@@ -1,0 +1,122 @@
+{
+  "/": {
+    "navbar": {
+      "background": "/images/navbar/blue/bg.png", 
+      "list": {
+        "fluye-en-la-u": "/images/navbar/blue/fluye.png",
+        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.png",
+        "/amor-drama-y-astros": "/images/navbar/blue/amor.png"
+      }
+    },
+    "modal" : {
+      "headerImage": "/images/pages/green/modal/modal-header.svg",
+      "primaryColor": "rgb(1, 103, 49, .7)",
+      "inputColor": "#CCFFE4",
+      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "buttonColor": "rgb(1, 103, 49, 100)"
+    }
+  },
+    "/manifestando-aumentos": {
+      "navbar": {
+        "background": "/images/navbar/green/bg.png", 
+        "list": {
+          "fluye-en-la-u": "/images/navbar/green/fluye.png",
+          "/manifestando-aumentos": "/images/navbar/green/ma-aumentos.png",
+          "/amor-drama-y-astros": "/images/navbar/green/amor.png"
+        }
+      },
+      "modal" : {
+        "headerImage": "/images/pages/green/modal/modal-header.svg",
+        "primaryColor": "rgb(1, 103, 49, .7)",
+        "inputColor": "#CCFFE4",
+        "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+        "buttonColor": "rgb(1, 103, 49, 100)"
+      },
+      "categories": 
+        {
+          "borderColor": "#00F98C",
+          "firstColor": "#02793A",
+          "secondColor": "#009A47",
+          "headerCategory": "/images/pages/green/otras-categorias.svg",
+          "list": [
+            {
+              "url": "/fluye-en-la-u",
+              "urlImage": "/images/home/person_1.svg" 
+            },
+            {
+              "url": "/amor-drama-y-astros",
+              "urlImage": "/images/home/person_3.svg" 
+            }
+          ]
+        }
+    },
+    
+    "/fluye-en-la-u": {
+      "navbar": {
+        "background": "/images/navbar/purple/bg.png", 
+        "list": {
+          "fluye-en-la-u": "/images/navbar/purple/fluye.png",
+          "/manifestando-aumentos": "/images/navbar/purple/ma-aumentos.png",
+          "/amor-drama-y-astros": "/images/navbar/purple/amor.png"
+        }
+      },
+      "modal" : {
+        "headerImage": "/images/pages/purple/modal/modal-header.svg",
+        "primaryColor": "rgb(85, 39, 121, .7)",
+        "inputColor": "#F6EAFF",
+        "description": "Suscríbete y dale diversión a tus clases tensas de inglés con Halls.",
+        "buttonColor": "rgb(85, 39, 121, 100)"
+      },
+      "categories": 
+        {
+          "borderColor": "#CD9BFF",
+          "firstColor": "#5B2688",
+          "secondColor": "#764B99",
+          "headerCategory": "/images/pages/purple/otras-categorias.svg",
+          "list": [
+            {
+              "url": "/amor-drama-y-astros",
+              "urlImage": "/images/home/person_3.svg" 
+            },
+            {
+              "url": "/manifestando-aumentos",
+              "urlImage": "/images/home/person_2.svg" 
+            }
+          ]
+        }
+    },
+    
+    "/amor-drama-y-astros": {
+      "navbar": {
+        "background": "/images/navbar/red/bg.png", 
+        "list": {
+          "fluye-en-la-u": "/images/navbar/red/fluye.png",
+          "/manifestando-aumentos": "/images/navbar/red/ma-aumentos.png",
+          "/amor-drama-y-astros": "/images/navbar/red/amor.png"
+        }
+      },
+      "modal" : {
+        "headerImage": "/images/pages/red/modal/modal-header.svg",
+        "primaryColor": "rgb(147, 19, 74, .7)",
+        "inputColor": "#FFCBE1",
+        "description": "#RespiraYTomaUnImpulsoReal con Halls, suscríbete y no repitas <br>la misma historia que viviste con tu ex por falta de compatibilidad.",
+        "buttonColor": "rgb(147, 19, 74, 100)"
+      },
+      "categories": {
+          "borderColor": "#FF69BA",
+          "firstColor": "#7B113F",
+          "secondColor": "#95144C",
+          "headerCategory": "/images/pages/red/otras-categorias.svg",
+          "list": [
+            {
+              "url": "/manifestando-aumentos",
+              "urlImage": "/images/home/person_2.svg" 
+            },
+            {
+              "url": "/fluye-en-la-u",
+              "urlImage": "/images/home/person_1.svg" 
+            }
+          ]
+      }
+    }
+  }

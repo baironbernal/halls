@@ -1,0 +1,19 @@
+/*General Nabvar*/
+
+.navbar img {
+    width: 10rem;
+}
+
+@media only screen and (max-width: 992px) {
+    /*General Nabvar*/
+    .navbar img {
+        width: 100%;
+    }
+    .navbar-collapse {
+        height: 100vh !important;
+    }
+
+    .astro {
+        margin: 20rem 0 !important;
+    }
+}

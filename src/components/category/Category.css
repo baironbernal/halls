@@ -1,0 +1,5 @@
+
+.other-categories--title figure{
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}

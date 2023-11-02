@@ -1,0 +1,93 @@
+.recuadro-video {
+    max-width: 1000px;
+    width: 65%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../../../public/images/home/lineas-cine.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0vw 4vw;
+    background-position: center;
+    position: relative;
+}
+
+.recuadro-video img {
+    max-width: 100%;
+}
+
+.video-work {
+    padding: 3vw 0vw;
+}
+.signal{
+    width:20px;
+    height:20px;
+    background:red;
+    border-radius:100px;
+}
+.recgrabacion {
+    display: flex;
+    position: absolute;
+    top: 3.7vw;
+    right: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.recgrabacion img {
+    width: 4vw;
+    margin-left: 0.5vw;
+}
+div#contador {
+    position: absolute;
+    bottom: 3.5vw;
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: 'GothamMedium';
+    left: 3vw;
+}
+.txt-videos-work {
+    position: absolute;
+    bottom: 3.5vw;
+    width: 24vw;
+    right: 3vw;
+    color: #fff;
+    font-family: 'GothamMedium';
+    line-height: 1.5vw;
+}
+.txt-videos-work a {
+    border: solid 2px #3AFA93;
+}
+
+.txt-videos-work .btn-section {
+    margin-top: 2vw;
+}
+.image-modo-cine img {
+    padding: 3vw 0vw;
+    width: 93%;
+}
+
+.txt-videos-work-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .image-modo-cine img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .txt-videos-work-mobile {
+        display: block;
+    }
+    .txt-videos-work {
+        display: none;
+    }
+
+    div#contador {
+        font-size: unset;
+    }
+    
+    .recuadro-video {
+        width: 90%;
+    }
+}

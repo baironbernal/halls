@@ -1,0 +1,120 @@
+/*Astro cards*/
+.icePinkGalaxy {
+    position: relative;
+    width: 100%;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+.cherryGalaxy2 {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+}
+.astro--cards {
+    position: absolute;
+    width: 80%;
+}
+.astro--container {
+    position: relative;
+    margin: 49px auto;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+.one {
+    animation-name: anim-one;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain !important;
+    background: url('../../../public/images/card-astro/astroCard3.svg');
+}
+.two {
+    animation-name: anim-two;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain !important;
+    background: url('../../../public/images/card-astro/astroCard3.svg') 
+}
+.three {
+    animation-name: anim-three;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain !important;
+    background: url('../../../public/images/card-astro/astroCard3.svg') 
+}
+.four {
+    animation-name: anim-five;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain !important;
+    background: url('../../../public/images/card-astro/astroCard3.svg') 
+}
+.five {
+    animation-name: anim-eight;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain !important;
+    background: url('../../../public/images/card-astro/astroCard3.svg') 
+}
+.astro--cards img{
+    width:40%;
+    position: absolute;
+    z-index: 1;
+    padding-top:11rem;
+}
+
+.astro--card {
+    position: absolute;
+    width: 20%;
+    height: 55%;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@media only screen and (max-width: 820px) {
+    .astro {
+        margin: 10rem 0 !important;
+    }
+    .astro--cards {
+        width: 100%;
+        margin-top: 14rem;
+   }
+    .astro--cards img{
+        width: 80%;
+        padding-top: 1rem;
+   }
+    .astro--container {
+        margin-top: -9rem;
+        overflow: hidden;
+   }
+    .astro--card {
+        width: 30%;
+   }
+}
+
+
+@keyframes anim-one {
+    from { transform: translate(0) rotate(0deg);}
+    to {transform: translateX(-260px)  translateY(-1rem) rotate(-30deg);}
+  }
+
+  @keyframes anim-two {
+    from { transform: translate(0) rotate(0deg);}
+    to{transform: translateX(-130px)  translateY(-5rem) rotate(-17deg);}
+  }
+  @keyframes anim-three {
+    from { transform: translate(0) rotate(0deg);}
+    to{transform: translateY(-7rem) rotate(-0deg);}
+  }
+
+  @keyframes anim-five {
+    from { transform: translate(0) rotate(0deg);}
+    to{transform: translateX(150px)  translateY(-4.5rem)rotate(17deg);}
+  }
+
+  @keyframes anim-eight {
+    from { transform: translate(0) rotate(0deg);}
+    to {transform: translate(260px, 14px) rotate(39deg);}
+  }

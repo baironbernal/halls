@@ -1,0 +1,42 @@
+.main-sign {
+    display: flex;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sign--back{
+    animation: infinite 4s linear floatAnimation;
+}
+
+.main-sign--back img{
+    width: 35%;
+}
+
+.diamond {
+    max-width: 200px;
+    max-height: 200px;
+    background: rgb(194,30,90);
+    background: linear-gradient(90deg, rgba(194,30,90,1) 0%, rgba(194,40,120,1) 100%);
+    border-radius: 20px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 0 0 1px #de4be0ab, 0 0 1px #C21E5A, 0 0 1px #C21E5A 0 0 300px #C21E5A;
+    border: 2px solid #e53877;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 20px;
+    animation: infinite resplandorAnimation 2s;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+    .main-sign--back {
+        display: none;
+    }
+}
+

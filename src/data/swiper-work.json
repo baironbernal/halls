@@ -1,0 +1,31 @@
+[
+    {
+       "id": 1,
+       "title": "Pedir aumento imagen",
+       "urlImage": "/images/pages/green/pedir-aumento.png",
+       "urlFile": "files/previews/pedir-aumento.pdf",
+       "imageModal": "/images/pages/green/modal/previews/preview-test.png"
+    },
+    {
+       "id": 2,
+       "title": "Pedir vacaciones imagen",
+       "urlImage": "/images/pages/green/pedir-vacaciones.png",
+       "urlFile": "files/previews/pedir-vacaciones.pdf",
+       "imageModal": "/images/pages/green/modal/previews/preview-test.png"
+    },
+    {
+       "id": 3,
+       "title": "Home Office imagen",
+       "urlImage": "/images/pages/green/home-office.png",
+       "urlFile": "files/previews/home-office.pdf",
+       "imageModal": "/images/pages/green/modal/previews/preview-test.png"
+    },
+    {
+       "id": 4,
+       "title": "Salir viernes temprano",
+       "urlImage": "/images/pages/green/work-slide-1.png",
+       "urlFile": "files/previews/salir-viernes-temprano.pdf",
+       "imageModal": "/images/pages/green/modal/previews/preview-test.png"
+    }
+    
+ ]

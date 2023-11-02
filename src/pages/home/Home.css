@@ -1,0 +1,255 @@
+/* COMPONENTS  */
+.spacing-halls{
+    padding: 0vw 9vw;
+}
+div#app-halls {
+    overflow-x: hidden;
+}
+
+/* HOME SECCIÓN 1 */
+.video-home{
+    padding: 4vw 9vw;
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* .video-halls {
+    position: relative;
+    padding: 0!important;
+} */
+.video-halls {
+    position: relative;
+    padding: 0!important;
+    min-height: 47vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.video-halls video.mainVideo {
+    max-width: 100%;
+    border-radius: 25px;
+}
+.video-halls video.mainVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.opacity-halls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+section.blue-home {
+    background-image: url(../../../public/images/home/bg-section-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.title-option  {
+    text-align: center;
+    padding: 4vw 0vw;
+}
+.title-option img {
+    max-width: 43vw;
+}
+.person-images img {
+    max-width: 100%;
+}
+.option-nav-person {
+    padding: 1vw 9vw;
+}
+.txt-person {
+    text-align: center;
+    color: #fff;
+    font-family: 'GothamBook';
+    font-size: 1.3vw;
+    padding: 2vw 0vw!important;
+    margin-bottom: 2vw!important;
+}
+.icon-mouse {
+    text-align: center;
+    margin-top: -0.5vw;
+}
+.title-halls-barra {
+    text-align: center;
+}
+
+/* HOME SECCIÓN 2  */
+.purple-home {
+    background: #744A98;
+    min-height: 54vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.text-spots h1 {
+    color: var(--pink-primary);
+    font-size: 5vw;
+    font-family: 'GothamBold';
+}
+
+.text-spots h1 span {
+    display: block;
+    color: #fff;
+    font-size: 3.7vw;
+    line-height: 2vw;
+}
+
+
+.text-spots {
+    position: relative;
+    z-index: 2;
+}
+.btn-section a {
+    border: solid 2px var(--pink-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5vw 2vw;
+    border-radius: 20px;
+    font-family: 'GothamBold';
+}
+.btn-section {
+    margin-top: 2.5vw;
+}
+.halls-menta-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.images-spots {
+    position: relative;
+}
+.halls-menta-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.halls-menta-2 {
+    position: absolute;
+    bottom: -10vw;
+    width: 52vw;
+    z-index: -1;
+    left: -8vw;
+}
+
+.halls-menta-2 img {
+    max-width: 100%;
+}
+
+.consejos-title {
+    margin: 0 auto;
+    text-align: center;
+    z-index: 9;
+}
+.consejos-title img {
+    max-width: 700px;
+}
+
+.consejos-home {
+    position: relative;
+}
+
+.object-scene .object-morado1 {
+    position: absolute!important;
+    top: 3vw!important;
+    width: 102%;
+    left: -3vw!important;
+}
+
+.object-scene div#scene2 {
+    position: absolute!important;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.consejos-home img {
+    position: relative;
+    z-index: 9;
+}
+/* HOME SECCIÓN 3  */
+.green-home {
+    background: #009846;
+    min-height: 54vw;
+    
+}
+
+.red-home {
+    background: #93134A;
+    min-height: 54vw;
+}
+
+.red--barra {
+    background-image: url(../../../public/images/home/green-red.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.purple--barra {
+    background-image: url(../../../public/images/home/blue-purple.png);
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+}
+
+
+.green--barra {
+    background-image: url(../../../public/images/home/purple-green.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+    
+    .text-spots {
+        text-align: center;
+    }
+    .text-spots h1 {
+      font-size: 3.9rem;
+    }
+    .text-spots h1 span {
+        font-size: 1.6rem;
+    }
+
+    .tiras-consejo {
+        padding-bottom: 4rem !important; 
+    }
+
+    #respiraytoma{
+        font-size: 23px !important;
+    }
+    .halls-menta-2 {
+        bottom: -48vh;
+    }
+    .halls-menta-2 img {
+        max-width: unset !important;
+    }
+  }

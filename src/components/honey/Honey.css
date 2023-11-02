@@ -1,0 +1,126 @@
+#imagenMover.mover-derecha {
+    left: auto!important;
+    right: -61vw!important;
+}
+
+#textoMover.mover-izquierda{
+    left: 11vh!important;
+    right: auto!important;
+}
+
+.container-workimpulso {
+    max-width: 64vw;
+    height: 30vw;
+    position: relative;
+    background-image: url(../../../public/images/home/button-workimpulso.svg);
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+}
+#imagenMover {
+    position: absolute;
+    left: 6vw;
+    transition: left 2s ease-in-out;
+    width: 21vw;
+    top: 4vw;
+}
+.text-workimpulso {
+    position: absolute;
+    right: 11vw;
+    transition: right 2s ease-in-out;
+    width: 25vw;
+}
+.work-impulso {
+    position: relative;
+    padding: 12vw 0vw;
+    margin-top: 5vw;
+}
+#imagenMover.mover-derecha {
+    left: auto!important;
+    right: 5vw!important;
+}
+
+.text-workimpulso.mover-izquierda {
+    right: auto!important;
+    left: 11.5vw!important;
+}
+.text-workimpulso h2 {
+    font-family: 'GothamBold';
+    color: #00F98C;
+    font-size: 1.7vw;
+}
+
+.work-impulso .btn-section a {
+    border: solid 2px #00F98C;
+}
+
+.text-workimpulso p {
+    font-family: 'GothamBook';
+    color: #fff;
+    line-height: 1.4vw;
+}
+.work-impulso::before {
+    max-width: 80%;
+    content: "";
+    background-image: url(../../../public/images/home/hojas-manifiesto.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+    background-repeat: no-repeat;
+    top: 0vw;
+    left: 20px;
+}
+
+.text-workimpulso-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 843px) {
+    .text-workimpulso {
+        display: none;
+    }
+
+    .work-impulso {
+        margin: 0;
+    }
+
+    .text-workimpulso-mobile {
+        position: absolute;
+        right: 11vw;
+        transition: right 2s ease-in-out;
+        width: 25vw;
+        display: block;
+    }
+
+    .work-impulso::before {
+        left: -46px;
+        max-width: 100%;
+    }
+
+    .work-impulso--title {
+        display: none;
+    }
+
+    .container-workimpulso{
+        max-width: 100%;
+        height: 200px;
+        background-size: 100% 100%;
+    }
+
+    #imagenMover {
+        margin-left: 15px;
+        position: relative;
+        top: 0;
+    }
+    
+}
