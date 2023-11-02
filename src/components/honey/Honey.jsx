@@ -1,14 +1,23 @@
 import React, { useState } from 'react'
 import './Honey.css'
 import Button from '../button/Button'
+import { useHistory } from 'react-router-dom';
+
 
 const Honey = () => {
   const publicURL = process.env.PUBLIC_URL;
 
   const [isClassActive, setIsClassActive] = useState(false);
+  const history = useHistory();
 
   const toggleClass = () => {
     setIsClassActive((prevIsClassActive) => !prevIsClassActive);
+    
+    // Use the setTimeout function to delay the redirect by 1 second (1000 milliseconds).
+    setTimeout(() => {
+      history.push('/manifestando-aumentos');  // Replace '/destination' with your target URL.
+    }, 1000);
+    
   };
 
   return (
@@ -38,7 +47,7 @@ const Honey = () => {
               <Button url={'/manifestando-aumentos'} titleButton={'Desliza para leer más'} />
             </div>
 
-            <div className="text-workimpulso-mobile">
+            <div className={isClassActive ? 'text-workimpulso-mobile mover-izquierda' : 'text-workimpulso-mobile'} id='mover-izquierda-button'>
                 <Button url={'/manifestando-aumentos'} titleButton={'Desliza'} />
             </div>
           </div>

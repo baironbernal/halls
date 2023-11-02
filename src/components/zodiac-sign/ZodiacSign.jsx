@@ -7,18 +7,12 @@ import './ZodialSign.css'
 const ZodiacSign = () => {
   
   const { options, selectedValue, information, showModal, setSelectedValue} = useZodiacSign();
-
-  const handleActionModal = (value) => {
-    if (!showModal) return;
-
-    setSelectedValue(value)
-  }
-
+  
   return (
     <div>
       <select
         value={selectedValue}
-        onChange={e => handleActionModal(e.target.value)}
+        onChange={e => setSelectedValue(e.target.value)}
         className="astros--select form-select rounded-5 w-50 mx-auto py-3 text-center"
         id="selectOption"
       >
@@ -29,17 +23,17 @@ const ZodiacSign = () => {
         ))}
       </select>
 
-      {selectedValue && (
+      {showModal && !selectedValue ? (
         <div className="row m-5">
           <Matchs information={information} />
         </div>
-      )}
+      ): null}
 
-      {!showModal && selectedValue ?(
+      {showModal && selectedValue &&(
         <div className="mt-0 p-0">
           <ModalForm />
         </div>
-      ):null}
+      )}
     </div>
   );
 };

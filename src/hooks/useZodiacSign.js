@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import useCookieFilter from './useCookieFilter';
 import ZodiacService from '../services/ZodiacService';
 
@@ -24,7 +24,8 @@ const useZodiacSign = () => {
   
   
     useEffect(() => {
-      fetchInformation()
+      if(showModal) return;
+        fetchInformation()
     }, [selectedValue])
     
     
@@ -36,7 +37,13 @@ const useZodiacSign = () => {
         setInformation(signalInfo);
       }
     };
-  return { options, selectedValue, information, showModal, setSelectedValue};
+  return { 
+      options, 
+      selectedValue, 
+      information, 
+      showModal, 
+      setSelectedValue
+    };
 };
 
 export default useZodiacSign;

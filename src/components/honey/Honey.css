@@ -122,5 +122,15 @@
         position: relative;
         top: 0;
     }
+
+    #imagenMover.mover-derecha {
+        left: auto!important;
+        right: -61vw!important;
+    }
+    
+    #mover-izquierda-button.mover-izquierda{
+        left: 11vh!important;
+        right: auto!important;
+    }
     
 }

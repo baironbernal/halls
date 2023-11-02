@@ -1,9 +1,11 @@
 import React from 'react'
 import { Modal, Row } from 'react-bootstrap'
 import Carousel from 'react-bootstrap/Carousel';
+import useVideoHome from '../../hooks/useVideoHome';
 
 
 const ModalVideo = ({show}) => {
+  const publicURL = process.env.PUBLIC_URL;
      
   return (
     <div>

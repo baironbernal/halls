@@ -42,7 +42,11 @@ const Fluye = () => {
         </Row>
 
       <Row className='justify-content-center align-items-center'>
-        <Col xs={12} md={12} lg={6} xl={6}>
+        <Col xs={12} md={12} lg={6} xl={6} style={{
+          height:'100%',
+          maxWidth: '40rem',
+          
+        }}>
                 <article>
                   <figure className='text-center mw-100'>
                     <img className='mw-100' src={publicURL + "/images/pages/purple/consejos.png"} alt="Consejos de último semestre" />
@@ -51,7 +55,11 @@ const Fluye = () => {
                     que no pasa desapercibido?</p>
                 </article>
         </Col>
-        <Col xs={12} md={12} lg={6} xl={6}  id='containerCardsSlide'>
+        <Col xs={12} md={12} lg={6} xl={6} style={{
+          height:'100%',
+          maxWidth: '40rem',
+          alignSelf: 'center'
+        }} id='containerCardsSlide'>
             {/*Tinder Cards Love and Nope*/}
               <DatingCards className='my-5' />
         </Col>
@@ -61,9 +69,6 @@ const Fluye = () => {
       </Row>
       </section>
 
-      <div className="mt-0 p-0">
-          <ModalForm/> 
-        </div>
     </>
   )
 }

@@ -5,7 +5,7 @@ import useDatingCards from '../../hooks/useDatingCards'
 
 function DatingCards () {
 
-   const { outOfFrame, childRefs, db, swiped, canSwipe, goBack,  swipe } = useDatingCards();
+   const { outOfFrame, childRefs, db, swiped, canSwipe, goBack, swipe } = useDatingCards();
    const publicURL = process.env.PUBLIC_URL;
 
   return (

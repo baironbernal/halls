@@ -20,12 +20,15 @@ const useVideoHome = () => {
       };
     }, []); // Empty dependency array to ensure the effect runs once
   
-  
     const showModalVideo = () => {
       setShowVideo(true);
     };
 
-  return { showModalVideo, showVideo };
+    const hideModalVideo = () => {
+      setShowVideo(false);
+    };
+
+  return { showModalVideo, showVideo, hideModalVideo };
 };
 
 export default useVideoHome;

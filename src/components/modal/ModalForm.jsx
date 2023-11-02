@@ -9,7 +9,7 @@ const ModalForm = () => {
 
   return (
     <div>
-      <Modal show={false}
+      <Modal show={show}
       className='modal'
       style={{
          backgroundColor: modal.primaryColor

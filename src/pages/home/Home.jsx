@@ -12,7 +12,7 @@ import useVideoHome from "../../hooks/useVideoHome";
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const { showModalVideo, showVideo } = useVideoHome();
+  const { showModalVideo, showVideo, hideModalVideo } = useVideoHome();
 
   return (
     <div>
@@ -39,7 +39,11 @@ const Home = () => {
         {/*Video modal*/}
         {
           showVideo && (
-            <ModalVideo show={true} />
+            <div>
+              <img src={publicURL + "/images/icons/close.svg"} alt="close button"
+                  onClick={hideModalVideo} className='d-block align-self-baseline'/>
+               <ModalVideo show={true} />
+            </div>
           )
         }
       <a href="#three-options">

@@ -8,6 +8,7 @@
 
 .card {
   position: relative;
+  height: 16rem;
   background-color: #fff;
   width: 100%;
   max-width: 25rem;
@@ -37,6 +38,7 @@
   .buttons {
     flex-direction: column;
   }
+ 
 }
 
 @media only screen and (max-width: 782px) {
@@ -45,9 +47,11 @@
     margin-top: 2rem;
   }
   .card {
-    max-width: unset;
+    max-height: unset;
     min-width: unset;
     width: 80%;
+    height: 15rem;
+    bottom: 20px;
   }
   .cardContainer{
     min-height: 216px;

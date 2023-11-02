@@ -5,6 +5,7 @@ import useForm from '../../hooks/useForm';
 const ModalFormPreview = ({ show, urlFile, imageModal }) => {
      
    const {  modal } = useForm(); 
+   const publicURL = process.env.PUBLIC_URL;
 
   return (
     <div>
@@ -22,7 +23,9 @@ const ModalFormPreview = ({ show, urlFile, imageModal }) => {
             <div className="modal-body p-4 rounded-4 mb-5">
                <Row>
                   <Figure className='text-center'>
-                        <img className='mw-100' src="/images/pages/green/modal/previews/preview-test.png" alt="Preview " />
+                        <img className='mw-100' 
+                        src={publicURL + '/images/pages/green/modal/previews/preview-test.png'} 
+                        alt="Preview " />
                   </Figure>
                </Row>
                <div className="border-0 d-flex flex-row justify-content-center my-2 bg-transparent">

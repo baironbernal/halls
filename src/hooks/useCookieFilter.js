@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 const useCookieFilter = () => {
   const [showModal, setShowModal] = useState(false);
   const [cookieExists, setCookieExists] = useState(false);
+  
 
   // Check if the cookie exists
   useEffect(() => {
@@ -10,7 +11,7 @@ const useCookieFilter = () => {
       if (!localStorage.getItem('SIGN_STAR')) {
        return (
         setCookieExists(false),
-        setShowModal(false)
+        setShowModal(true)
        )
       }
       return (
@@ -22,7 +23,9 @@ const useCookieFilter = () => {
     checkCookie();
   }, []); // Empty dependency array ensures this runs only once
 
-  const handleClose = () => setShowModal(false);
+  const handleClose = () => {
+    setShowModal(false)
+  };
 
   return { showModal, handleClose, cookieExists };
 };

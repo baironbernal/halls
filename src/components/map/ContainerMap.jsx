@@ -5,10 +5,11 @@ import SiteCard from '../../components/map/SiteCard';
 import './Map.css'
 import Map from './Map';
 import useFilterMap from '../../hooks/useFilterMap';
+import ModalForm from '../modal/ModalForm';
 
 const ContainerMap = () => {
 
-   const {setCategory, setCity, data} = useFilterMap();
+   const {setCategory, setCity, data, showModal, city} = useFilterMap();
 
   return (
     
@@ -58,6 +59,12 @@ const ContainerMap = () => {
                 <Map markers={ data.locations }  />
             </Col>
         </Row>
+
+        {showModal && city &&(
+        <div className="mt-0 p-0">
+          <ModalForm />
+        </div>
+      )}
     </Container>
     </>
   )

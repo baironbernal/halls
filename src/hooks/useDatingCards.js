@@ -4,28 +4,28 @@ const useDatingCards = () => {
 
 const db = [
     {
-    question: "¿Primer app1 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
     repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
     },
     {
-    question: "¿Primer app2 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
-    repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    repply: "El outfit es tan importante como respirar y alistar tu stick de Halls Negro antes de salir 😏."
     },
     {
-    question: "¿Primer app3 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
-    repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    repply: "No le hables de tu ex! Respira y mejor ofrécele el último Hallsito 😉."
     },
     {
-    question: "¿Primer app4 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
-    repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    repply: "Keep it real, toma un respiro con Halls y no sobre actúes."
     },
     {
-    question: "¿Primer app5 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
-    repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    repply: "Si la cita está muy mala, respira y pon una alarma en tu celular a las 10 pm, la podrás usar como timbre de llamada urgente. 📲"
     },
     {
-    question: "¿Primer app6 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
-    repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    repply: "Busca spots relajados donde se sientan cómodos, un Hallsito y déjalo fluir. 😉"
     }
 ]
   const [currentIndex, setCurrentIndex] = useState(db.length - 1)
