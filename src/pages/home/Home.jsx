@@ -12,7 +12,7 @@ import useVideoHome from "../../hooks/useVideoHome";
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const { showModalVideo, showVideo, hideModalVideo } = useVideoHome();
+  const { showModalVideo, showVideo } = useVideoHome();
 
   return (
     <div>
@@ -22,7 +22,7 @@ const Home = () => {
             <Row>
               <div className="video-halls" onClick={showModalVideo}>
                 <video autoPlay={true} muted="" loop="" className="mainVideo">
-                  <source src={publicURL+"/video/video-hub1.mp4"} type="video/mp4" />
+                  <source src={publicURL+"/video/video-hub1.mp4"} type="video/mp4" muted />
                 </video>
                 <div className="opacity-halls">
                   <img
@@ -39,9 +39,7 @@ const Home = () => {
         {/*Video modal*/}
         {
           showVideo && (
-            <div>
-              <img src={publicURL + "/images/icons/close.svg"} alt="close button"
-                  onClick={hideModalVideo} className='d-block align-self-baseline'/>
+            <div >
                <ModalVideo show={true} />
             </div>
           )

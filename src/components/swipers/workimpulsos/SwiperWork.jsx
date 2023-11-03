@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React  from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide, } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,102 +11,23 @@ import '../Swiper.css';
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import { Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import ModalFormPreview from '../../modal/ModalFormPreview';
 import Button from '../../button/Button';
+import useSwiperWork from '../../../hooks/useSwiperWork';
 
-export default function SwiperWork() {
+const SwiperWork = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const [showPreview, setShowPreview] = useState(false);
-  const [filePdf, setFilePdf] = useState('');
-  const [urlPreview, setUrlPreview] = useState('');
-
-    const photos = [
-      {   
-          id: 0,
-          title: 'Pedir aumento imagen',
-          urlImage: '/images/pages/green/pedir-aumento.png',
-          urlFile: 'files/previews/pedir-aumento.pdf',
-          imageModal: '/images/pages/green/modal/previews/preview-test.png'
-
-      },
-      {
-          id: 1,
-          title: 'Pedir vacaciones imagen',
-          urlImage: '/images/pages/green/pedir-vacaciones.png',
-          urlFile: 'files/previews/pedir-vacaciones.pdf',
-          imageModal: '/images/pages/green/modal/previews/preview-test.png'
-
-      },
-      {
-          id: 2,
-          title: 'Home Office imagen',
-          urlImage: '/images/pages/green/home-office.png',
-          urlFile: 'files/previews/home-office.pdf',
-          imageModal: '/images/pages/green/modal/previews/preview-test.png'
-
-      },
-      {
-          id: 3,
-          title: 'Salir viernes temprano',
-          urlImage: '/images/pages/green/work-slide-1.png',
-          urlFile: 'files/previews/salir-viernes-temprano.pdf',
-          imageModal: '/images/pages/green/modal/previews/preview-test.png'
-
-      }
-  ];
-
-    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-
-    const handleSlideChange = (swiper) => {
-      console.log()
-      setActiveSlideIndex(swiper.activeIndex);
-    };
-
-    const handlePreview = () => {
-      console.log("Click", showPreview)
-      setShowPreview(true)
-    }
-
-    const handleDownloadPDF = async () => {
-      // Specify the URL of the PDF file
-      const pdfUrl = 'files/previews/test.pdf';
-  
-      try {
-        // Fetch the PDF content from the URL
-        const response = await fetch(pdfUrl);
-  
-        // Check if the fetch was successful
-        if (!response.ok) {
-          throw new Error('Failed to fetch the PDF file');
-        }
-  
-        // Convert the response to a Blob
-        const blob = await response.blob();
-  
-        // Create a URL for the Blob
-        const blobUrl = URL.createObjectURL(blob);
-  
-        // Create an anchor element and set its href to the Blob URL
-        const a = document.createElement('a');
-        a.href = blobUrl;
-  
-        // Set the anchor element to download the PDF file with a specified filename
-        a.download = 'test.pdf';
-  
-        // Trigger a click event on the anchor element to initiate the download
-        a.click();
-  
-        // Release the Object URL to free up resources
-        URL.revokeObjectURL(blobUrl);
-      } catch (error) {
-        console.error('Error downloading PDF:', error);
-      }
-    };
+  const {
+    handleSlideChange , 
+    handlePreview, 
+    showPreview,
+    urlPreview,
+    photos
+} = useSwiperWork();
 
   return (
     <>
-    <ModalFormPreview show={showPreview}/>
       <Swiper
         id='swiper-work'
         className='swiper p-0 my-4 w-75 h-100'
@@ -136,8 +57,10 @@ export default function SwiperWork() {
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Navigation]}>
         {
-            photos.map(({id, urlImage, title}) => (
+            photos.map(({id, urlImage, title, imageModal, urlFile}) => (
                 <SwiperSlide  
+                data-file-attribute={ urlFile}
+                data-image-modal-atribute = {imageModal}
                 key={id}
                 className='swiper-slide'>
                     <img className='rounded-4' src={publicURL + urlImage} alt={title} />
@@ -157,11 +80,18 @@ export default function SwiperWork() {
               titleButton={'Previsualizar'} 
               borderColor={'#00F98C'} />
           </div>
-          <div onClick={handleDownloadPDF}>
+          <div >
             <Button titleButton={'Descargar'}  borderColor={'#00F98C'} />
           </div>
           </div>
       </Row>
+
+      <ModalFormPreview 
+      urlPreview={urlPreview} 
+      show={showPreview}/>
     </>
   );
 }
+
+
+export default SwiperWork

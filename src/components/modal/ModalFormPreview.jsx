@@ -2,10 +2,9 @@ import React from 'react'
 import { Figure, Modal, Row } from 'react-bootstrap'
 import useForm from '../../hooks/useForm';
 
-const ModalFormPreview = ({ show, urlFile, imageModal }) => {
+const ModalFormPreview = ({ show, urlFile, urlPreview }) => {
      
-   const {  modal } = useForm(); 
-   const publicURL = process.env.PUBLIC_URL;
+   const { modal } = useForm(); 
 
   return (
     <div>
@@ -24,7 +23,7 @@ const ModalFormPreview = ({ show, urlFile, imageModal }) => {
                <Row>
                   <Figure className='text-center'>
                         <img className='mw-100' 
-                        src={publicURL + '/images/pages/green/modal/previews/preview-test.png'} 
+                        src={urlPreview} 
                         alt="Preview " />
                   </Figure>
                </Row>

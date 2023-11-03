@@ -84,9 +84,7 @@ const Aumentos = () => {
                 </Row>
             </Zoom>
 
-            <div className="mt-0 p-0">
-          <ModalForm/> 
-        </div>
+          
 
             
             

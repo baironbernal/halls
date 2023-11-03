@@ -1,20 +1,25 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap'
 import useForm from '../../hooks/useForm';
+import { useMyState } from '../../context/ContextGlobal';
+
 
 const ModalForm = () => {
      
    const publicURL = process.env.PUBLIC_URL;
-   const { handleSubmit, handleClose, show, modal, email, name,  setEmail, setName, setShow} = useForm(); 
+   const { handleSubmit, modal, email, name,  setEmail, setName} = useForm(); 
+   const { showModal, handleClose  } = useMyState()
+
+   console.log('Soy el modal', showModal)
 
   return (
     <div>
-      <Modal show={show}
+      <Modal show={showModal}
       className='modal'
       style={{
          backgroundColor: modal.primaryColor
       }}
-      onHide={() => setShow(show)}
+      onHide={() => handleClose}
       contentClassName='modal-content bg-transparent border-0 mb-5'
       dialogClassName="modal-dialog modal-dialog-centered  modal-xl"
       aria-labelledby="example-custom-modal-styling-title">

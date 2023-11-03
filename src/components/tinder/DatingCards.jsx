@@ -28,11 +28,6 @@ function DatingCards () {
       </div>
       <div className='buttons mx-auto d-block'>
         <img className='mx-3' onClick={() => swipe('left')} src={publicURL + '/images/pages/red/pink-x.svg'} alt='X' />
-        {
-            !canSwipe && (
-              <button onClick={() => goBack()}>Undo swipe!</button>
-            )
-        }
         <img onClick={() => swipe('right')} src={publicURL + '/images/pages/red/heart.svg' } alt='heart'/>
       </div>
     </div>

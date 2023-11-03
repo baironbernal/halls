@@ -65,6 +65,7 @@
 
 .buttons img {
   cursor: pointer;
+  z-index: 9;
 }
 .buttons img:hover {
   cursor: pointer;

@@ -5,13 +5,16 @@ import './styles/app.css';
 
 import Footer from './layout/footer/Footer';
 import Navbar from './layout/navbar/Navbar';
+import { ContextGlobal } from './context/ContextGlobal';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <main>
-        <RouteConfig />
+        <ContextGlobal>
+          <RouteConfig />
+        </ContextGlobal>
       </main>
       <Footer />
   </Router>

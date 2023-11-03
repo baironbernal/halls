@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import useCookieFilter from './useCookieFilter';
 import ZodiacService from '../services/ZodiacService';
+import { useMyState } from '../context/ContextGlobal';
 
 const useZodiacSign = () => {
     const options = [
@@ -19,13 +19,12 @@ const useZodiacSign = () => {
         { value: '12', label: 'Piscis' }
       ];
     const [selectedValue, setSelectedValue] = useState('');
-    const { showModal } = useCookieFilter();
+    const { showModal, action, setAction } = useMyState();
     const [information, setInformation] = useState({});
-  
-  
+    
+
     useEffect(() => {
-      if(showModal) return;
-        fetchInformation()
+        if(action > 0 && !showModal) fetchInformation()
     }, [selectedValue])
     
     
@@ -42,7 +41,9 @@ const useZodiacSign = () => {
       selectedValue, 
       information, 
       showModal, 
-      setSelectedValue
+      setSelectedValue,
+      setAction,
+      action
     };
 };
 
