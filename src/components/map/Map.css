@@ -7,6 +7,25 @@
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-color: white !important;
+}
 
+.container-map--spot {
+    margin-top: -10rem;
+    max-width: 23rem;
+}
+
+
+@media only screen and (max-width: 782px) {
+    .container-map {
+        padding: 4px 5px;
+        font-size: 12px !important;
+    }
+    .container-map--sites{
+        max-height: 200px;
+    }
+    .container-map--spot {
+        margin-top: 0rem;
+        max-width: 15rem;
+    }
 }
 

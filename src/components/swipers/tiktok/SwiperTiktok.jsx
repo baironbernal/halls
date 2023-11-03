@@ -45,13 +45,22 @@ const SwiperTiktok = () => {
 
   return (
     <div>
-       <Swiper
+      <div className="d-flex justify-content-center align-items-center ">
+        <img src={publicURL + '/images/icons/left.png'} 
+          id='swiper-tiktok-iconleft'
+          alt="left-icon" 
+          className='swiper--iconleft'  />
+        <Swiper
         id='swiper-tiktoks'
         className='swiper p-0 my-4 w-75'
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         initialSlide={3}
+        navigation={{
+          prevEl: '#swiper-tiktok-iconleft',
+          nextEl: '#swiper-tiktok-iconright',
+        }}
         loop={true}
         centeredSlidesBounds={true}
         slidesPerView={1}
@@ -77,7 +86,6 @@ const SwiperTiktok = () => {
             spaceBetween: 90
           }
         }}
-        navigation={true}
         pagination={{ clickable: true }}
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
@@ -91,6 +99,12 @@ const SwiperTiktok = () => {
             ))
         }
       </Swiper>
+        <img src={publicURL + '/images/icons/right.png'} 
+        alt="right-icon" 
+        id='swiper-tiktok-iconright'
+        className='swiper--iconright'/>
+      </div>
+       
     </div>
   )
 }

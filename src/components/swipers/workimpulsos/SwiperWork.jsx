@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
 import '../Swiper.css';
 
 // import required modules
@@ -28,46 +27,60 @@ const SwiperWork = () => {
 
   return (
     <>
-      <Swiper
-        id='swiper-work'
-        className='swiper p-0 my-4 w-75 h-100'
-        effect={'coverflow'}
-        centeredSlides={true}
-        initialSlide={1}
-        centeredSlidesBounds={false}
-        onSlideChange={handleSlideChange}
-        slidesPerView={1}
-        loop={true}
-        navigation={true}
-        coverflowEffect={{
-          rotate: 0,
-            stretch: 70,
-            depth: 200,
-            modifier: 1,
-            slideShadows: true, 
-            
-        }}
-        breakpoints={{
-          // when window width is >= 768px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 0
+      <div className="d-flex align-items-center">
+        <img src={publicURL + '/images/icons/left.png'} 
+          id='swiper-work-iconleft'
+          alt="left-icon" 
+          className='swiper--iconleft'  />
+        <Swiper
+          id='swiper-work'
+          className='swiper p-0 my-4 w-75 h-100'
+          effect={'coverflow'}
+          centeredSlides={true}
+          navigation={{
+            prevEl: '#swiper-work-iconleft',
+            nextEl: '#swiper-work-iconright',
+          }}
+  
+          initialSlide={1}
+          centeredSlidesBounds={false}
+          onSlideChange={handleSlideChange}
+          slidesPerView={1}
+          loop={true}
+          coverflowEffect={{
+            rotate: 0,
+              stretch: 70,
+              depth: 200,
+              modifier: 1,
+              slideShadows: true, 
+              
+          }}
+          breakpoints={{
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 0
+            }
+          }}
+          pagination={{ clickable: true }}
+          modules={[EffectCoverflow, Pagination, Navigation]}>
+          {
+              photos.map(({id, urlImage, title, imageModal, urlFile}) => (
+                  <SwiperSlide  
+                  data-file-attribute={ urlFile}
+                  data-image-modal-atribute = {imageModal}
+                  key={id}
+                  className='swiper-slide'>
+                      <img className='rounded-4' src={publicURL + urlImage} alt={title} />
+                  </SwiperSlide>
+              ))
           }
-        }}
-        pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination, Navigation]}>
-        {
-            photos.map(({id, urlImage, title, imageModal, urlFile}) => (
-                <SwiperSlide  
-                data-file-attribute={ urlFile}
-                data-image-modal-atribute = {imageModal}
-                key={id}
-                className='swiper-slide'>
-                    <img className='rounded-4' src={publicURL + urlImage} alt={title} />
-                </SwiperSlide>
-            ))
-        }
-      </Swiper>
+        </Swiper>
+        <img src={publicURL + '/images/icons/right.png'} 
+        alt="right-icon" 
+        id='swiper-work-iconright'
+        className='swiper--iconright'/>
+      </div>
       <Row className='mt-3'>
         <p className='text-white ff-gotham-bold fs-5'>
         ¿Con cuál te atreves?

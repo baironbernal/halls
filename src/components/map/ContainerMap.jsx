@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Form, Row } from 'react-bootstrap'
+import { Col, Container, Figure, Form, Row } from 'react-bootstrap'
 import SiteCard from '../../components/map/SiteCard';
 //Import
 import './Map.css'
@@ -12,16 +12,17 @@ const ContainerMap = () => {
 
    const {setCategory, setCity, data} = useFilterMap();
    const { setAction, action, showModal} =useMyState();
+   const publicURL = process.env.PUBLIC_URL;
 
   return (
     
     <>
     <Container className='container-map rounded-4 p-5'>
         <Row>
-            <img src="" alt="" />
-        </Row>
-        <Row>
             <Col xs={12} md={12} lg={4} xl={4}>
+                <Figure>
+                <img className='container-map--spot' src={publicURL + '/images/pages/purple/spot-parchaditos.png'} alt="Spot parchaditos" />
+                </Figure>
                 <Row className='justify-content-center gy-3'>
                     <Col xs={12} md={12} lg={6} xl={6}>
                         <Form.Select 

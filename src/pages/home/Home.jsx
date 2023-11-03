@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Home.css";
 import { Col, Container, Figure, Row } from "react-bootstrap";
 import Button from "../../components/button/Button";

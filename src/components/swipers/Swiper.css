@@ -45,6 +45,17 @@
   .swiper-button-prev, .swiper-button-next {
     color: white !important; 
   }
+
+  .swiper--iconleft,.swiper--iconright {
+    cursor: pointer;
+    width: 21px;
+}
+
+@media only screen and (max-width: 782px) {
+    .swiper--iconleft,.swiper--iconright {
+        display: none;
+    }
+}
   
 
   @media only screen and (max-width: 992px) {

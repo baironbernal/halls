@@ -4,7 +4,7 @@ const useDatingCards = () => {
 
 const db = [
     {
-    question: "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+    question: "¿Primer app1 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
     repply: "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
     },
     {

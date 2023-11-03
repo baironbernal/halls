@@ -27,8 +27,16 @@ function DatingCards () {
         ))}
       </div>
       <div className='buttons mx-auto d-block'>
-        <img className='mx-3' onClick={() => swipe('left')} src={publicURL + '/images/pages/red/pink-x.svg'} alt='X' />
-        <img onClick={() => swipe('right')} src={publicURL + '/images/pages/red/heart.svg' } alt='heart'/>
+        <img 
+          className='mx-3 position-relative z-1' 
+          onClick={() => swipe('left')} 
+          src={publicURL + '/images/pages/red/pink-x.svg'} 
+          alt='X' />
+        <img 
+          className='position-relative z-1'
+          onClick={() => swipe('right')} 
+          src={publicURL + '/images/pages/red/heart.svg' } 
+          alt='heart'/>
       </div>
     </div>
   )

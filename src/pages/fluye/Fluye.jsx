@@ -8,13 +8,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { LightSpeed } from 'react-reveal';
 import DatingCards from '../../components/tinder/DatingCards';
 
-
 const Fluye = () => {
   const publicURL = process.env.PUBLIC_URL;
   return (
     <>
     <div className="container-fluid overlay">
-        <img src={publicURL + "/images/pages/purple/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
+        <img src={publicURL + "/images/pages/purple/bg-pepitas.png"} 
+        alt="Floating Images" 
+        className="pepitas floating-image mw-100 w-100" /> 
     </div>
       <section className='fluye text-center ff-gotham-medium'>
         <Container className='py-5'>
@@ -43,8 +44,7 @@ const Fluye = () => {
       <Row className='justify-content-center align-items-center'>
         <Col xs={12} md={12} lg={6} xl={6} style={{
           height:'100%',
-          maxWidth: '40rem',
-          
+          maxWidth: '40rem',          
         }}>
                 <article>
                   <figure className='text-center mw-100'>

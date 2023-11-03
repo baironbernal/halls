@@ -19,7 +19,6 @@ const useCookieFilter = () => {
     };
     
     if(action !== 0) {
-      console.log("Tiene que hacer checkcookie y mostrarme el puto modal", action, showModal)
       checkCookie();
     };
 
