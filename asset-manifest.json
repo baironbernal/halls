@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://baironbernal.github.io/halls/static/css/main.f2d2989b.css",
-    "main.js": "https://baironbernal.github.io/halls/static/js/main.47f0c3a4.js",
+    "main.js": "https://baironbernal.github.io/halls/static/js/main.41d602de.js",
     "static/css/473.a400213b.chunk.css": "https://baironbernal.github.io/halls/static/css/473.a400213b.chunk.css",
     "static/js/473.2ce8ebf3.chunk.js": "https://baironbernal.github.io/halls/static/js/473.2ce8ebf3.chunk.js",
     "static/css/209.be9f6da0.chunk.css": "https://baironbernal.github.io/halls/static/css/209.be9f6da0.chunk.css",
@@ -79,7 +79,7 @@
     "static/media/lineas-cine.svg": "https://baironbernal.github.io/halls/static/media/lineas-cine.af11e219335e019328f8.svg",
     "index.html": "https://baironbernal.github.io/halls/index.html",
     "main.f2d2989b.css.map": "https://baironbernal.github.io/halls/static/css/main.f2d2989b.css.map",
-    "main.47f0c3a4.js.map": "https://baironbernal.github.io/halls/static/js/main.47f0c3a4.js.map",
+    "main.41d602de.js.map": "https://baironbernal.github.io/halls/static/js/main.41d602de.js.map",
     "473.a400213b.chunk.css.map": "https://baironbernal.github.io/halls/static/css/473.a400213b.chunk.css.map",
     "473.2ce8ebf3.chunk.js.map": "https://baironbernal.github.io/halls/static/js/473.2ce8ebf3.chunk.js.map",
     "209.be9f6da0.chunk.css.map": "https://baironbernal.github.io/halls/static/css/209.be9f6da0.chunk.css.map",
@@ -97,6 +97,6 @@
   },
   "entrypoints": [
     "static/css/main.f2d2989b.css",
-    "static/js/main.47f0c3a4.js"
+    "static/js/main.41d602de.js"
   ]
 }
