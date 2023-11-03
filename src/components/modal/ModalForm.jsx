@@ -2,6 +2,7 @@ import React from 'react'
 import { Modal } from 'react-bootstrap'
 import useForm from '../../hooks/useForm';
 import { useMyState } from '../../context/ContextGlobal';
+import './Modal.css';
 
 const ModalForm = () => {
      

@@ -19,7 +19,10 @@
   border-radius: 20px;
 }
 
-
+.card--diamond {
+  margin-top: -3rem;
+  width: 60px;
+}
 
 
 .cardContent {
@@ -50,7 +53,7 @@
     max-height: unset;
     min-width: unset;
     width: 80%;
-    height: 15rem;
+    height: 13rem;
     bottom: 20px;
   }
   .cardContainer{

@@ -1,0 +1,5 @@
+@media only screen and (max-width: 782px) {
+    .modal,.modal .fs-6, .modal label {
+        font-size: 12px !important;
+    }
+}

@@ -2,7 +2,6 @@
 import React from 'react';
 import './Footer.css';
 
-
 const Footer = () => {
   const publicURL = process.env.PUBLIC_URL;
   return (
@@ -12,7 +11,7 @@ const Footer = () => {
         {/* Logo Halls  */}
         <div className="row text-center mb-4">
             <a className="navbar-brand" href="/">
-                <img src={publicURL + "/images/logos/halls.png"} alt="Halls Logo" />
+                <img src={publicURL + "/images/logos/halls.svg"} alt="Halls Logo" />
             </a>
         </div>
             {/* Links copyright  */}

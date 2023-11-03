@@ -19,7 +19,7 @@ function Navbar2() {
       <Container>
         <Navbar.Brand>
           <Link to={'/'}>  
-            <img src={publicURL + "/images/logos/halls.png"} 
+            <img src={publicURL + "/images/logos/halls.svg"} 
             alt="Halls Logo" 
             className="d-inline-block align-text-top" /> 
           </Link>

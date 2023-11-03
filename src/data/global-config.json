@@ -3,9 +3,9 @@
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
       "list": {
-        "fluye-en-la-u": "/images/navbar/blue/fluye.png",
-        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.png",
-        "/amor-drama-y-astros": "/images/navbar/blue/amor.png"
+        "fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
       }
     },
     "modal" : {
@@ -20,9 +20,9 @@
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
       "list": {
-        "fluye-en-la-u": "/images/navbar/blue/fluye.png",
-        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.png",
-        "/amor-drama-y-astros": "/images/navbar/blue/amor.png"
+        "fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
       }
     },
     "modal" : {
@@ -37,9 +37,9 @@
       "navbar": {
         "background": "/images/navbar/green/bg.png", 
         "list": {
-          "fluye-en-la-u": "/images/navbar/green/fluye.png",
-          "/manifestando-aumentos": "/images/navbar/green/ma-aumentos.png",
-          "/amor-drama-y-astros": "/images/navbar/green/amor.png"
+          "fluye-en-la-u": "/images/navbar/green/fluye.svg",
+          "/manifestando-aumentos": "/images/navbar/green/ma-aumentos.svg",
+          "/amor-drama-y-astros": "/images/navbar/green/amor.svg"
         }
       },
       "modal" : {
@@ -72,9 +72,9 @@
       "navbar": {
         "background": "/images/navbar/purple/bg.png", 
         "list": {
-          "fluye-en-la-u": "/images/navbar/purple/fluye.png",
-          "/manifestando-aumentos": "/images/navbar/purple/ma-aumentos.png",
-          "/amor-drama-y-astros": "/images/navbar/purple/amor.png"
+          "fluye-en-la-u": "/images/navbar/purple/fluye.svg",
+          "/manifestando-aumentos": "/images/navbar/purple/ma-aumentos.svg",
+          "/amor-drama-y-astros": "/images/navbar/purple/amor.svg"
         }
       },
       "modal" : {
@@ -107,9 +107,9 @@
       "navbar": {
         "background": "/images/navbar/red/bg.png", 
         "list": {
-          "fluye-en-la-u": "/images/navbar/red/fluye.png",
-          "/manifestando-aumentos": "/images/navbar/red/ma-aumentos.png",
-          "/amor-drama-y-astros": "/images/navbar/red/amor.png"
+          "fluye-en-la-u": "/images/navbar/red/fluye.svg",
+          "/manifestando-aumentos": "/images/navbar/red/ma-aumentos.svg",
+          "/amor-drama-y-astros": "/images/navbar/red/amor.svg"
         }
       },
       "modal" : {
