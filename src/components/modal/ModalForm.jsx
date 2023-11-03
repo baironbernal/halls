@@ -3,14 +3,11 @@ import { Modal } from 'react-bootstrap'
 import useForm from '../../hooks/useForm';
 import { useMyState } from '../../context/ContextGlobal';
 
-
 const ModalForm = () => {
      
    const publicURL = process.env.PUBLIC_URL;
    const { handleSubmit, modal, email, name,  setEmail, setName} = useForm(); 
    const { showModal, handleClose  } = useMyState()
-
-   console.log('Soy el modal', showModal)
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Home.css";
 import { Col, Container, Figure, Row } from "react-bootstrap";
 import Button from "../../components/button/Button";
@@ -12,7 +12,8 @@ import useVideoHome from "../../hooks/useVideoHome";
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const { showModalVideo, showVideo } = useVideoHome();
+  
+  const { showModalVideo, showVideo, togglePlay, videoRef } = useVideoHome();
 
   return (
     <div>
@@ -20,8 +21,11 @@ const Home = () => {
         <LightSpeed left>
           <div className="video-home spacing-halls">
             <Row>
-              <div className="video-halls" onClick={showModalVideo}>
-                <video autoPlay={true} muted="" loop="" className="mainVideo">
+              <div className="video-halls" onClick={()=> {
+                showModalVideo();
+                togglePlay()
+              }}>
+                <video ref={videoRef} autoPlay muted loop className="mainVideo">
                   <source src={publicURL+"/video/video-hub1.mp4"} type="video/mp4" muted />
                 </video>
                 <div className="opacity-halls">
@@ -250,11 +254,7 @@ const Home = () => {
                         src={publicURL+"/images/home/object-morado-1.svg"}
                         alt=""
                       />
-                    <img
-                        className="mw-100"
-                        src={publicURL+"/images/home/object-morado-2.svg"}
-                        alt=""
-                      />
+                   
                   </div>
                 </div>
               </div>

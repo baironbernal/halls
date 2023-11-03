@@ -6,10 +6,12 @@ import './Map.css'
 import Map from './Map';
 import useFilterMap from '../../hooks/useFilterMap';
 import ModalForm from '../modal/ModalForm';
+import { useMyState } from '../../context/ContextGlobal';
 
 const ContainerMap = () => {
 
-   const {setCategory, setCity, data, showModal, city} = useFilterMap();
+   const {setCategory, setCity, data} = useFilterMap();
+   const { setAction, action, showModal} =useMyState();
 
   return (
     
@@ -23,7 +25,15 @@ const ContainerMap = () => {
                 <Row className='justify-content-center gy-3'>
                     <Col xs={12} md={12} lg={6} xl={6}>
                         <Form.Select 
-                        onChange={e => setCity(e.target.value)}
+                        onChange={e => {
+                            setAction(action + 1);
+                            if(!showModal) {
+                                return setCity(e.target.value);
+                            } 
+                            return;
+                            
+
+                        }}
                         className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book'>
                             <option value="all">Buscar Ciudad</option>
                             <option value="Bogotá">Bogotá</option>
@@ -34,7 +44,14 @@ const ContainerMap = () => {
                     </Col>
                     <Col xs={12} md={12} lg={6} xl={6}>
                         <Form.Select 
-                        onChange={e => setCategory(e.target.value)}
+                        onChange={e => {
+                            setAction(action + 1);
+                            if(!showModal) {
+                                return setCategory(e.target.value)
+                            } 
+                            return;
+                            
+                        }}
                         className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book'>
                             <option value="all" className='fc-gray-soft'>Buscar Categoría</option>
                             <option value="Experimentar">Experimentar</option>
@@ -59,12 +76,9 @@ const ContainerMap = () => {
                 <Map markers={ data.locations }  />
             </Col>
         </Row>
-
-        {showModal && city &&(
         <div className="mt-0 p-0">
           <ModalForm />
         </div>
-      )}
     </Container>
     </>
   )

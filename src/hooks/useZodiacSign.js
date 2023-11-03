@@ -24,7 +24,8 @@ const useZodiacSign = () => {
     
 
     useEffect(() => {
-        if(action > 0 && !showModal) fetchInformation()
+        if(showModal) return;
+        fetchInformation()
     }, [selectedValue])
     
     

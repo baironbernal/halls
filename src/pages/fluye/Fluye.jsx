@@ -1,5 +1,4 @@
 import React from 'react'
-import ModalForm from '../../components/modal/ModalForm';
 import '../../styles/keyframes.css';
 
 import './Fluye.css';

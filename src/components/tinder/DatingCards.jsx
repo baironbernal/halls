@@ -15,7 +15,7 @@ function DatingCards () {
           <TinderCard
             ref={childRefs[index]}
             className='swipe'
-            key={card.question}
+            key={index}
             onSwipe={(dir) => swiped(dir, card.question, index)}
             onCardLeftScreen={() => outOfFrame(card.question, index)}
           >

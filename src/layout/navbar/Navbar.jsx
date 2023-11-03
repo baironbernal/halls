@@ -19,7 +19,9 @@ function Navbar2() {
       <Container>
         <Navbar.Brand>
           <Link to={'/'}>  
-            <img src={publicURL + "/images/logos/halls.png"} alt="Halls Logo" className="d-inline-block align-text-top" /> 
+            <img src={publicURL + "/images/logos/halls.png"} 
+            alt="Halls Logo" 
+            className="d-inline-block align-text-top" /> 
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="collapseHalls" />

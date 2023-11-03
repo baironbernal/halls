@@ -1,13 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 const useVideoHome = () => {
 
     const [showVideo, setShowVideo] = useState(false);
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const togglePlay = () => {
+      const video = videoRef.current;
+      if (video) {
+        if (isPlaying) {
+          video.pause(); // Pauses the video
+        } else {
+          video.play(); // Resumes playing the video
+        }
+        setIsPlaying(!isPlaying); // Toggle the state
+      }
+    };
 
     useEffect(() => {
       // Event listener function
       const handleEscKeyPress = (event) => {
         if (event.key === 'Escape') {
           setShowVideo(false); // Set the state variable to false when "Escape" is pressed
+          togglePlay()
         }
       };
   
@@ -28,7 +43,7 @@ const useVideoHome = () => {
       setShowVideo(false);
     };
 
-  return { showModalVideo, showVideo, hideModalVideo };
+  return { showModalVideo, showVideo, hideModalVideo, togglePlay, videoRef };
 };
 
 export default useVideoHome;
