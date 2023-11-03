@@ -1,4 +1,21 @@
 {
+  "/halls": {
+    "navbar": {
+      "background": "/images/navbar/blue/bg.png", 
+      "list": {
+        "fluye-en-la-u": "/images/navbar/blue/fluye.png",
+        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.png",
+        "/amor-drama-y-astros": "/images/navbar/blue/amor.png"
+      }
+    },
+    "modal" : {
+      "headerImage": "/images/pages/green/modal/modal-header.svg",
+      "primaryColor": "rgb(1, 103, 49, .7)",
+      "inputColor": "#CCFFE4",
+      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "buttonColor": "rgb(1, 103, 49, 100)"
+    }
+  },
   "/": {
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
