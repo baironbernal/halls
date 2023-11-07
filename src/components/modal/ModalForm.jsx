@@ -27,13 +27,10 @@ const ModalForm = () => {
             <div className="modal-header-banner align-self-center">
                <div className="row justify-content-md-center">
                   <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <img className="d-block mw-100" 
+                     <img className="d-block mw-100 mx-auto" 
                            src={publicURL + modal.headerImage} 
                            alt="Respira y toma un impulso" />
-                     <p className="my-4 ff-gotham-bold text-white">
-                        #RespiraYTomaUnImpulsoReal con Halls, suscríbete y no repitas <br/>
-                        la misma historia que viviste con tu ex por falta de compatibilidad.
-                     </p>
+                     <p className="my-4 ff-gotham-bold text-white">{modal.description}</p>
                   </div>
                </div>
             </div>
@@ -81,7 +78,7 @@ const ModalForm = () => {
             <a className="navbar-brand" href="/">
             <img className="w-auto mb-3 " src={publicURL + "/images/logos/halls-white.svg"} alt="Halls Logo" />
             </a>
-            <p className="ff-gotham-medium fs-6 text-white"> 
+            <p className="ff-gotham-medium text-white"> 
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de</p>
          </div>
       </div>

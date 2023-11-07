@@ -1,17 +1,17 @@
 import React from 'react'
 import { Figure, Modal, Row } from 'react-bootstrap'
-import useForm from '../../hooks/useForm';
 
-const ModalFormPreview = ({ show, urlFile, urlPreview }) => {
+const ModalFormPreview = ({ show, info }) => {
      
-   const { modal } = useForm(); 
+   
+   const publicURL = process.env.PUBLIC_URL;
 
   return (
     <div>
       <Modal show={show}
       className='modal'
       style={{
-         backgroundColor: modal.primaryColor
+         backgroundColor: "rgb(1, 103, 49, .7)"
       }}
       onHide={() => show}
       contentClassName='modal-content bg-transparent border-0 mb-5'
@@ -23,13 +23,13 @@ const ModalFormPreview = ({ show, urlFile, urlPreview }) => {
                <Row>
                   <Figure className='text-center'>
                         <img className='mw-100' 
-                        src={urlPreview} 
-                        alt="Preview " />
+                        src={publicURL + info.imageModal} 
+                        alt="Preview" />
                   </Figure>
                </Row>
                <div className="border-0 d-flex flex-row justify-content-center my-2 bg-transparent">
-                  <button type="submit" style={{ borderColor: modal.buttonColor, background: 'transparent' }} 
-                  className="button-general rounded-5 px-4 py-2">Descargar</button>
+                  <a
+                  className="button-general rounded-5 px-4 py-2">Descargar</a>
                </div>
             </div>
       </div>

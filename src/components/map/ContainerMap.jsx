@@ -11,7 +11,7 @@ import { useMyState } from '../../context/ContextGlobal';
 const ContainerMap = () => {
 
    const {setCategory, setCity, data} = useFilterMap();
-   const { setAction, action, showModal} =useMyState();
+   const { setAction, action, showModal} = useMyState();
    const publicURL = process.env.PUBLIC_URL;
 
   return (

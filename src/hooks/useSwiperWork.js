@@ -1,12 +1,11 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useSwiperWork = () => {
   
-    
     const [showPreview, setShowPreview] = useState(false);
     const [filePdf, setFilePdf] = useState('');
-    const [urlPreview, setUrlPreview] = useState('');
+    const [info, setInfo] = useState({});
 
     const publicURL = process.env.PUBLIC_URL;
   
@@ -44,20 +43,32 @@ const useSwiperWork = () => {
   
         }
     ];
-  
-    
-      const handleSlideChange = () => {
-        const activeDiv = document.querySelector("#swiper-work .swiper-slide .swiper-slide-visible .swiper-slide-active");
-        if(!activeDiv) return;
-          setFilePdf(publicURL + activeDiv.getAttribute("data-file-attribute"))
-          setUrlPreview(publicURL + activeDiv.getAttribute("data-image-modal-atribute"))
-  
-        console.log(filePdf, urlPreview, activeDiv)
-      };
-  
-      const handlePreview = () => {
-        setShowPreview(true)
+
+    useEffect(() => {
+      getInfoFrom()
+    }, [])
+
+
+    const getInfoFrom = () => {
+      const parentDiv = document.getElementById("swiper-work"); 
+      const bullets = parentDiv.querySelectorAll(".swiper-pagination-bullet"); 
+      const activeBulletIndex = Array.from(bullets).findIndex(bullet => bullet.classList.contains('swiper-pagination-bullet-active'));
+
+      if (photos[activeBulletIndex]) {
+        setInfo({
+          imageModal: photos[activeBulletIndex].imageModal,
+          urlFile: photos[activeBulletIndex].urlFile
+        })
       }
+    }
+    
+    const handleSlideChange = () => {
+      getInfoFrom()      
+    };
+  
+    const handlePreview = () => {
+      setShowPreview(true)
+    }
   
       const handleDownloadPDF = async () => {
         // Specify the URL of the PDF file
@@ -95,12 +106,11 @@ const useSwiperWork = () => {
       };
 
   return {
-        handleSlideChange , 
+        handleSlideChange,
         handlePreview, 
         handleDownloadPDF, 
         showPreview, setShowPreview,
-        filePdf, setFilePdf,
-        urlPreview, setUrlPreview,
+        info,
         photos
     };
 };

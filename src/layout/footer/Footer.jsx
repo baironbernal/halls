@@ -1,6 +1,7 @@
 // Footer.js
 import React from 'react';
 import './Footer.css';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -16,15 +17,15 @@ const Footer = () => {
         </div>
             {/* Links copyright  */}
         <div className="row d-flex flex-column flex-lg-row justify-content-center gap-lg-5 mb-4 ff-gotham-bold">
-                    <a href="#" className="d-block text-decoration-none text-center w-auto">
-                        Políticas de Privacidad
-                    </a>                
-                    <a href="#" className="d-block text-decoration-none text-center w-auto">
+                    <Link className="d-block text-decoration-none text-center w-auto" 
+                    to={'/politicas-de-privacidad'}>Políticas de Privacidad</Link>
+
+                    <Link to={'/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
                         Aviso de Cookies
-                    </a>
-                    <a href="#" className="d-block text-decoration-none text-center w-auto">
+                    </Link>
+                    <Link to={'/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
                         Aviso legal
-                    </a>    
+                    </Link>    
         </div>
         {/* Links social media  */}
         <div className="row d-flex justify-content-center gap-1 mb-4">

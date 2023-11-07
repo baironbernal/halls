@@ -17,8 +17,7 @@ function DatingCards () {
             className='swipe'
             key={index}
             onSwipe={(dir) => swiped(dir, card.question, index)}
-            onCardLeftScreen={() => outOfFrame(card.question, index)}
-          >
+            onCardLeftScreen={() => outOfFrame(card.question, index)}>
             <div className='card'>
               <img className='card--diamond mx-auto' src={publicURL + '/images/icons/diamond.png'} alt="Logo" />
               <p className="text-center ff-gotham-bold fs-5">{card.question}</p>

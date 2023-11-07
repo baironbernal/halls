@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Matchs.css'
 import { Col, Row } from 'react-bootstrap';
 import { LightSpeed } from 'react-reveal';
 
 const Matchs = ({ information }) => {
   const publicURL = process.env.PUBLIC_URL;
-  useEffect(() => {
-    console.log(information)
-  }, [information])
   
   return (
     <>
@@ -28,10 +25,11 @@ const Matchs = ({ information }) => {
         </LightSpeed>
 
         <LightSpeed right>
-        <Row className='justify-content-center text-white text-start'>
+        <Row className='results-sign  justify-content-center text-white text-start'>
           <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
                 <figure>
-                    <img src={publicURL+'/images/pages/red/sign/titles/ser-mas-que-amigos.png'} alt="Ser mas que amigos" />
+                    <img src={publicURL+'/images/pages/red/sign/titles/ser-mas-que-amigos.png'} 
+                    alt="Ser mas que amigos" />
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
@@ -40,9 +38,9 @@ const Matchs = ({ information }) => {
                   </figure>
                 </Col>
                 <Col xs={12} md={12} lg={8} xl={8} xxl={8}>
-                  <h3>{information.sign_one}</h3>
-                  <h2>{information.percent_one}</h2>
-                  <p className='mb-2'>De compatibilidad</p>
+                  <h3 className='ff-gotham-bold'>{information.sign_one}</h3>
+                  <h2 className='ff-gotham-bold'>{information.percent_one}</h2>
+                  <p className='mb-2 ff-gotham-bold'>De compatibilidad</p>
                   <p className='ff-gotham-book'>{information.description_one}</p>
                 </Col>
              </Row>
@@ -50,7 +48,8 @@ const Matchs = ({ information }) => {
           {/* Second result */}
           <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
                 <figure>
-                    <img src={publicURL + '/images/pages/red/sign/titles/ser-mas-que-amigos.png'} alt="Ser mas que amigos" />
+                    <img src={publicURL + '/images/pages/red/sign/titles/match-en-la-u.png'} 
+                    alt="Ser mas que amigos" />
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
@@ -59,9 +58,9 @@ const Matchs = ({ information }) => {
                   </figure>
                 </Col>
                 <Col xs={12} md={12} lg={8} xl={8} xxl={8}>
-                  <h3>{information.sign_two}</h3>
-                  <h2>{information.percent_two}</h2>
-                  <p className='mb-2'>De compatibilidad</p>
+                  <h3 className='ff-gotham-bold'>{information.sign_two}</h3>
+                  <h2 className='ff-gotham-bold'>{information.percent_two}</h2>
+                  <p className='mb-2 ff-gotham-bold'>De compatibilidad</p>
                   <p className='ff-gotham-book'>{information.description_two}</p>
                 </Col>
              </Row>
@@ -69,7 +68,8 @@ const Matchs = ({ information }) => {
            {/* Three result */}
            <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
                 <figure>
-                    <img src={publicURL + '/images/pages/red/sign/titles/ser-mas-que-amigos.png'} alt="Ser mas que amigos" />
+                    <img src={publicURL + '/images/pages/red/sign/titles/trabajando-juntos.png'} 
+                    alt="Ser mas que amigos" />
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
@@ -78,9 +78,9 @@ const Matchs = ({ information }) => {
                   </figure>
                 </Col>
                 <Col xs={12} md={12} lg={8} xl={8} xxl={8}>
-                  <h3>{information.sign_three}</h3>
-                  <h2>{information.percent_three}</h2>
-                  <p className='mb-2'>De compatibilidad</p>
+                  <h3 className='ff-gotham-bold'>{information.sign_three}</h3>
+                  <h2 className='ff-gotham-bold'>{information.percent_three}</h2>
+                  <p className='mb-2 ff-gotham-bold'>De compatibilidad</p>
                   <p className='ff-gotham-book'>{information.description_three}</p>
                 </Col>
              </Row>

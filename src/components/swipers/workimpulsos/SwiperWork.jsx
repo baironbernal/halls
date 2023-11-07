@@ -18,10 +18,10 @@ import useSwiperWork from '../../../hooks/useSwiperWork';
 const SwiperWork = () => {
   const publicURL = process.env.PUBLIC_URL;
   const {
-    handleSlideChange , 
+    handleSlideChange,
     handlePreview, 
     showPreview,
-    urlPreview,
+    info,
     photos
 } = useSwiperWork();
 
@@ -31,7 +31,7 @@ const SwiperWork = () => {
         <img src={publicURL + '/images/icons/left.png'} 
           id='swiper-work-iconleft'
           alt="left-icon" 
-          className='swiper--iconleft'  />
+          className='swiper--iconleft'/>
         <Swiper
           id='swiper-work'
           className='swiper p-0 my-4 w-75 h-100'
@@ -64,7 +64,7 @@ const SwiperWork = () => {
           }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Navigation]}>
-          {
+            {
               photos.map(({id, urlImage, title, imageModal, urlFile}) => (
                   <SwiperSlide  
                   data-file-attribute={ urlFile}
@@ -100,7 +100,7 @@ const SwiperWork = () => {
       </Row>
 
       <ModalFormPreview 
-      urlPreview={urlPreview} 
+      info={info} 
       show={showPreview}/>
     </>
   );

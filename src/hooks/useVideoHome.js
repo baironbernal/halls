@@ -21,6 +21,7 @@ const useVideoHome = () => {
       // Event listener function
       const handleEscKeyPress = (event) => {
         if (event.key === 'Escape') {
+          console.log("Esc in react")
           setShowVideo(false); // Set the state variable to false when "Escape" is pressed
           togglePlay()
         }

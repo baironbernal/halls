@@ -9,14 +9,14 @@ const Clapperboard = ({ isText }) => {
   return (
     <>
       <div className="video-work">
-            <div className="recuadro-video">
+            <div className="recuadro-video" style={{
+                maxWidth: isText ? '1000px' : '600px'
+            }}>
                 <div className="image-modo-cine">
                     <img src={publicURL + "/images/home/cuadro-cine.png"} alt="Cine cuadro"/>    
                 </div>
                 <div className="recgrabacion">
-                    <div className="signal" id="signals" style={{
-                        backgroundColor: currentColor
-                    }}></div>
+                    <div className="signal" id="signals" style={{backgroundColor: currentColor}}></div>
                     <img src={publicURL + "/images/home/rec.svg"} alt="Rec" /> 
                 </div>
                 <div id="contador">00:{hours < 10 ? '0' : ''}

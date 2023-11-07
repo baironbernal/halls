@@ -1,5 +1,4 @@
 .recuadro-video {
-    max-width: 1000px;
     width: 65%;
     left: 0;
     right: 0;
@@ -10,6 +9,10 @@
     padding: 0vw 4vw;
     background-position: center;
     position: relative;
+}
+
+.max-width-1000 {
+    max-width: 1000px;
 }
 
 .recuadro-video img {

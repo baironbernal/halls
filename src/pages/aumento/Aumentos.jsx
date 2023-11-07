@@ -12,7 +12,7 @@ import SwiperTiktok from '../../components/swipers/tiktok/SwiperTiktok';
 import { Col, Container, Row } from 'react-bootstrap';
 //Animations
 import { LightSpeed, Zoom, Bounce, Fade } from 'react-reveal';
-import ModalForm from '../../components/modal/ModalForm';
+
 
 const Aumentos = () => {
 
@@ -21,7 +21,9 @@ const Aumentos = () => {
   return (
     <>
       <div className="container-fluid overlay">
-        <img src={publicURL + "/images/pages/green/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
+        <img src={publicURL + "/images/pages/green/bg-pepitas.png"} 
+        alt="Floating Images" 
+        className="pepitas floating-image mw-100 w-100" /> 
     </div>
     
     <section className="manifestando-aumentos text-center ff-gotham-medium">
@@ -29,7 +31,9 @@ const Aumentos = () => {
             <Row className>
                 <LightSpeed right>
                     <figure>
-                        <img className="mw-100" src={publicURL + "/images/pages/green/manifestando-barra.svg"} alt="Barra verde" /> 
+                        <img className="mw-100" 
+                        src={publicURL + "/images/pages/green/manifestando-barra.svg"} 
+                        alt="Barra verde" /> 
                     </figure>
                 </LightSpeed>
             </Row>
@@ -38,7 +42,8 @@ const Aumentos = () => {
                 <Col lg={6}>
                     <Bounce left>
                         <article>
-                            <img className="mw-100 mb-5" src={publicURL + "/images/pages/green/workimpulsos.svg"} 
+                            <img className="mw-100 mb-5" 
+                            src={publicURL + "/images/pages/green/workimpulsos.svg"} 
                             alt="Work impulsos" /> 
                             <p className="mt-3 text-white fs-5">
                             #RespiraYTomaUnImpulsoReal y haz eso que te apasiona con 
@@ -83,11 +88,6 @@ const Aumentos = () => {
                     <SwiperTiktok/>
                 </Row>
             </Zoom>
-
-          
-
-            
-            
         </Container>
     </section>
     {/* Other categories */}

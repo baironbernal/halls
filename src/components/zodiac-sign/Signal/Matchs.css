@@ -5,6 +5,7 @@
     justify-content: center;
 }
 
+
 .main-sign--back{
     animation: infinite 4s linear floatAnimation;
 }
@@ -37,6 +38,11 @@
 @media only screen and (max-width: 760px) {
     .main-sign--back {
         display: none;
+    }
+
+    .results-sign{ 
+        font-size: 12px !important;
+        text-align: center !important;
     }
 }
 

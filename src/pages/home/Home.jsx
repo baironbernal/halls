@@ -31,7 +31,7 @@ const Home = () => {
                 <div className="opacity-halls">
                   <img
                     src={publicURL+'/images/home/playIcon.svg'}
-                    alt=""
+                    alt="Icon Svg"
                     className="playicon"
                   />
                 </div>

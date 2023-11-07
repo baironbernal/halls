@@ -1,3 +1,15 @@
+.modal-video .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after { 
+    color: white;
+}
+
+.modal-video .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: white;
+}
+
+.halls-text {
+    font-size: 12px !important;
+}
+
 @media only screen and (max-width: 782px) {
     .modal,.modal .fs-6, .modal label {
         font-size: 12px !important;
