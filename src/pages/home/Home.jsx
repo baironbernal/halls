@@ -7,47 +7,16 @@ import { LightSpeed, Zoom } from "react-reveal";
 import Clapperboard from "../../components/cinema/Clapperboard";
 import Honey from "../../components/honey/Honey";
 import ModalVideo from "../../components/modal/ModalVideo";
-import useVideoHome from "../../hooks/useVideoHome";
-
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
   
-  const { showModalVideo, showVideo, togglePlay, videoRef } = useVideoHome();
-
   return (
     <div>
       <section className="blue-home">
         <LightSpeed left>
-          <div className="video-home spacing-halls">
-            <Row>
-              <div className="video-halls" onClick={()=> {
-                showModalVideo();
-                togglePlay()
-              }}>
-                <video ref={videoRef} autoPlay muted loop className="mainVideo">
-                  <source src={publicURL+"/video/video-hub1.mp4"} type="video/mp4" muted />
-                </video>
-                <div className="opacity-halls">
-                  <img
-                    src={publicURL+'/images/home/playIcon.svg'}
-                    alt="Icon Svg"
-                    className="playicon"
-                  />
-                </div>
-              </div>
-            </Row>
-          </div>
+          <ModalVideo/>
         </LightSpeed>
-
-        {/*Video modal*/}
-        {
-          showVideo && (
-            <div >
-               <ModalVideo show={true} />
-            </div>
-          )
-        }
       <a href="#three-options">
       <div className="icon-mouse">
           <svg
@@ -161,21 +130,16 @@ const Home = () => {
       </section>
 
       <section className="purple-home">
-        
             <div className="purple--barra w-100 py-5 text-center">
             <Zoom>
             <img
                  src={publicURL + "/images/pages/purple/fluye-barra.svg"}
                 className="mw-100"
-                alt="Amor barra"
-            />
+                alt="Amor barra"/>
             </Zoom>
             </div>
-            
         <Container>
           {/* Barra Halls Purple */}
-          
-          
           <LightSpeed right>
             <Row className="justify-content-center align-center">
               <Col xs={12} md={12} lg={7} xl={7}>
@@ -209,7 +173,7 @@ const Home = () => {
                     cool entre tus amigos.
                   </p>
                   <Button
-                    url={"/fluye-en-la-u"}
+                    url={"fluye-en-la-u"}
                     borderColor={"#CD9BFF"}
                     titleButton={"Leer más"}
                   />
@@ -260,7 +224,7 @@ const Home = () => {
               </div>
             </Zoom>
             <div className="txt-consejos-home">
-              <div className="info-consejos-home">
+              <div className="info-consejos-home position-relative z-1">
                 <p className="mt-3 text-white text-center fs-5">
                   No levantes la mano para ir al baño y haz lo imposible para
                   que el profe no sepa tu <br />
@@ -268,7 +232,7 @@ const Home = () => {
                 </p>
                 <div className="text-center">
                   <Button
-                    url={"/fluye-en-la-u"}
+                    url={"fluye-en-la-u"}
                     borderColor={"#CD9BFF"}
                     titleButton={"Leer más"}
                   />
@@ -317,7 +281,7 @@ const Home = () => {
                 src={publicURL + "/images/pages/red/mural-rompe-hielo.png"}
                 alt="Mural rompe hielo"
               />
-              <p className="mt-3 text-white fs-5">
+              <p className="mt-3 text-white fs-5 position-relative z-1">
                 Ser el más extrovertido no asegura el éxito en la primera cita.
                 Rompe el hielo <br />
                 con Halls y estos tipcitos. ¿Funcionan? No tenemos pruebas, pero
@@ -326,7 +290,7 @@ const Home = () => {
               </p>
               <div className="text-center">
                 <Button
-                  url={"/fluye-en-la-u"}
+                  url={"amor-drama-y-astros"}
                   borderColor={"#D8005D"}
                   titleButton={"Leer más"}
                 />
@@ -343,17 +307,17 @@ const Home = () => {
         </Row>
         <br />
         <Row className="pb-5">
-          <p className="mt-3 text-white fs-5">
+          <p className="mt-3 text-white fs-5 position-relative z-1">
             ¿Tienes más de un crush? Nada que un Halls no pueda resolver. <br />
             #RespiraYTomaUnImpulsoReal y descubre quién que te conviene. <br />
             ¿Aries, Tauro, Libra?
           </p>
           <div className="text-center">
-            <Button
-              url={"/fluye-en-la-u"}
-              borderColor={"#D8005D"}
-              titleButton={"Leer más"}
-            />
+                <Button
+                  url={"amor-drama-y-astros"}
+                  borderColor={"#D8005D"}
+                  titleButton={"Leer más"}
+                />
           </div>
         </Row>
         </Container>

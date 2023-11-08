@@ -52,6 +52,18 @@ const Honey = () => {
             </div>
           </div>
         </div>
+
+
+        <div class="slide-honey-mobile">
+          <p class="mt-3 text-white fs-5">
+                <span style={{
+                  color: '#00F98C'
+                }}>#RespiraYTomaUnImpulsoReal </span>
+                y haz eso que te apasiona con los workimpulsos. <br/>
+                Pedir vacaciones, un aumento o salir temprano los viernes ahora con <br/>
+                Halls es posible.
+          </p>
+        </div>
     </>
   )
 }

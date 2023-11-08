@@ -11,7 +11,7 @@
 }
 
 .main-sign--back img{
-    width: 35%;
+    max-width: 250px;
 }
 
 .diamond {

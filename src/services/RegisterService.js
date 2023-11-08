@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE_URL = 'http://app-lubowitz.o63ysw09ej-gok67yemr652.p.temp-site.link';  // Replace with your API base URL
+const API_BASE_URL = 'http://app-lubowitz.o63ysw09ej-gok67yemr652.p.temp-site.link/proyecto/public/';  // Replace with your API base URL
 
 const instance = axios.create({
     baseURL: API_BASE_URL,

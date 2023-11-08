@@ -27,9 +27,10 @@ const Clapperboard = ({ isText }) => {
                     isText && (
                         <div className="txt-videos-work" >
                             <p>Basta de apps y cursos de inglés. Mejor cómete un Halls y practica lipsync con estos videos que de aburridos no tienen nada. #RespiraYTomaUnImpulsoReal haz tu mejor performance en tu entrevista y sigue facturando.</p>
-                            <div className="btn-section">
-                                <a href="/">Leer más</a>
-                            </div>
+                            <Button 
+                            url={'manifestando-aumentos'}
+                            borderColor={'#00F98C'}
+                            titleButton={'Leer más'}  />
                         </div>
                     )
                 }
@@ -42,7 +43,7 @@ const Clapperboard = ({ isText }) => {
                     </p>
                         <div className="text-center">
                         <Button 
-                            url={'/manifestando-aumentos'}
+                            url={'manifestando-aumentos'}
                             borderColor={'#00F98C'}
                             titleButton={'Leer más'}  />
                         </div>

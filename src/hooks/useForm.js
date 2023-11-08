@@ -8,7 +8,6 @@ const useForm = () => {
       const [email, setEmail] = useState('');
       const [name, setName] = useState('');    
    
-   
       const handleSubmit = async (e) => {
          e.preventDefault();
      

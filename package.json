@@ -27,7 +27,7 @@
     "use-places-autocomplete": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://baironbernal.github.io/halls",
+  "homepage": "http://app-lubowitz.o63ysw09ej-gok67yemr652.p.temp-site.link",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

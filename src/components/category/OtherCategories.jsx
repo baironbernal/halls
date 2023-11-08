@@ -45,7 +45,12 @@ const OtherCategories = () => {
                           {
                               otherCategory.list ? (
                                   otherCategory['list'].map( category => (
-                                      <Category borderColor={otherCategory.borderColor} key={category.url} imageUrl={category.urlImage}></Category>
+                                      <Category 
+                                        borderColor={otherCategory.borderColor} 
+                                        key={category.url} 
+                                        imageUrl={category.urlImage} 
+                                        url= {category.url}
+                                        />
                                   ))
                               ): null
                           }

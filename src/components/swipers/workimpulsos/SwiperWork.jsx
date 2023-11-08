@@ -11,16 +11,15 @@ import '../Swiper.css';
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { Row } from 'react-bootstrap';
-import ModalFormPreview from '../../modal/ModalFormPreview';
 import Button from '../../button/Button';
 import useSwiperWork from '../../../hooks/useSwiperWork';
+import ModalPreview from '../../modal/ModalPreview';
 
 const SwiperWork = () => {
   const publicURL = process.env.PUBLIC_URL;
   const {
+    handleDownloadPDF,
     handleSlideChange,
-    handlePreview, 
-    showPreview,
     info,
     photos
 } = useSwiperWork();
@@ -88,20 +87,16 @@ const SwiperWork = () => {
       </Row>
       <Row>
           <div className="d-flex justify-content-center gap-3">
-          <div onClick={handlePreview}>
-            <Button 
-              titleButton={'Previsualizar'} 
-              borderColor={'#00F98C'} />
+          <div>
+            <ModalPreview handleDownloadPDF={handleDownloadPDF} info={info} />
           </div>
-          <div >
-            <Button titleButton={'Descargar'}  borderColor={'#00F98C'} />
+          <div onClick={handleDownloadPDF}>
+            <Button 
+              titleButton={'Descargar'} 
+              borderColor={'#00F98C'} />
           </div>
           </div>
       </Row>
-
-      <ModalFormPreview 
-      info={info} 
-      show={showPreview}/>
     </>
   );
 }
