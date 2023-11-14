@@ -21,7 +21,7 @@ function DatingCards () {
             <div className='card'>
               <img className='card--diamond mx-auto' src={publicURL + '/images/icons/diamond.png'} alt="Logo" />
               <p className="text-center ff-gotham-bold fs-5">{card.question}</p>
-              <p className="card--question text-center p-2 rounded-4 bg-gray-light-h fc-gray-light "> {card.repply}</p>
+              <p className="card--question text-center ff-gotham-book p-3 rounded-4 bg-gray-light-h fc-gray-light "> {card.repply}</p>
             </div>
           </TinderCard>
         ))}

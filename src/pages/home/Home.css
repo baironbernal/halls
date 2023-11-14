@@ -163,6 +163,10 @@ section.blue-home {
 }
 
 .consejos-title {
+    background-image: url(../../../public/images/home/cuerda.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
     text-align: center;
     z-index: 9;

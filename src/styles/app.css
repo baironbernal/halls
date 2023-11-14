@@ -161,6 +161,7 @@
 body {
     font-family: 'GothamBook';
     overflow-x: hidden !important;
+    line-height: 20px !important;
 }
 
 /*Global custom class*/

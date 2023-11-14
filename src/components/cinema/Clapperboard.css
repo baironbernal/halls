@@ -54,11 +54,6 @@ div#contador {
     width: 24vw;
     right: 3vw;
     color: #fff;
-    font-family: 'GothamMedium';
-    line-height: 1.5vw;
-}
-.txt-videos-work a {
-    border: solid 2px #3AFA93;
 }
 
 .txt-videos-work .btn-section {

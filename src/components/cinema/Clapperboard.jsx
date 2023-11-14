@@ -8,7 +8,7 @@ const Clapperboard = ({ isText }) => {
     const { seconds, minutes, hours , currentColor} = useClapper();
   return (
     <>
-      <div className="video-work">
+      <div className="video-work ff-gotham-medium text-start text-white">
             <div className="recuadro-video" style={{
                 maxWidth: isText ? '1000px' : '600px'
             }}>
@@ -38,7 +38,7 @@ const Clapperboard = ({ isText }) => {
             {
                 isText && (
                     <div className='txt-videos-work-mobile'>
-                    <p className='mt-3 text-white text-center fs-5'>
+                    <p className='mt-3 text-start text-center fs-5'>
                         Basta de apps y cursos de inglés.Mejor cómete un Halls y practica lipsync con estos videos que de aburridos no tienen nada. #RespiraYTomaUnImpulsoReal haz tu mejor performance en tu entrevista y sigue facturando.
                     </p>
                         <div className="text-center">

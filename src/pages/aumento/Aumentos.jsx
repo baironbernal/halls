@@ -20,13 +20,14 @@ const Aumentos = () => {
 
   return (
     <>
-      <div className="container-fluid overlay">
-        <img src={publicURL + "/images/pages/green/bg-pepitas.png"} 
-        alt="Floating Images" 
-        className="pepitas floating-image mw-100 w-100" /> 
-    </div>
+      
     
     <section className="manifestando-aumentos text-center ff-gotham-medium">
+        <div className="container-fluid overlay">
+            <img src={publicURL + "/images/pages/green/bg-pepitas.png"} 
+            alt="Floating Images" 
+            className="pepitas floating-image mw-100 w-100" /> 
+        </div>
         <Container className="py-5">
             <Row className>
                 <LightSpeed right>
@@ -60,14 +61,16 @@ const Aumentos = () => {
                     </Bounce>
                 </Col>
             </Row>
-            
+        </Container>
+        <div className='position-relative'>
+        <div className="container-fluid overlay">
+            <img src={publicURL + "/images/pages/green/bg-pepitas-4.png"} 
+            alt="Floating Images" 
+            className="pepitas floating-image mw-100 w-100" /> 
+        </div>
             {/* Camera picture */}
            <Fade top>
                 <Row className="my-5 position-relative">
-                    <div className="overlay">
-                        <img src={publicURL + "images/pages/green/bg-pepitas-2.png"}
-                         alt="Floating Image2" className="floating-image mw-100 w-100" /> 
-                    </div>
                     <Clapperboard />
                     <p className="mt-3 text-white fs-5">#RespiraYTomaUnImpulsoReal para hablar sin trabarte y alégrate porque <br/>el inglés ya no será un problema si lo que quieres es facturar.</p>
                 </Row>
@@ -84,11 +87,11 @@ const Aumentos = () => {
 
             {/* Slider Tik Toks */}
             <Zoom>
-                <Row className='m-5 position-relative'>
+                <Row className='position-relative'>
                     <SwiperTiktok/>
                 </Row>
             </Zoom>
-        </Container>
+        </div>
     </section>
     {/* Other categories */}
     <OtherCategories titleImageUrl={'/images/pages/green/otras-categorias.svg'} />

@@ -20,11 +20,9 @@ const ContainerMap = () => {
     <Container className='container-map rounded-4 p-5'>
         <Row>
             <Col xs={12} md={12} lg={4} xl={4}>
-                <Figure>
-                <img className='container-map--spot' src={publicURL + '/images/pages/purple/spot-parchaditos.png'} alt="Spot parchaditos" />
-                </Figure>
+            <img className='container-map--spot' src={publicURL + '/images/pages/purple/spot-parchaditos.png'} alt="Spot parchaditos" />
                 <Row className='justify-content-center gy-3'>
-                    <Col xs={12} md={12} lg={6} xl={6}>
+                    <Col xs={12} md={12} lg={6} xl={6} className='my-md-0'>
                         <Form.Select 
                         onChange={e => {
                             setAction(action + 1);
@@ -32,18 +30,18 @@ const ContainerMap = () => {
                                 return setCity(e.target.value);
                             } 
                             return;
-                            
-
                         }}
-                        className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book'>
-                            <option value="all">Buscar Ciudad</option>
+                        className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book' style={{
+                            fontSize: '14px'
+                        }}>
+                            <option value="all" className='text-center'>Buscar Ciudad</option>
                             <option value="Bogotá">Bogotá</option>
                             <option value="Medellín">Medellín</option>
                             <option value="Cali">Cali</option>
                             <option value="Cartagena">Cartagena</option>
                         </Form.Select>
                     </Col>
-                    <Col xs={12} md={12} lg={6} xl={6}>
+                    <Col xs={12} md={12} lg={6} xl={6} className='my-md-0'>
                         <Form.Select 
                         onChange={e => {
                             setAction(action + 1);
@@ -53,8 +51,10 @@ const ContainerMap = () => {
                             return;
                             
                         }}
-                        className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book'>
-                            <option value="all" className='fc-gray-soft'>Buscar Categoría</option>
+                        className='form-control rounded-5 py-2 fc-gray-soft ff-gotham-book' style={{
+                            fontSize: '14px'
+                        }}>
+                            <option value="all" className='text-center' >Buscar Categoría</option>
                             <option value="Experimentar">Experimentar</option>
                             <option value="Socializar">Socializar</option>
                             <option value="Compartir">Compartir</option>

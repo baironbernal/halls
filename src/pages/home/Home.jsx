@@ -7,6 +7,8 @@ import { LightSpeed, Zoom } from "react-reveal";
 import Clapperboard from "../../components/cinema/Clapperboard";
 import Honey from "../../components/honey/Honey";
 import ModalVideo from "../../components/modal/ModalVideo";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -14,11 +16,12 @@ const Home = () => {
   return (
     <div>
       <section className="blue-home">
-        <LightSpeed left>
-          <ModalVideo/>
-        </LightSpeed>
+        <ModalVideo/>
       <a href="#three-options">
       <div className="icon-mouse">
+      <ScrollAnimation animateIn="fadeIn">
+            Some Text
+          </ScrollAnimation>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -141,7 +144,7 @@ const Home = () => {
         <Container>
           {/* Barra Halls Purple */}
           <LightSpeed right>
-            <Row className="justify-content-center align-center">
+            <Row className="justify-content-center align-items-center">
               <Col xs={12} md={12} lg={7} xl={7}>
                 <div className="images-spots w-100">
                   <img
@@ -225,7 +228,7 @@ const Home = () => {
             </Zoom>
             <div className="txt-consejos-home">
               <div className="info-consejos-home position-relative z-1">
-                <p className="mt-3 text-white text-center fs-5">
+                <p className="text-white text-center fs-5">
                   No levantes la mano para ir al baño y haz lo imposible para
                   que el profe no sepa tu <br />
                   apellido, son solo algunos consejos para sobrevivir en la U.
@@ -270,7 +273,6 @@ const Home = () => {
               </div>
             
         <Container>
-        
         
         {/*Break the ice*/}
         <Row className="my-5">

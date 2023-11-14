@@ -44,8 +44,9 @@ const ModalVideo = () => {
             <Modal.Body>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                   <SwiperSlide>
-                  <iframe style={{ height: '80vh', width:'100%' }} 
+                  <iframe style={{ height:'80vh', width:'100%' }} 
                             title="Halls Campaing"
+                            allow="autoplay; encrypted-media"
                             src="https://www.youtube.com/embed/9gRc242BjRA?autoplay=1&loop=1" />
                   </SwiperSlide>
                   <SwiperSlide>

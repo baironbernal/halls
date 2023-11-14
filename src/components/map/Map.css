@@ -10,10 +10,9 @@
 }
 
 .container-map--spot {
-    margin-top: -10rem;
+    margin-top: -13rem;
     max-width: 23rem;
 }
-
 
 @media only screen and (max-width: 782px) {
     .container-map {
@@ -24,8 +23,9 @@
         max-height: 200px;
     }
     .container-map--spot {
-        margin-top: 0rem;
+        margin-top: -7rem;
         max-width: 15rem;
+        margin-bottom: 2rem;
     }
 }
 

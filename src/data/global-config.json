@@ -55,6 +55,7 @@
           "firstColor": "#02793A",
           "secondColor": "#009A47",
           "headerCategory": "/images/pages/green/otras-categorias.svg",
+          "overlay": "/images/pages/green/overlay-otras-categorias.png",
           "list": [
             {
               "url": "/fluye-en-la-u",
@@ -90,6 +91,7 @@
           "firstColor": "#5B2688",
           "secondColor": "#764B99",
           "headerCategory": "/images/pages/purple/otras-categorias.svg",
+          "overlay": "/images/pages/purple/overlay-otras-categorias.png",
           "list": [
             {
               "url": "/amor-drama-y-astros",
@@ -124,6 +126,7 @@
           "firstColor": "#7B113F",
           "secondColor": "#95144C",
           "headerCategory": "/images/pages/red/otras-categorias.svg",
+          "overlay": "/images/pages/red/overlay-otras-categorias.png",
           "list": [
             {
               "url": "/manifestando-aumentos",

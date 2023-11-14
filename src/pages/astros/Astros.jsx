@@ -19,10 +19,13 @@ const Astros = () => {
 
   return (
     <>
-    <div className="container-fluid overlay">
+    
+      <section className="amor-astros text-center">
+
+      <div className="container-fluid overlay">
         <img src={publicURL + "/images/pages/red/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
     </div>
-      <section className="amor-astros text-center">
+
         <Container className="py-5">
             {/*Dramatic, love , astral picture*/}
             <Row className="my-5">
@@ -44,6 +47,8 @@ const Astros = () => {
 
                 </LightSpeed>
             </Row>
+            <br/>
+            <br/>
             {/*Tinder Cards Love and Nope*/}
 
             <Row className='justify-content-center'>
@@ -51,7 +56,13 @@ const Astros = () => {
             </Row>
             <br />
             <br />
+        </Container>
+        <div className='position-relative'>
+        <div className="container-fluid overlay">
+            <img src={publicURL + "/images/pages/red/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
+        </div>
 
+        <Container>
             {/*Astro Effect*/}
             <Row className="z-0 position-relative">
                 <CardAstro/>
@@ -74,6 +85,7 @@ const Astros = () => {
             {/*Show info signal astro*/}
       
         </Container>
+        </div>
             <Row>
                 <OtherCategories/>
             </Row>

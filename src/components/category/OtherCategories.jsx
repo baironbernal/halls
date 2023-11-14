@@ -38,7 +38,7 @@ const OtherCategories = () => {
               <Container className='pb-5'>
                   <Row className="position-relative d-flex flex-column flex-lg-row justify-content-center gap-lg-5 mb-4">
                         <div className="overlay">
-                            <img src={publicURL + "/images/pages/green/bg-pepitas-3.png"} 
+                            <img src={publicURL + otherCategory.overlay} 
                             alt="Pepitas flotantes" 
                             className="floating-image mw-100 w-100 z-0 position-relative" /> 
                         </div>

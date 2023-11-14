@@ -23,7 +23,7 @@ const Honey = () => {
   return (
     <>
       <div className="work-impulso" id='work-impulso'>
-        <figure className='work-impulso--title position-relative'>
+        <figure className='work-impulso--title'>
             <img src={publicURL+"/images/home/workimpulsos-title.svg"} 
             alt="work-impulsos title" className='mw-100' />
         </figure>

@@ -21,7 +21,7 @@ const Fluye = () => {
         <Container className='py-5'>
             <Row>
               <LightSpeed right>
-                  <figure>
+                  <figure className='mb-5'>
                       <img className="mw-100" 
                       src={publicURL + "/images/pages/purple/fluye-barra.svg"} alt="Barra purple" /> 
                   </figure>
