@@ -6,7 +6,8 @@ import ContainerMap from '../../components/map/ContainerMap';
 import OtherCategories from '../../components/category/OtherCategories';
 import { Col, Container, Row } from 'react-bootstrap';
 import { LightSpeed } from 'react-reveal';
-import DatingCards from '../../components/tinder/DatingCards';
+import DatingCardsFluye from '../../components/tinder/DatingCardsFluye';
+
 
 const Fluye = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -60,7 +61,7 @@ const Fluye = () => {
           alignSelf: 'center'
         }} id='containerCardsSlide'>
             {/*Tinder Cards Love and Nope*/}
-              <DatingCards className='my-5' />
+              <DatingCardsFluye className='my-5' />
         </Col>
       </Row>
       <Row>

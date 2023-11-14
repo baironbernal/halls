@@ -7,7 +7,7 @@ import './Modal.css';
 const ModalForm = () => {
      
    const publicURL = process.env.PUBLIC_URL;
-   const { handleSubmit, modal, email, name,  setEmail, setName} = useForm(); 
+   const { handleSubmit, modal, email, name,  setEmail, setName, error} = useForm(); 
    const { showModal, handleClose  } = useMyState()
 
   return (
@@ -69,6 +69,16 @@ const ModalForm = () => {
                      </label>  
                   </div>
                </div>
+               {
+                        error && (
+                           <div className="row text-center">
+                              <p className='ff-gotham-bold' style={{
+                                 color: 'red',
+                                 fontSize: '12px'
+                              }}>{error}</p>
+                           </div>
+                        )
+                     }
                <div className="border-0 d-flex flex-row justify-content-center my-2 bg-transparent">
                   <button type="submit" style={{ backgroundColor: modal.buttonColor }} className="d-block text-center text-white px-5 py-2 border-0 rounded-4">Enviar</button>
                </div>

@@ -19,9 +19,7 @@ const Astros = () => {
 
   return (
     <>
-    
       <section className="amor-astros text-center">
-
       <div className="container-fluid overlay">
         <img src={publicURL + "/images/pages/red/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
     </div>

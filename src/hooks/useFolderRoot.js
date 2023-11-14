@@ -19,7 +19,7 @@ const useFolderRoot = () => {
             setNavbar(configPage.navbar);
             setModal(configPage.modal);
             if(configPage.categories) setOtherCategory(configPage.categories)
-            if(configPage.conversations) setConversations(configPage.conversations)
+            if(configPage.db) setConversations(configPage.db)
         }
     };
 

@@ -16,7 +16,7 @@ const ZodiacSign = () => {
           setSelectedValue(e.target.value);
           setAction(action + 1);
         }}
-        className="astros--select form-select rounded-5 w-50 mx-auto py-3 text-center"
+        className="astros--select form-select rounded-5 w-50 mx-auto py-3 text-center position-relative z-1"
         id="selectOption"
       >
         {options.map(option => (

@@ -1,11 +1,11 @@
 import React  from 'react'
 import TinderCard from 'react-tinder-card'
 import './DatingCards.css'
-import useDatingCards from '../../hooks/useDatingCards'
+import useDatingCardsFluye from '../../hooks/useDatingCardsFluye';
 
-function DatingCards () {
+function DatingCardsFluye () {
 
-   const { outOfFrame, childRefs, db, swiped, canSwipe, goBack, swipe } = useDatingCards();
+   const { outOfFrame, childRefs, db, swiped, canSwipe, goBack, swipe } = useDatingCardsFluye();
    const publicURL = process.env.PUBLIC_URL;
 
   return (
@@ -30,7 +30,7 @@ function DatingCards () {
         <img 
           className='mx-3 position-relative z-1' 
           onClick={() => swipe('left')} 
-          src={publicURL + '/images/pages/red/pink-x.svg'} 
+          src={publicURL + '/images/pages/purple/purple-x.svg'} 
           alt='X' />
         <img 
           className='position-relative z-1'
@@ -42,4 +42,4 @@ function DatingCards () {
   )
 }
 
-export default DatingCards
+export default DatingCardsFluye
