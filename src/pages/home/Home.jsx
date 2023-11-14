@@ -19,9 +19,6 @@ const Home = () => {
         <ModalVideo/>
       <a href="#three-options">
       <div className="icon-mouse">
-      <ScrollAnimation animateIn="fadeIn">
-            Some Text
-          </ScrollAnimation>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

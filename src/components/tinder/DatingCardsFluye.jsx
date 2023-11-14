@@ -19,7 +19,7 @@ function DatingCardsFluye () {
             onSwipe={(dir) => swiped(dir, card.question, index)}
             onCardLeftScreen={() => outOfFrame(card.question, index)}>
             <div className='card'>
-              <img className='card--diamond mx-auto' src={publicURL + '/images/icons/diamond.png'} alt="Logo" />
+              <img className='card--diamond mx-auto' src={publicURL + '/images/icons/person.png'} alt="Logo" />
               <p className="text-center ff-gotham-bold fs-5">{card.question}</p>
               <p className="card--question text-center ff-gotham-book p-3 rounded-4 bg-gray-light-h fc-gray-light "> {card.repply}</p>
             </div>
