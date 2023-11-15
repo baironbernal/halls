@@ -9,7 +9,7 @@ function DatingCardsFluye () {
    const publicURL = process.env.PUBLIC_URL;
 
   return (
-    <div >
+    <>
       <div className='cardContainer w-100 d-flex justify-content-center'>
         { Array.isArray(db) && db && db.map((card, index) => (
           <TinderCard
@@ -38,7 +38,7 @@ function DatingCardsFluye () {
           src={publicURL + '/images/pages/red/heart.svg' } 
           alt='heart'/>
       </div>
-    </div>
+    </>
   )
 }
 

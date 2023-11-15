@@ -4,7 +4,6 @@ import { useMyState } from '../context/ContextGlobal';
 
 const useZodiacSign = () => {
     const options = [
-        { value: 'all', label: 'Buscar Signo' },
         { value: '1', label: 'Aries' },
         { value: '2', label: 'Tauro' },
         { value: '3', label: 'Geminis' },

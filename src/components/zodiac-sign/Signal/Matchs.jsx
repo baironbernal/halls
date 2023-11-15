@@ -10,6 +10,11 @@ const Matchs = ({ information }) => {
     <>
         <LightSpeed left>
             <Row className="main-sign my-5" >
+            <div className="overlay">
+                        <img src={publicURL + "/images/pages/red/pepitas-zodiaco.png"} 
+                        alt="Floating Images" 
+                        className="pepitas floating-image mw-100 w-100" /> 
+                    </div>
                 <div className="main-sign--back">
                     <img  
                       src={publicURL+ "/images/pages/red/sign/romboOther@2x.png"}
@@ -25,7 +30,7 @@ const Matchs = ({ information }) => {
         </LightSpeed>
 
         <LightSpeed right>
-        <Row className='results-sign  justify-content-center text-white text-start'>
+        <Row className='results-sign justify-content-center text-white text-start'>
           <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
                 <figure>
                     <img src={publicURL+'/images/pages/red/sign/titles/ser-mas-que-amigos.png'} 
@@ -33,7 +38,7 @@ const Matchs = ({ information }) => {
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
-                  <figure>
+                  <figure className='diamond'>
                     <img className='w-100' src={publicURL+ information.image1} alt={information.name} />
                   </figure>
                 </Col>
@@ -53,7 +58,7 @@ const Matchs = ({ information }) => {
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
-                  <figure>
+                  <figure className='diamond'>
                     <img className='w-100' src={publicURL + information.image2} alt={information.name} />
                   </figure>
                 </Col>
@@ -73,7 +78,7 @@ const Matchs = ({ information }) => {
                   </figure>
              <Row className='mt-5'>
               <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
-                  <figure>
+                  <figure className='diamond'>
                     <img className='w-100' src={publicURL +information.image3} alt={information.name} />
                   </figure>
                 </Col>

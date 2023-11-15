@@ -5,7 +5,6 @@
     justify-content: center;
 }
 
-
 .main-sign--back{
     animation: infinite 4s linear floatAnimation;
 }
@@ -33,7 +32,10 @@
     animation: infinite resplandorAnimation 2s;
 }
 
-
+.results-sign .diamond {
+    padding: 9px;
+    max-width: 110px;
+}
 
 @media only screen and (max-width: 760px) {
     .main-sign--back {
@@ -43,6 +45,17 @@
     .results-sign{ 
         font-size: 12px !important;
         text-align: center !important;
+    }
+
+
+    .results-sign h3{
+        padding-top: 2rem;
+    }
+
+    .results-sign .diamond {
+        display: block;
+        position: unset;
+        margin: 0 auto;
     }
 }
 

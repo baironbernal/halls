@@ -28,6 +28,15 @@ function ModalPreview({ info, handleDownloadPDF }) {
             <div className="modal-body p-4 rounded-4 mb-5">
                <Row>
                   <Figure className='text-center'>
+                    <img src={publicURL + "/images/icons/close-preview.png"} 
+                    onClick={handleClose}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      right: 0,
+                      cursor: 'pointer',
+                    }}  
+                    alt="Logo cerrar" />
                         <img className='mw-100' 
                         style={{
                           maxHeight: '700px'  

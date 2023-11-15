@@ -77,11 +77,11 @@ const Aumentos = () => {
            </Fade>
             {/* Typsettings */}
             <Zoom>
-                <Row className="d-flex justify-content-center align-items-center gap-1 mb-4 my-5">
+                <Row className="tag d-flex justify-content-center align-items-center mb-4 my-5">
                     <a href="/" className="d-block text-decoration-none text-center w-auto">
                         <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
                     </a>
-                    <span className="d-block text-center text-white w-auto fs-3"> @typesetting </span>
+                    <span className="tag--title d-block text-center text-white w-auto fs-3"> @typesetting </span>
                 </Row>
             </Zoom>
         </div>

@@ -3,3 +3,16 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+@media only screen and (max-width: 782px) { 
+    .tag img{
+        padding: 0;
+        margin: 0;
+    }
+    .tag--title{
+        font-size: 1.4rem !important;
+        padding: 0;
+        margin: 0;
+    }
+}
