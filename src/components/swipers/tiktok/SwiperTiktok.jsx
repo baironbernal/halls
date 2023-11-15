@@ -49,7 +49,7 @@ const SwiperTiktok = () => {
         <img src={publicURL + '/images/icons/left.png'} 
           id='swiper-tiktok-iconleft'
           alt="left-icon" 
-          className='swiper--iconleft'  />
+          className='swiper--iconleft z-1'  />
         <Swiper
         id='swiper-tiktoks'
         className='swiper p-0 my-4 w-75'
@@ -102,7 +102,7 @@ const SwiperTiktok = () => {
         <img src={publicURL + '/images/icons/right.png'} 
         alt="right-icon" 
         id='swiper-tiktok-iconright'
-        className='swiper--iconright'/>
+        className='swiper--iconright z-1'/>
       </div>
        
     </div>

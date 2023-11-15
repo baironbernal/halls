@@ -201,29 +201,26 @@ const Home = () => {
               con Halls y rómpela en el semestre.
             </p>
           </Row>
-          <Row className="tiras-consejo">
+          <Row className="tiras-consejo position-relative">
+                <div className="position-absolute overlay">
+                    <img src={publicURL + "/images/home/pepitas-cuerdas.png"} 
+                    alt="Floating Images" 
+                    className="pepitas floating-image mw-100 w-100" /> 
+                </div>
             <Zoom>
               <div className="consejos-home">
-                <div className="consejos-title">
+                <div className="consejos-title position-relative">
                   <img
                     src={publicURL+"/images/home/consejos-title-sombra.png"}
                     alt="Consejos title sombra"
                     className="w-100"
                   />
                 </div>
-                <div className="object-scene">
-                  <div id="scene2">
-                  <img
-                        className="mw-100"
-                        src={publicURL+"/images/home/object-morado-1.svg"}
-                        alt=""
-                      />
-                   
-                  </div>
-                </div>
               </div>
-            </Zoom>
-            <div className="txt-consejos-home">
+            </Zoom>            
+          </Row>
+          <Row>
+          <div className="txt-consejos-home">
               <div className="info-consejos-home position-relative z-1">
                 <p className="text-white text-center fs-5">
                   No levantes la mano para ir al baño y haz lo imposible para
@@ -244,14 +241,14 @@ const Home = () => {
       </section>
 
       <section className="green-home text-center">
-                  <div className="green--barra w-100 py-5">
-                      <Zoom>
-                      <img
-                          src={publicURL+"/images/pages/green/manifestando-barra.svg"}
-                          className="mw-100"
-                          alt="Amor barra"/>
-                      </Zoom>
-                    </div>
+            <div className="green--barra w-100 py-5">
+                <Zoom>
+                <img
+                    src={publicURL+"/images/pages/green/manifestando-barra.svg"}
+                    className="mw-100"
+                    alt="Amor barra"/>
+                </Zoom>
+              </div>
             <Container>
               {/* Honey Component */}
               <Honey/>

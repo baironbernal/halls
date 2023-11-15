@@ -27,12 +27,11 @@ const Astros = () => {
         <Container className="py-5">
             {/*Dramatic, love , astral picture*/}
             <Row className="my-5">
-            <LightSpeed right>
-                <figure>
-                    <img className="mw-100" src={publicURL + "/images/pages/red/amor-barra.svg"} alt="Barra de amor y astros" />
-                </figure>
-            </LightSpeed>
-                
+                <LightSpeed right>
+                    <figure>
+                        <img className="mw-100" src={publicURL + "/images/pages/red/amor-barra.svg"} alt="Barra de amor y astros" />
+                    </figure>
+                </LightSpeed>  
             </Row>
             {/*Break the ice*/}
             <Row className="my-5">
@@ -42,25 +41,26 @@ const Astros = () => {
                             <p className="mt-3 text-white fs-5">Ser el más extrovertido no asegura el éxito en la primer a cita. Rompe el hielo con Halls y estos tipcitos. 
                             <br/>¿Funcionan? No tenemos pruebas, pero tampoco dudas.#RespiraYTomaUnImpulsoReal y ponlos a prueba</p>
                         </article>
-
                 </LightSpeed>
             </Row>
             <br/>
             <br/>
-            {/*Tinder Cards Love and Nope*/}
-
+        </Container>
+        <Container className='position-relative'>
             <Row className='justify-content-center'>
+                    <div className="overlay">
+                        <img src={publicURL + "/images/pages/red/pepitas-cards.png"} 
+                        alt="Floating Images" 
+                        className="pepitas floating-image mw-100 w-100" /> 
+                    </div>
+                     {/*Tinder Cards Love and Nope*/}
                 <DatingCards className='my-5' />
             </Row>
             <br />
             <br />
         </Container>
-        <div className='position-relative'>
-        <div className="container-fluid overlay">
-            <img src={publicURL + "/images/pages/red/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
-        </div>
-
-        <Container>
+        
+        <Container className='position-relative'>
             {/*Astro Effect*/}
             <Row className="z-0 position-relative">
                 <CardAstro/>
@@ -72,21 +72,22 @@ const Astros = () => {
                 ¿Tienes más de un crush? Nada que un Halls no pueda resolver. #TomaUnImpulsoReal <br />
                 y descubre quién te conviene. ¿Aries, Tauro, Libra?
             </p>
-            
             </Row>
             
             {/*Form astro*/}
             <Row className="my-5">
                 <p className="text-center text-white fs-3 ff-gotham-bold ">Claro que sabes tu signo ¡Escríbelo aquí!</p>
+                <br />
+                <br />
+                <br />
                 <ZodiacSign/>
             </Row>
             {/*Show info signal astro*/}
       
         </Container>
-        </div>
-            <Row>
-                <OtherCategories/>
-            </Row>
+        <Row>
+            <OtherCategories/>
+        </Row>
     </section>
     </>
   )

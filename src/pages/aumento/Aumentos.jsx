@@ -63,14 +63,14 @@ const Aumentos = () => {
             </Row>
         </Container>
         <div className='position-relative'>
-        <div className="container-fluid overlay">
-            <img src={publicURL + "/images/pages/green/bg-pepitas-4.png"} 
-            alt="Floating Images" 
-            className="pepitas floating-image mw-100 w-100" /> 
-        </div>
             {/* Camera picture */}
            <Fade top>
                 <Row className="my-5 position-relative">
+                <div className="container overlay">
+                    <img src={publicURL + "/images/pages/green/pepitas-clapper.png"} 
+                    alt="Floating Images" 
+                    className="pepitas floating-image mw-100 w-100" /> 
+                </div>
                     <Clapperboard />
                     <p className="mt-3 text-white fs-5">#RespiraYTomaUnImpulsoReal para hablar sin trabarte y alégrate porque <br/>el inglés ya no será un problema si lo que quieres es facturar.</p>
                 </Row>
@@ -84,14 +84,20 @@ const Aumentos = () => {
                     <span className="d-block text-center text-white w-auto fs-3"> @typesetting </span>
                 </Row>
             </Zoom>
-
+        </div>
+        <Container>
             {/* Slider Tik Toks */}
             <Zoom>
                 <Row className='position-relative'>
-                    <SwiperTiktok/>
+                    <div className="overlay">
+                        <img src={publicURL + "/images/pages/green/pepitas-video.png"} 
+                        alt="Floating Images" 
+                        className="pepitas floating-image mw-100 w-100" /> 
+                    </div>
+                    <SwiperTiktok />
                 </Row>
             </Zoom>
-        </div>
+        </Container>
     </section>
     {/* Other categories */}
     <OtherCategories titleImageUrl={'/images/pages/green/otras-categorias.svg'} />

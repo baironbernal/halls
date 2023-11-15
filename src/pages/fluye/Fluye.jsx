@@ -27,7 +27,6 @@ const Fluye = () => {
                       src={publicURL + "/images/pages/purple/fluye-barra.svg"} alt="Barra purple" /> 
                   </figure>
               </LightSpeed>
-                
             </Row>
         </Container>
 
@@ -42,7 +41,12 @@ const Fluye = () => {
           con Halls y sé el anfitrión más cool entre tus amigos.</p>
         </Row>
 
-      <Row className='justify-content-center align-items-center'>
+      <Row className='justify-content-center align-items-center position-relative'>
+        <div className="container-fluid overlay">
+            <img src={publicURL + "/images/pages/purple/pepitas-caja.png"} 
+            alt="Floating Images" 
+            className="pepitas floating-image mw-100 w-100" /> 
+        </div>
         <Col xs={12} md={12} lg={6} xl={6} style={{
           height:'100%',
           maxWidth: '40rem',          
