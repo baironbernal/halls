@@ -5,9 +5,8 @@ import './Fluye.css';
 import ContainerMap from '../../components/map/ContainerMap';
 import OtherCategories from '../../components/category/OtherCategories';
 import { Col, Container, Row } from 'react-bootstrap';
-import { LightSpeed } from 'react-reveal';
+import { LightSpeed, Zoom } from 'react-reveal';
 import DatingCardsFluye from '../../components/tinder/DatingCardsFluye';
-
 
 const Fluye = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -21,19 +20,19 @@ const Fluye = () => {
       <section className='fluye text-center ff-gotham-medium'>
         <Container className='py-5'>
             <Row>
-              <LightSpeed right>
+              <Zoom>
                   <figure className='mb-5'>
                       <img className="mw-100" 
                       src={publicURL + "/images/pages/purple/fluye-barra.svg"} alt="Barra purple" /> 
                   </figure>
-              </LightSpeed>
+              </Zoom>
             </Row>
         </Container>
 
           {/* Zone Maps */}
-          <LightSpeed left>
+          <Zoom>
             <ContainerMap/>
-          </LightSpeed>
+          </Zoom>
             
           {/* Zone Maps End */}
         <Row className='text-center'>
@@ -66,8 +65,10 @@ const Fluye = () => {
         }} id='containerCardsSlide'>
             {/*Tinder Cards Love and Nope*/}
               <DatingCardsFluye className='my-5' />
+              
         </Col>
       </Row>
+     
       <Row>
         <OtherCategories/>
       </Row>

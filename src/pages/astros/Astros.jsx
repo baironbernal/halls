@@ -11,7 +11,7 @@ import { Container, Row } from 'react-bootstrap';
 import OtherCategories from '../../components/category/OtherCategories';
 
 //Animations
-import { LightSpeed } from 'react-reveal';
+import { Zoom } from 'react-reveal';
 
 const Astros = () => {
 
@@ -27,21 +27,21 @@ const Astros = () => {
         <Container className="py-5">
             {/*Dramatic, love , astral picture*/}
             <Row className="my-5">
-                <LightSpeed right>
+                <Zoom >
                     <figure>
                         <img className="mw-100" src={publicURL + "/images/pages/red/amor-barra.svg"} alt="Barra de amor y astros" />
                     </figure>
-                </LightSpeed>  
+                </Zoom>  
             </Row>
             {/*Break the ice*/}
             <Row className="my-5">
-                <LightSpeed left>
+                <Zoom>
                         <article>
                             <img className="mw-100" src={publicURL + "/images/pages/red/mural-rompe-hielo.png"} alt="Mural rompe hielo"/>
                             <p className="mt-3 text-white fs-5">Ser el más extrovertido no asegura el éxito en la primer a cita. Rompe el hielo con Halls y estos tipcitos. 
                             <br/>¿Funcionan? No tenemos pruebas, pero tampoco dudas.#RespiraYTomaUnImpulsoReal y ponlos a prueba</p>
                         </article>
-                </LightSpeed>
+                </Zoom>
             </Row>
             <br/>
             <br/>

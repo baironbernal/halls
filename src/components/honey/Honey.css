@@ -122,6 +122,7 @@
     }
 
     #imagenMover {
+        width: 6rem;
         margin-left: 15px;
         position: relative;
         top: 0;

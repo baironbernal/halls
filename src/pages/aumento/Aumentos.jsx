@@ -11,7 +11,7 @@ import SwiperTiktok from '../../components/swipers/tiktok/SwiperTiktok';
 //Boostrap
 import { Col, Container, Row } from 'react-bootstrap';
 //Animations
-import { LightSpeed, Zoom, Bounce, Fade } from 'react-reveal';
+import { Zoom, Fade } from 'react-reveal';
 
 
 const Aumentos = () => {
@@ -20,7 +20,6 @@ const Aumentos = () => {
 
   return (
     <>
-      
     
     <section className="manifestando-aumentos text-center ff-gotham-medium">
         <div className="container-fluid overlay">
@@ -30,18 +29,18 @@ const Aumentos = () => {
         </div>
         <Container className="py-5">
             <Row className>
-                <LightSpeed right>
+                <Zoom >
                     <figure>
                         <img className="mw-100" 
                         src={publicURL + "/images/pages/green/manifestando-barra.svg"} 
                         alt="Barra verde" /> 
                     </figure>
-                </LightSpeed>
+                </Zoom>
             </Row>
           
             <Row className="align-items-center my-5 gx-5 ">
                 <Col lg={6}>
-                    <Bounce left>
+                    <Zoom>
                         <article>
                             <img className="mw-100 mb-5" 
                             src={publicURL + "/images/pages/green/workimpulsos.svg"} 
@@ -52,13 +51,13 @@ const Aumentos = () => {
                             los viernes ahora con Halls es posible ¡Descarga el tuyo!
                             </p>
                         </article>
-                    </Bounce>
+                    </Zoom>
                 </Col>
                 <Col lg={6}>
                     {/* Swiper Work*/}
-                    <Bounce right>
+                    <Zoom >
                         <SwiperWork/>
-                    </Bounce>
+                    </Zoom>
                 </Col>
             </Row>
         </Container>

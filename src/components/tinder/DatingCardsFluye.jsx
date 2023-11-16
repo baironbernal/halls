@@ -13,12 +13,17 @@ function DatingCardsFluye () {
       <div className='cardContainer w-100 d-flex justify-content-center'>
         { Array.isArray(db) && db && db.map((card, index) => (
           <TinderCard
+          style={{zIndex: '1 !important'}}
             ref={childRefs[index]}
             className='swipe'
             key={index}
             onSwipe={(dir) => swiped(dir, card.question, index)}
             onCardLeftScreen={() => outOfFrame(card.question, index)}>
-            <div className='card'>
+            <div className='card' style={{
+              transform: `scale(${(20 - index) / 20}) translateY(-${30 * index}px)`,
+              
+              zIndex: 1
+            }}>
               <img className='card--diamond mx-auto' src={publicURL + '/images/icons/person.png'} alt="Logo" />
               <p className="text-center ff-gotham-bold fs-5">{card.question}</p>
               <p className="card--question text-center ff-gotham-book p-3 rounded-4 bg-gray-light-h fc-gray-light "> {card.repply}</p>

@@ -1,14 +1,14 @@
 import React from 'react';
 import './Matchs.css'
 import { Col, Row } from 'react-bootstrap';
-import { LightSpeed } from 'react-reveal';
+import { Zoom } from 'react-reveal';
 
 const Matchs = ({ information }) => {
   const publicURL = process.env.PUBLIC_URL;
   
   return (
     <>
-        <LightSpeed left>
+        <Zoom left>
             <Row className="main-sign my-5" >
             <div className="overlay">
                         <img src={publicURL + "/images/pages/red/pepitas-zodiaco.png"} 
@@ -27,9 +27,9 @@ const Matchs = ({ information }) => {
                   <img className='w-100' src={publicURL + information.image} alt="Signal zoom" />
                 </div>
             </Row>
-        </LightSpeed>
+        </Zoom>
 
-        <LightSpeed right>
+        <Zoom right>
         <Row className='results-sign justify-content-center text-white text-start'>
           <Col sm={12} md={12} lg={4} xl={4} xxl={4}>
                 <figure>
@@ -91,7 +91,7 @@ const Matchs = ({ information }) => {
              </Row>
           </Col>
         </Row>  
-        </LightSpeed>
+        </Zoom>
         
     </>
   )
