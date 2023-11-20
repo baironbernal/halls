@@ -121,12 +121,12 @@ const CardSitos = ({ conversations }) => {
 
       <div className="tinder--cards">
       { Array.isArray(conversations) && conversations && conversations.map((card, index) => (
-          <div class="tinder--card p-4 rounded-5">
+          <div className="tinder--card p-4 rounded-5" key={index}>
             <img className='mx-auto' src={logoImgSrc} alt="Logo" style={{
               maxWidth: '4rem'
             }} />
-            <p class="text-center ff-gotham-bold fs-5">{card.question}</p>
-            <p class="text-center ff-gotham-book p-2 rounded-4 fs-5 bg-gray-light-h fc-gray-light "> {card.repply}</p>
+            <p className="text-center ff-gotham-bold fs-5">{card.question}</p>
+            <p className="text-center ff-gotham-book p-2 rounded-4 fs-5 bg-gray-light-h fc-gray-light "> {card.repply}</p>
         </div>
       ))}
       </div>

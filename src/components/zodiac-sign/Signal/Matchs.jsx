@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap';
 import { Zoom } from 'react-reveal';
 
 const Matchs = ({ information }) => {
+
   const publicURL = process.env.PUBLIC_URL;
   
   return (

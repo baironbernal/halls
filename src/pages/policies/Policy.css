@@ -10,10 +10,10 @@ background-size: 100% 100% !important;
 background: #162F5E;
 }
 
-p, div, td, span {
-line-height: 16px;
-font-size: 16px!important;
-color: #fff!important;
+.policy p, .policy div, .policy td, .policy span {
+    line-height: 16px;
+    font-size: 16px!important;
+    color: #fff!important;
 }
 
 #cookie-policy-title {

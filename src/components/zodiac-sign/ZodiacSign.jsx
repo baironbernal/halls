@@ -1,25 +1,43 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ModalForm from '../modal/ModalForm';
 import Matchs from './Signal/Matchs';
 import useZodiacSign from '../../hooks/useZodiacSign';
-import './ZodialSign.css'
+import './ZodialSign.css';
 
 const ZodiacSign = () => {
-  
-  const { options, selectedValue, information, setSelectedValue, setAction, action} = useZodiacSign();
-  
+  const {
+    options,
+    selectedValue,
+    information,
+    setSelectedValue,
+    setAction,
+    action
+  } = useZodiacSign();
+
+  const matchsRef = useRef(null);
+
+  const handleSelectChange = (e) => {
+    setSelectedValue(e.target.value);
+    setAction(action + 1);
+
+    // Scroll to the Matchs component
+    if (matchsRef.current) {
+      matchsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
       <select
         value={selectedValue}
-        onChange={e => {
-          setSelectedValue(e.target.value);
-          setAction(action + 1);
-        }}
+        onChange={handleSelectChange}
         className="astros--select form-select rounded-5 w-25 mx-auto py-2 position-relative z-1"
-        id="selectOption">
-        <option value="" selected disabled>Buscar Signo</option>
-        {options.map(option => (
+        id="selectOption"
+      >
+        <option value="" selected disabled>
+          Buscar Signo
+        </option>
+        {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
           </option>
@@ -27,14 +45,14 @@ const ZodiacSign = () => {
       </select>
 
       {selectedValue ? (
-        <div className="row m-5">
+        <div ref={matchsRef} className="row m-5">
           <Matchs information={information} />
         </div>
-      ): null}
+      ) : null}
 
-        <div className="mt-0 p-0">
-          <ModalForm />
-        </div>
+      <div className="mt-0 p-0">
+        <ModalForm />
+      </div>
     </div>
   );
 };

@@ -1,11 +1,13 @@
 
 import { useEffect, useState } from 'react';
+import { useMyState } from '../context/ContextGlobal';
 
 const useSwiperWork = () => {
   
     const [showPreview, setShowPreview] = useState(false);
     const [info, setInfo] = useState({});
     const publicURL = process.env.PUBLIC_URL;
+    const { showModal, action, setAction } = useMyState();
   
       const photos = [
         {   
@@ -65,10 +67,12 @@ const useSwiperWork = () => {
       getInfoFrom()      
     };
   
-  
+
       const handleDownloadPDF = async () => {
-        
+        setAction(action + 1);
+      
         try {
+          
           // Fetch the PDF content from the URL
           const response = await fetch(info.urlFile);
     

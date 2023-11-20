@@ -2,12 +2,19 @@ import { useState } from 'react';
 import { Figure, Row } from 'react-bootstrap';
 import Button from '../button/Button';
 import Modal from 'react-bootstrap/Modal';
+import { useMyState } from '../../context/ContextGlobal';
+import ModalForm from './ModalForm';
 
 function ModalPreview({ info, handleDownloadPDF }) {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const { showModal, action, setAction } = useMyState(); 
+
+  const handleShow = () => {
+    setAction(action + 1);
+    setShow(true);
+  }
   const publicURL = process.env.PUBLIC_URL;
 
   return (
@@ -52,6 +59,9 @@ function ModalPreview({ info, handleDownloadPDF }) {
             </div>
       </div>
       </Modal>
+      <div className="mt-0 p-0">
+          <ModalForm />
+        </div>
     </>
   );
 }

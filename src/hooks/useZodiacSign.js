@@ -29,7 +29,6 @@ const useZodiacSign = () => {
     
     
     const fetchInformation = async () => {
-  
       const signalInfo = await ZodiacService.fetchData(selectedValue);
       
       if(signalInfo) {

@@ -14,6 +14,7 @@ import { Row } from 'react-bootstrap';
 import Button from '../../button/Button';
 import useSwiperWork from '../../../hooks/useSwiperWork';
 import ModalPreview from '../../modal/ModalPreview';
+import ModalForm from '../../modal/ModalForm';
 
 const SwiperWork = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -97,6 +98,9 @@ const SwiperWork = () => {
           </div>
           </div>
       </Row>
+      <div className="mt-0 p-0">
+          <ModalForm />
+        </div>
     </>
   );
 }

@@ -17,8 +17,8 @@ const Footer = () => {
         </div>
             {/* Links copyright  */}
         <div className="row d-flex flex-column flex-lg-row justify-content-center gap-lg-5 mb-4 ff-gotham-bold">
-                    <Link className="d-block text-decoration-none text-center w-auto" 
-                    to={'/politicas-de-privacidad'}>Políticas de Privacidad</Link>
+                    <a href='/politicas-de-privacidad' 
+                    className="d-block text-decoration-none text-center w-auto">Políticas de Privacidad</a>
 
                     <Link to={'/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
                         Aviso de Cookies
