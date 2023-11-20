@@ -75,6 +75,7 @@ const Aumentos = () => {
                 </Row>
            </Fade>
             {/* Typsettings */}
+            <br />
             <Zoom>
                 <Row className="tag d-flex justify-content-center align-items-center mb-4 my-5">
                     <a href="/" className="d-block text-decoration-none text-center w-auto">

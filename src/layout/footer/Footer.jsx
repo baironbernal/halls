@@ -28,7 +28,7 @@ const Footer = () => {
                     </Link>    
         </div>
         {/* Links social media  */}
-        <div className="row d-flex justify-content-center gap-1 mb-4">
+        <div className="row d-flex justify-content-center gap-1">
             <a href="#" className="d-block text-decoration-none text-center w-auto">
                 <img src={publicURL + "/images/footer/facebook.svg"} alt="Facebook" />
             </a>

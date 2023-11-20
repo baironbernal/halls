@@ -4,7 +4,7 @@ import './Astros.css';
 import '../../styles/keyframes.css';
 //Components
 import CardAstro from '../../components/cards-astros/CardAstro';
-import DatingCards from '../../components/tinder/DatingCards';
+
 import ZodiacSign from '../../components/zodiac-sign/ZodiacSign';
 //Boostrap
 import { Container, Row } from 'react-bootstrap';
@@ -21,7 +21,8 @@ const Astros = () => {
     <>
       <section className="amor-astros text-center">
       <div className="container-fluid overlay">
-        <img src={publicURL + "/images/pages/red/bg-pepitas.png"} alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
+        <img src={publicURL + "/images/pages/red/bg-pepitas.png"} 
+        alt="Floating Images" className="pepitas floating-image mw-100 w-100" /> 
     </div>
 
         <Container className="py-5">
@@ -54,7 +55,7 @@ const Astros = () => {
                         className="pepitas floating-image mw-100 w-100" /> 
                     </div>
                      {/*Tinder Cards Love and Nope*/}
-                <DatingCards className='my-5' />
+                
             </Row>
             <br />
             <br />

@@ -84,6 +84,11 @@
     left: 0;
     top: -3rem;
 }
+@media only screen and (min-width: 490px) and (max-width: 900px) {
+   #imagenMover{
+    margin-left: 5rem !important;
+   }
+  }
 
 @media only screen and (max-width: 843px) {
     .slide-honey-mobile {

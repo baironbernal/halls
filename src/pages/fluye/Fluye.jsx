@@ -1,15 +1,16 @@
 import React from 'react'
 import '../../styles/keyframes.css';
-
 import './Fluye.css';
 import ContainerMap from '../../components/map/ContainerMap';
 import OtherCategories from '../../components/category/OtherCategories';
 import { Col, Container, Row } from 'react-bootstrap';
-import { LightSpeed, Zoom } from 'react-reveal';
-import DatingCardsFluye from '../../components/tinder/DatingCardsFluye';
+import { Zoom } from 'react-reveal';
+import CardSitos from '../../components/tinder/CardsSitos';
+import useFolderRoot from '../../hooks/useFolderRoot';
 
 const Fluye = () => {
   const publicURL = process.env.PUBLIC_URL;
+  const { conversations } = useFolderRoot();
   return (
     <>
     <div className="container-fluid overlay">
@@ -64,8 +65,8 @@ const Fluye = () => {
           alignSelf: 'center'
         }} id='containerCardsSlide'>
             {/*Tinder Cards Love and Nope*/}
-              <DatingCardsFluye className='my-5' />
-              
+              {/* <DatingCardsFluye className='my-5' /> */}
+              <CardSitos conversations={conversations} />
         </Col>
       </Row>
      

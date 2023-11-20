@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import "../../styles/keyframes.css";
 import { Col, Container, Figure, Row } from "react-bootstrap";
 import Button from "../../components/button/Button";
 import CardAstro from "../../components/cards-astros/CardAstro";
@@ -7,8 +8,6 @@ import { LightSpeed, Zoom } from "react-reveal";
 import Clapperboard from "../../components/cinema/Clapperboard";
 import Honey from "../../components/honey/Honey";
 import ModalVideo from "../../components/modal/ModalVideo";
-import ScrollAnimation from 'react-animate-on-scroll';
-
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
@@ -83,7 +82,12 @@ const Home = () => {
           </Zoom>
           {/* People Logos */}
           <Zoom>
-            <Row className="text-center" id="three-options">
+            <Row className="text-center position-relative" id="three-options">
+                <div className="container-fluid overlay ">
+                  <img src={publicURL + "/images/home/pepitas-initials.png"} 
+                  alt="Floating Images" 
+                  className="pepitas floating-image mw-100 w-100" /> 
+              </div>
               <Col xs={12} md={12} lg={4} xl={4}>
                 <Figure className="text-center">
                   <img
@@ -240,7 +244,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="green-home text-center">
+      <section className="green-home text-center position-relative">
             <div className="green--barra w-100 py-5">
                 <Zoom>
                 <img
@@ -253,7 +257,15 @@ const Home = () => {
               {/* Honey Component */}
               <Honey/>
             </Container>
-            <Clapperboard isText={true} />
+            
+            <Row className="position-relative">
+              <div className="container-fluid overlay ">
+                  <img src={publicURL + "/images/home/pepitas-cine.png"} 
+                  alt="Floating Images" 
+                  className="pepitas floating-image mw-100 w-100" /> 
+              </div>
+              <Clapperboard isText={true} />
+            </Row>
       </section>
       <section className="red-home text-center">
             
@@ -269,8 +281,13 @@ const Home = () => {
         <Container>
         
         {/*Break the ice*/}
-        <Row className="my-5">
-          <LightSpeed left>
+        <Row className="my-5 position-relative">
+        <div className="container-fluid overlay ">
+                  <img src={publicURL + "/images/pages/red/bg-pepitas.png"} 
+                  alt="Floating Images" 
+                  className="pepitas floating-image mw-100 w-100" /> 
+              </div>
+          <Zoom>
             <article>
               <img
                 className="mw-100"
@@ -292,7 +309,7 @@ const Home = () => {
                 />
               </div>
             </article>
-          </LightSpeed>
+          </Zoom>
         </Row>
 
         <br />

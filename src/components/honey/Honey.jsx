@@ -17,12 +17,16 @@ const Honey = () => {
     setTimeout(() => {
       history.push('/manifestando-aumentos');  // Replace '/destination' with your target URL.
     }, 1000);
-    
   };
 
   return (
     <>
       <div className="work-impulso" id='work-impulso'>
+              <div className="container-fluid overlay">
+                  <img src={publicURL + "/images/home/pepitas-honey.png"} 
+                  alt="Floating Images" 
+                  className="pepitas floating-image mw-100 w-100" /> 
+              </div>
         <figure className='work-impulso--title'>
             <img src={publicURL+"/images/home/workimpulsos-title.svg"} 
             alt="work-impulsos title" className='mw-100' />
