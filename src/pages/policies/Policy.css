@@ -1,4 +1,113 @@
 .policy{
     background: #162F5E;
-    height: 100vh;
+    height: 200vh;
+}
+
+.mainBox2 {
+background-repeat: no-repeat;
+background-position: top center;
+background-size: 100% 100% !important;
+background: #162F5E;
+}
+
+p, div, td, span {
+line-height: 16px;
+font-size: 16px!important;
+color: #fff!important;
+}
+
+#cookie-policy-title {
+text-transform: uppercase !important;
+}
+
+#onetrust-policy-text {
+color: black !important;
+}
+
+
+#ot-sdk-btn {
+background: green !important;
+}
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {
+    color: white !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header {
+    color: #696969 !important;
+    font-weight: bold !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a , #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{
+    color: #696969 !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span{
+    color: white !important;
+}
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td {
+    color: white !important;
+}
+
+.ot-host-td, .ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td {
+    color: white !important;
+}
+
+#ot-sdk-btn {
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+@media only screen and (max-width: 530px) {
+    .mainBox2 {
+ 
+ background-repeat: no-repeat;
+background-position: top center;
+background-size: 100% 100% !important;
+background: #162F5E;
+}
+
+p, div, td, span {
+line-height: 16px;
+font-size: 16px!important;
+color: #fff!important;
+}
+
+#cookie-policy-title {
+text-transform: uppercase !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h3, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h4, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy h6, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy p, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy li, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy th, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-description, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy #cookie-policy-title {
+ color: white !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy .ot-table-header {
+ color: #696969 !important;
+ font-weight: bold !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy a , #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td{
+ color: #696969 !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td span{
+ color: white !important;
+}
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table tr:last-child td {
+ color: white !important;
+}
+
+.ot-host-td, .ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td {
+ color: white !important;
+}
+
+#ot-sdk-btn {
+ color: white !important;
+ font-size: 14px !important;
+ font-weight: 700 !important;
+}
+
+#ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy td:before, #ot-sdk-cookie-policy-v2.ot-sdk-cookie-policy table td{
+color: white !important; 
+}
 }

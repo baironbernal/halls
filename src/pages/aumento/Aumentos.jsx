@@ -13,14 +13,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 //Animations
 import { Zoom, Fade } from 'react-reveal';
 
-
 const Aumentos = () => {
 
     const publicURL = process.env.PUBLIC_URL;
 
   return (
     <>
-    
     <section className="manifestando-aumentos text-center ff-gotham-medium">
         <div className="container-fluid overlay">
             <img src={publicURL + "/images/pages/green/bg-pepitas.png"} 
@@ -55,7 +53,7 @@ const Aumentos = () => {
                 </Col>
                 <Col lg={6}>
                     {/* Swiper Work*/}
-                    <Zoom >
+                    <Zoom>
                         <SwiperWork/>
                     </Zoom>
                 </Col>

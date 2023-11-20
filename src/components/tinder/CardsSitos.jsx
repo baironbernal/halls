@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
 import Hammer from 'hammerjs';
 import './CardSitos.css'; // Asegúrate de tener un archivo de estilo CSS asociado
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 const CardSitos = ({ conversations }) => {
   const publicURL = process.env.PUBLIC_URL;
+  const location = useLocation();
+  
+  const nopeImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/pages/purple/purple-x.svg' : publicURL + '/images/pages/red/pink-x.svg';
+  const logoImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/icons/person.png' : publicURL + '/images/icons/diamond.png';
 
   useEffect(() => {
     const tinderContainer = document.querySelector('.tinder');
@@ -23,7 +28,7 @@ const CardSitos = ({ conversations }) => {
       tinderContainer.classList.add('loaded');
     }
 
-    initCards();
+    initCards(); // Call initCards initially
 
     allCards.forEach(function (el) {
       const hammertime = new Hammer(el);
@@ -101,7 +106,6 @@ const CardSitos = ({ conversations }) => {
 
     nope.addEventListener('click', nopeListener);
     love.addEventListener('click', loveListener);
-
     // Debe haber un return cleanup para limpiar los eventos cuando el componente se desmonta
     return () => {
       // Limpiar eventos, si es necesario
@@ -118,7 +122,9 @@ const CardSitos = ({ conversations }) => {
       <div className="tinder--cards">
       { Array.isArray(conversations) && conversations && conversations.map((card, index) => (
           <div class="tinder--card p-4 rounded-5">
-            <img className='mx-auto' src={publicURL + '/images/icons/person.png'} alt="Logo" />
+            <img className='mx-auto' src={logoImgSrc} alt="Logo" style={{
+              maxWidth: '4rem'
+            }} />
             <p class="text-center ff-gotham-bold fs-5">{card.question}</p>
             <p class="text-center ff-gotham-book p-2 rounded-4 fs-5 bg-gray-light-h fc-gray-light "> {card.repply}</p>
         </div>
@@ -131,7 +137,7 @@ const CardSitos = ({ conversations }) => {
           style={{
             cursorPointer: true
           }}
-          src={publicURL + '/images/pages/purple/purple-x.svg'} 
+          src={nopeImgSrc} 
           alt='X' />
         <img 
           id="love" className='position-relative z-1'

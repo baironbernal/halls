@@ -1,4 +1,21 @@
 {
+  "/politicas-de-privacidad": {
+    "navbar": {
+      "background": "/images/navbar/blue/bg.png", 
+      "list": {
+        "fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
+      }
+    },
+    "modal" : {
+      "headerImage": "/images/pages/green/modal/modal-header.svg",
+      "primaryColor": "rgb(1, 103, 49, .7)",
+      "inputColor": "#CCFFE4",
+      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "buttonColor": "rgb(1, 103, 49, 100)"
+    }
+  },
   "/halls": {
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 

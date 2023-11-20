@@ -53,7 +53,9 @@ const Fluye = () => {
         }}>
                 <article>
                   <figure className='text-center mw-100'>
-                    <img className='mw-100' src={publicURL + "/images/pages/purple/consejos.png"} alt="Consejos de último semestre" />
+                    <img className='mw-100'
+                     src={publicURL + "/images/pages/purple/consejos.png"} 
+                    alt="Consejos de último semestre" />
                   </figure>
                   <p className='text-white'>¿Listo para dejar de ser ese “primíparo” <br />
                     que no pasa desapercibido?</p>

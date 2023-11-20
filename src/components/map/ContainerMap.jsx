@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Figure, Form, Row } from 'react-bootstrap'
+import { Col, Container, Form, Row } from 'react-bootstrap'
 import SiteCard from '../../components/map/SiteCard';
 //Import
 import './Map.css'

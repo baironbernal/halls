@@ -12,10 +12,13 @@ import OtherCategories from '../../components/category/OtherCategories';
 
 //Animations
 import { Zoom } from 'react-reveal';
+import CardSitos from '../../components/tinder/CardsSitos';
+import useFolderRoot from '../../hooks/useFolderRoot';
 
 const Astros = () => {
 
    const publicURL = process.env.PUBLIC_URL;
+   const { conversations } = useFolderRoot();
 
   return (
     <>
@@ -55,7 +58,7 @@ const Astros = () => {
                         className="pepitas floating-image mw-100 w-100" /> 
                     </div>
                      {/*Tinder Cards Love and Nope*/}
-                
+                    <CardSitos conversations={conversations}/>
             </Row>
             <br />
             <br />
