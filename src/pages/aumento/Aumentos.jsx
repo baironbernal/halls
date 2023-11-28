@@ -62,14 +62,14 @@ const Aumentos = () => {
         <div className='position-relative'>
             {/* Camera picture */}
            <Fade top>
-                <Row className="my-5 position-relative">
+                <Row className="mb-5 position-relative">
                 <div className="container overlay">
                     <img src={publicURL + "/images/pages/green/pepitas-clapper.png"} 
                     alt="Floating Images" 
                     className="pepitas floating-image mw-100 w-100" /> 
                 </div>
                     <Clapperboard />
-                    <p className="mt-3 text-white fs-5">#RespiraYTomaUnImpulsoReal para hablar sin trabarte y alégrate porque <br/>el inglés ya no será un problema si lo que quieres es facturar.</p>
+                    <p className="mt-4 text-white fs-5">#RespiraYTomaUnImpulsoReal para hablar sin trabarte y alégrate porque <br/>el inglés ya no será un problema si lo que quieres es facturar.</p>
                 </Row>
            </Fade>
             {/* Typsettings */}

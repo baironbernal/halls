@@ -17,8 +17,8 @@ const CardSitos = ({ conversations }) => {
     const love = document.getElementById('love');
 
     function initCards(card, index) {
-      const newCards = document.querySelectorAll('.tinder--card:not(.removed)');
-
+      var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
+     
       newCards.forEach(function (card, index) {
         card.style.zIndex = allCards.length - index;
         card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
@@ -27,8 +27,6 @@ const CardSitos = ({ conversations }) => {
 
       tinderContainer.classList.add('loaded');
     }
-
-    initCards(); // Call initCards initially
 
     allCards.forEach(function (el) {
       const hammertime = new Hammer(el);
@@ -96,7 +94,6 @@ const CardSitos = ({ conversations }) => {
         }
 
         initCards();
-
         event.preventDefault();
       };
     }
@@ -107,7 +104,11 @@ const CardSitos = ({ conversations }) => {
     nope.addEventListener('click', nopeListener);
     love.addEventListener('click', loveListener);
     // Debe haber un return cleanup para limpiar los eventos cuando el componente se desmonta
+
+    initCards(); // Call initCards initially
     return () => {
+      nope.removeEventListener('click', nopeListener);
+      love.removeEventListener('click', loveListener);
       // Limpiar eventos, si es necesario
     };
   }, []); // El array vacío asegura que este efecto se ejecute solo una vez al montar el componente
@@ -121,9 +122,14 @@ const CardSitos = ({ conversations }) => {
 
       <div className="tinder--cards">
       { Array.isArray(conversations) && conversations && conversations.map((card, index) => (
-          <div className="tinder--card p-4 rounded-5" key={index}>
-            <img className='mx-auto' src={logoImgSrc} alt="Logo" style={{
-              maxWidth: '4rem'
+          <div className="tinder--card p-4 rounded-5" key={index} style={{
+              zIndex: 10 - index,
+              transform: 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)',
+              opacity: (10 - index) / 10,
+          }}>
+            <img className='mx-auto' src={logoImgSrc} alt="Logo" 
+            style={{
+              maxWidth: '4rem',
             }} />
             <p className="text-center ff-gotham-bold fs-5">{card.question}</p>
             <p className="text-center ff-gotham-book p-2 rounded-4 fs-5 bg-gray-light-h fc-gray-light "> {card.repply}</p>

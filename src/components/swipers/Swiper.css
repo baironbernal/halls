@@ -20,7 +20,7 @@
     max-width: 800px;
     height: 570px;
     border: 3px double #00F98C;
-    box-shadow: 0 0 1px #00F98C, 0 0 1px #00F98C, 0 0 2px #00F98C, 0 0 40px #00F98C;
+    box-shadow: 0 0 13px #00F98C, 0 0 13px #00F98C, 0 0 0px #00F98C, 0 0 0px #00F98C;
     background: #00f98c00;
     border-radius: 50px;
     animation: sunshine 2s;

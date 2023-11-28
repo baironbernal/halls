@@ -36,11 +36,12 @@ const Fluye = () => {
           </Zoom>
             
           {/* Zone Maps End */}
-        <Row className='text-center'>
+        <Row className='text-center' style={{
+          marginBottom:'3rem'
+        }}>
         <p className='text-white fs-5 mt-5'>¿Nuevo en la zona? Dile no a los sitios más básicos del lugar. #RespiraYTomaUnImpulsoReal <br />
           con Halls y sé el anfitrión más cool entre tus amigos.</p>
         </Row>
-
       <Row className='justify-content-center align-items-center position-relative'>
         <div className="container-fluid overlay">
             <img src={publicURL + "/images/pages/purple/pepitas-caja.png"} 
@@ -54,6 +55,7 @@ const Fluye = () => {
                 <article>
                   <figure className='text-center mw-100'>
                     <img className='mw-100'
+                      id='consejos-ultimo'
                      src={publicURL + "/images/pages/purple/consejos.png"} 
                     alt="Consejos de último semestre" />
                   </figure>

@@ -41,8 +41,6 @@ const SwiperTiktok = () => {
       location: '/video/tiktok1.mp4' 
   }
 ]);
-
-
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center ">

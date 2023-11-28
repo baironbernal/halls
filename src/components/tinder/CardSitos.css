@@ -46,7 +46,7 @@
 
 .tinder--cards {
   flex-grow: 1;
-  padding-top: 40px;
+  padding-top: 6rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -93,11 +93,6 @@
   pointer-events: none;
 }
 
-.tinder--card p {
-
-}
-
-
 /* Style every second <p> element */
 .tinder--card p:nth-child(3) {
   font-size: 13px !important;
@@ -129,3 +124,11 @@
   font-size: 32px;
   vertical-align: middle;
 }
+
+
+@media only screen and (max-width: 782px) {
+  .tinder--cards {
+    padding-top: 6.4rem;
+  }
+}
+

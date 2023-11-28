@@ -13,10 +13,10 @@ const RouteConfig = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/halls" component={Home} />
-        <Route path="/amor-drama-y-astros" component={Astros} />
-        <Route path="/manifestando-aumentos" component={Aumentos} />
-        <Route path="/fluye-en-la-u" component={Fluye} />
-        <Route path="/politicas-de-privacidad" component={Policy} />
+        <Route exact path="/amor-drama-y-astros" component={Astros} />
+        <Route exact path="/manifestando-aumentos" component={Aumentos} />
+        <Route exact path="/fluye-en-la-u" component={Fluye} />
+        <Route exact path="/politicas-de-privacidad" component={Policy} />
       </Switch>
     </Suspense>
   );
