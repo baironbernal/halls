@@ -29,10 +29,12 @@ const Footer = () => {
         </div>
         {/* Links social media  */}
         <div className="row d-flex justify-content-center gap-1">
-            <a href="#" className="d-block text-decoration-none text-center w-auto">
+            <a href="https://www.facebook.com/HallsColombia?mibextid=D4KYlr" 
+                className="d-block text-decoration-none text-center w-auto">
                 <img src={publicURL + "/images/footer/facebook.svg"} alt="Facebook" />
             </a>
-            <a href="#" className="d-block text-decoration-none text-center w-auto">
+            <a href="https://www.instagram.com/hallscolombia/" 
+                className="d-block text-decoration-none text-center w-auto">
                 <img src={publicURL + "/images/footer/instagram.svg"} alt="Instagram" />
             </a>
             <a href="#" className="d-block text-decoration-none text-center w-auto">
