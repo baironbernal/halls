@@ -12,18 +12,24 @@
   }
 
   #swiper-tiktoks {
+    background-image: url('../../../public/images/pages/purple/blur.png');
+    background-size: 100% 43rem;
+    background-repeat: no-repeat;
     width: 100%;
-    max-width: 950px;
+    max-width: 890px;
   }
 
-  .swiper-slide video {
-    max-width: 800px;
-    height: 570px;
+.swiper-video-border {
     border: 3px double #00F98C;
     box-shadow: 0 0 13px #00F98C, 0 0 13px #00F98C, 0 0 0px #00F98C, 0 0 0px #00F98C;
     background: #00f98c00;
     border-radius: 50px;
     animation: sunshine 2s;
+}
+
+  .swiper-slide video {
+    max-width: 800px;
+    height: 570px;
     padding: 4px 4px 4px 4px;
   }
 

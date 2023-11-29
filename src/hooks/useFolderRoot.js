@@ -9,6 +9,7 @@ const useFolderRoot = () => {
     const [modal, setModal] = useState({});
     const [otherCategory, setOtherCategory] = useState({});
     const [conversations, setConversations] = useState({});
+    const [videos, setVideos] = useState({});
 
   // Check the page current and put the root folder for the images, colors and others
   useEffect(() => {
@@ -20,13 +21,14 @@ const useFolderRoot = () => {
             setModal(configPage.modal);
             if(configPage.categories) setOtherCategory(configPage.categories)
             if(configPage.conversations) setConversations(configPage.conversations)
+            if(configPage.videos) setVideos(configPage.videos)
         }
     };
 
     setConfig();
   }, [location.pathname]); // Depends of location name (Url)
 
-  return { navbar,  modal, otherCategory, conversations};
+  return { navbar,  modal, otherCategory, conversations, videos};
 };
 
 export default useFolderRoot;

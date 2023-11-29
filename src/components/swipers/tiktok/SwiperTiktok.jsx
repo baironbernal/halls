@@ -11,36 +11,12 @@ import '../Swiper.css';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import useSwiperTikToks from '../../../hooks/useSwiperTikToks';
 
 const SwiperTiktok = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const videos = ([
-    {   
-        id: 1,
-        title: 'Pedir aumento imagen',
-        location: '/video/tiktok1.mp4' 
-    },
-    {
-        id: 2,
-        title: 'Pedir vacaciones imagen',
-        location: '/video/tiktok1.mp4' 
-    },
-    {
-        id: 3,
-        title: 'Home Office imagen',
-        location: '/video/tiktok1.mp4' 
-    },
-    {
-        id: 4,
-        title: 'Work slide 1',
-        location: '/video/tiktok1.mp4' 
-    },
-    {
-      id: 5,
-      title: 'Work slide 1',
-      location: '/video/tiktok1.mp4' 
-  }
-]);
+  const {  swiperRef , videos } = useSwiperTikToks()
+  
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center ">
@@ -48,7 +24,9 @@ const SwiperTiktok = () => {
           id='swiper-tiktok-iconleft'
           alt="left-icon" 
           className='swiper--iconleft z-1'  />
+
         <Swiper
+        ref={swiperRef}
         id='swiper-tiktoks'
         className='swiper p-0 my-4 w-75'
         effect={'coverflow'}
@@ -88,11 +66,18 @@ const SwiperTiktok = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
         {
-            videos.map((video, index) => (
+          Array.isArray(videos) && videos && videos.map((video, index) => (
                 <SwiperSlide key={index} className='h-100'>
-                    <video className="rounded-5" controls="controls" muted="muted" loop="loop" autoPlay="autoplay">
-                      <source src={publicURL + video.location} type="video/mp4" />
-                    </video>
+                    {({ isActive }) => (
+                       <video
+                       className={isActive ? 'swiper-video-border rounded-5': 'rounded-5'}
+                       controls
+                       muted
+                       loop
+                       autoPlay={isActive}>
+                       <source src={publicURL + video.location} type="video/mp4" />
+                     </video>
+                    )}
                 </SwiperSlide>
             ))
         }

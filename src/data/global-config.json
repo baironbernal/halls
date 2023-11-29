@@ -83,7 +83,34 @@
               "urlImage": "/images/home/person_3.svg" 
             }
           ]
+        },
+        "videos": [
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "location": "/video/tiktok1.mp4" 
+          },
+          {
+              "id": 2,
+              "title": "Pedir vacaciones imagen",
+              "location": "/video/tiktok1.mp4" 
+          },
+          {
+              "id": 3,
+              "title": "Home Office imagen",
+              "location": "/video/tiktok1.mp4" 
+          },
+          {
+              "id": 4,
+              "title": "Work slide 1",
+              "location": "/video/tiktok1.mp4" 
+          },
+          {
+            "id": 5,
+            "title": "Work slide 1",
+            "location": "/video/tiktok1.mp4" 
         }
+      ]
     },
     
     "/fluye-en-la-u": {
@@ -122,27 +149,27 @@
         },
         "conversations": [
           {
-          "question": "¿Primer app1 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
           },
           {
-          "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "El outfit es tan importante como respirar y alistar tu stick de Halls Negro antes de salir 😏."
           },
           {
-          "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "No le hables de tu ex! Respira y mejor ofrécele el último Hallsito 😉."
           },
           {
-          "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "Keep it real, toma un respiro con Halls y no sobre actúes."
           },
           {
-          "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "Si la cita está muy mala, respira y pon una alarma en tu celular a las 10 pm, la podrás usar como timbre de llamada urgente. 📲"
           },
           {
-          "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
           "repply": "Busca spots relajados donde se sientan cómodos, un Hallsito y déjalo fluir. 😉"
           }
         ]

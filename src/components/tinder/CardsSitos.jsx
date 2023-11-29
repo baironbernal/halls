@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hammer from 'hammerjs';
 import './CardSitos.css'; // Asegúrate de tener un archivo de estilo CSS asociado
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import Emoji from '../emoji/Emoji';
+
 
 const CardSitos = ({ conversations }) => {
   const publicURL = process.env.PUBLIC_URL;
   const location = useLocation();
+  const [emoji, setEmoji] = useState(false);
+
   
   const nopeImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/pages/purple/purple-x.svg' : publicURL + '/images/pages/red/pink-x.svg';
   const logoImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/icons/person.png' : publicURL + '/images/icons/diamond.png';
@@ -81,7 +85,12 @@ const CardSitos = ({ conversations }) => {
         const cards = document.querySelectorAll('.tinder--card:not(.removed)');
         const moveOutWidth = document.body.clientWidth * 1.5;
 
-        if (!cards.length) return false;
+        if (!cards.length || cards.length === 1) {
+          document.querySelector('.tinder--cards').remove()
+          document.querySelector('.tinder--buttons').remove()
+          setEmoji(true);
+          return false;
+        };
 
         const card = cards[0];
 
@@ -136,20 +145,28 @@ const CardSitos = ({ conversations }) => {
         </div>
       ))}
       </div>
-      <div className="tinder--buttons">
-        <img 
-          id="nope"
-          className='mx-3 position-relative z-1'
-          style={{
-            cursorPointer: true
-          }}
-          src={nopeImgSrc} 
-          alt='X' />
-        <img 
-          id="love" className='position-relative z-1'
-          src={publicURL + '/images/pages/red/heart.svg' } 
-          alt='heart'/>
-      </div>
+          <div className="tinder--buttons">
+            <img 
+              id="nope"
+              className='mx-3 position-relative z-1'
+              style={{
+                cursorPointer: true
+              }}
+              src={nopeImgSrc} 
+              alt='X' />
+            <img 
+              id="love" className='position-relative z-1'
+              src={publicURL + '/images/pages/red/heart.svg' } 
+              alt='heart'/>
+          </div>
+
+          {
+            emoji && (
+              <>
+                <Emoji url={'https://fonts.gstatic.com/s/e/notoemoji/latest/1f60e/512.webp'} />
+              </>
+            )
+          }
     </div>
   );
 };
