@@ -12,8 +12,7 @@ const Emoji = ({ url }) => {
                   alt="😆" />
                   <p className='text-white fs-5 mt-5'>¡Pronto volveremos con más consejos!</p>
               </picture>
-              
-              </Zoom>
+        </Zoom>
     </>
   )
 }
