@@ -28,7 +28,7 @@ const useCookieFilter = () => {
     setShowModal(false)
   };
 
-  return { showModal, handleClose, cookieExists, action, setAction };
+  return { showModal, handleClose, cookieExists, action, setAction, setShowModal };
 };
 
 export default useCookieFilter;

@@ -9,10 +9,11 @@ function ModalPreview({ info, handleDownloadPDF }) {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const { showModal, action, setAction } = useMyState(); 
+  const { showModal, action, setAction, setShowModal, cookieExists } = useMyState(); 
 
   const handleShow = () => {
     setAction(action + 1);
+    if (!cookieExists) return setShowModal(true); 
     setShow(true);
   }
   const publicURL = process.env.PUBLIC_URL;

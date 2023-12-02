@@ -80,7 +80,7 @@ const Astros = () => {
             
             {/*Form astro*/}
             <Row className="my-5">
-                <p className="text-center text-white fs-3 ff-gotham-bold position-relative z-1">Claro que sabes tu signo ¡Escríbelo aquí!</p>
+                <p className="text-center text-white fs-3 ff-gotham-bold position-relative z-1">Claro que sabes tu signo ¡Búscalo aquí!</p>
                 <br />
                 <br />
                 <br />

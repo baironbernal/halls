@@ -11,14 +11,15 @@ const ZodiacSign = () => {
     information,
     setSelectedValue,
     setAction,
-    action
+    action, 
+    cookieExists
   } = useZodiacSign();
 
   const matchsRef = useRef(null);
 
   const handleSelectChange = (e) => {
-    setSelectedValue(e.target.value);
     setAction(action + 1);
+    setSelectedValue(e.target.value);
 
     // Scroll to the Matchs component
     if (matchsRef.current) {
@@ -44,7 +45,7 @@ const ZodiacSign = () => {
         ))}
       </select>
 
-      {selectedValue ? (
+      {selectedValue && cookieExists ?(
         <div ref={matchsRef} className="row m-5">
           <Matchs information={information} />
         </div>

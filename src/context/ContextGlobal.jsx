@@ -8,10 +8,10 @@ export function useMyState() {
 }
 
 export function ContextGlobal({ children }) {
-    const { showModal, handleClose, action, setAction } = useCookieFilter();
+    const { showModal, handleClose, action, setAction, cookieExists, setShowModal } = useCookieFilter();
 
   return (
-    <myGlobalContext.Provider value={{ showModal, handleClose, action, setAction }}>
+    <myGlobalContext.Provider value={{ showModal, handleClose, action, setAction, cookieExists, setShowModal }}>
       {children}
     </myGlobalContext.Provider>
   );

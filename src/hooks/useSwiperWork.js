@@ -7,7 +7,7 @@ const useSwiperWork = () => {
     const [showPreview, setShowPreview] = useState(false);
     const [info, setInfo] = useState({});
     const publicURL = process.env.PUBLIC_URL;
-    const { showModal, action, setAction } = useMyState();
+    const { showModal, action, setAction, cookieExists, setShowModal } = useMyState();
   
       const photos = [
         {   
@@ -69,6 +69,7 @@ const useSwiperWork = () => {
   
 
       const handleDownloadPDF = async () => {
+        if (!cookieExists) return setShowModal(true); 
         setAction(action + 1);
       
         try {

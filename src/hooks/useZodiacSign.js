@@ -18,7 +18,7 @@ const useZodiacSign = () => {
         { value: 12, label: 'Piscis' }
       ];
     const [selectedValue, setSelectedValue] = useState('');
-    const { showModal, action, setAction } = useMyState();
+    const { showModal, action, setAction, cookieExists } = useMyState();
     const [information, setInformation] = useState({});
     
 
@@ -41,6 +41,7 @@ const useZodiacSign = () => {
       information, 
       showModal, 
       setSelectedValue,
+      cookieExists,
       setAction,
       action
     };
