@@ -88,28 +88,33 @@
           {   
               "id": 1,
               "title": "Pedir aumento imagen",
-              "location": "/video/tiktok1.mp4" 
+              "location": "/video/halls1.mp4" 
           },
           {
               "id": 2,
               "title": "Pedir vacaciones imagen",
-              "location": "/video/tiktok1.mp4" 
+              "location": "/video/halls2.mp4" 
           },
           {
               "id": 3,
               "title": "Home Office imagen",
-              "location": "/video/tiktok1.mp4" 
+              "location": "/video/halls3.mp4" 
+          },
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "location": "/video/halls1.mp4" 
           },
           {
-              "id": 4,
-              "title": "Work slide 1",
-              "location": "/video/tiktok1.mp4" 
+              "id": 2,
+              "title": "Pedir vacaciones imagen",
+              "location": "/video/halls2.mp4" 
           },
           {
-            "id": 5,
-            "title": "Work slide 1",
-            "location": "/video/tiktok1.mp4" 
-        }
+              "id": 3,
+              "title": "Home Office imagen",
+              "location": "/video/halls3.mp4" 
+          }
       ]
     },
     
