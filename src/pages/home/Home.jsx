@@ -83,36 +83,42 @@ const Home = () => {
           {/* People Logos */}
           <Zoom>
             <Row className="text-center position-relative" id="three-options">
-                <div className="container-fluid overlay ">
+                <div className="container-fluid overlay">
                   <img src={publicURL + "/images/home/pepitas-initials.png"} 
                   alt="Floating Images" 
                   className="pepitas floating-image mw-100 w-100" /> 
               </div>
-              <Col xs={12} md={12} lg={4} xl={4}>
+              <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
+                  <a href="/fluye-en-la-u">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_1.svg"}
                     alt="Fluye en la U"
                   />
+                  </a>
                 </Figure>
               </Col>
-              <Col xs={12} md={12} lg={4} xl={4}>
-                <Figure className="text-center|">
-                  <img
+              <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
+                <Figure className="text-center">
+                  <a href='/manifestando-aumentos'>
+                    <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_2.svg"}
                     alt="Manifestando aumentos"
-                  />
+                    />
+                  </a>
                 </Figure>
               </Col>
-              <Col xs={12} md={12} lg={4} xl={4}>
+              <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
+                <a href="/amor-drama-y-astros">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_3.svg"}
                     alt="Amor y astros"
                   />
+                  </a>
                 </Figure>
               </Col>
             </Row>
@@ -120,10 +126,10 @@ const Home = () => {
           <LightSpeed right>
             <Row className="text-center">
               <p className="mt-3 text-white fs-5">
-                Aquí hablar de tu jefe, conquistar a tu mejor amigx y querer
-                cambiarse de carrera es el chisme diario. ¡Tú tranqui!
+              Aquí nos gusta el chisme, por eso hablamos de tu jefe, de conquistar a tu mejor amix y de la carrera
+                a la que te quieres cambiar.
                 <br />
-                #RespiraYTomaUnImpulsoReal para comenzar ¡Clickea sin miedo!
+                <b>#RespiraYTomaUnImpulsoreal clickea sin miedo y ¡empecemos!</b>
               </p>
             </Row>
           </LightSpeed>
@@ -172,9 +178,9 @@ const Home = () => {
                     ¿Nuevo <span>en la zona?</span>
                   </h1>
                   <p className="mt-3 text-white fs-5">
-                    Dile no a los sitios más básicos del lugar. <br />
+                    Dile no, a los sitios más básicos del lugar. <br />
                     #RespiraYTomaUnImpulsoReal con Halls y sé el anfitrión más
-                    cool entre tus amigos.
+                    cool de tus amigos.
                   </p>
                   <Button
                     url={"fluye-en-la-u"}

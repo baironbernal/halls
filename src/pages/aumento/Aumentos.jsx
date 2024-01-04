@@ -69,17 +69,23 @@ const Aumentos = () => {
                     className="pepitas floating-image mw-100 w-100" /> 
                 </div>
                     <Clapperboard />
-                    <p className="mt-4 text-white fs-5">#RespiraYTomaUnImpulsoReal para hablar sin trabarte y alégrate porque <br/>el inglés ya no será un problema si lo que quieres es facturar.</p>
+                    <p className="mt-4 text-white fs-5">#RespiraYTomaUnImpulsoReal para darla toda en el trabajo y seguir facturando.</p>
                 </Row>
            </Fade>
             {/* Typsettings */}
             <br />
             <Zoom>
                 <Row className="tag d-flex justify-content-center align-items-center mb-4 my-5">
-                    <a href="https://www.instagram.com/hallscolombia/" className="d-block text-decoration-none text-center w-auto">
+                    <a href="https://www.instagram.com/duvanjimenez46/?hl=en" className="d-block text-decoration-none text-center w-auto">
                         <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
                     </a>
-                    <span className="tag--title d-block text-center text-white w-auto fs-3"> @typesetting </span>
+                    <span className="tag--title d-block text-center text-white w-auto fs-3"> @duvanjimenez </span>
+                </Row>
+                <Row className="tag d-flex justify-content-center align-items-center mb-4">
+                <a href="https://www.instagram.com/paupatarroyo/?hl=en" className="d-block text-decoration-none text-center w-auto">
+                        <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
+                    </a>
+                    <span className="tag--title d-block text-center text-white w-auto fs-3">@paupatarroyo </span>
                 </Row>
             </Zoom>
         </div>

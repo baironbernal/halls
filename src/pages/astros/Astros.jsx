@@ -73,14 +73,14 @@ const Astros = () => {
             <br />
             <Row>
             <p className="mt-3 text-white fs-5 position-relative z-1">
-                ¿Tienes más de un crush? Nada que un Halls no pueda resolver. #TomaUnImpulsoReal <br />
-                y descubre quién te conviene. ¿Aries, Tauro, Libra?
+            ¿Tienes más de un crush? Nada que un Halls no pueda resolver.<br />
+            #RespiraYTomaUnImpulsoReal para descubrir quién te conviene más.
             </p>
             </Row>
             
             {/*Form astro*/}
             <Row className="my-5">
-                <p className="text-center text-white fs-3 ff-gotham-bold position-relative z-1">Claro que sabes tu signo ¡Búscalo aquí!</p>
+                <p className="text-center text-white fs-3 ff-gotham-bold position-relative z-1">¡Escoge aquí tu signo!</p>
                 <br />
                 <br />
                 <br />

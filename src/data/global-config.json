@@ -12,7 +12,7 @@
       "headerImage": "/images/pages/green/modal/modal-header.svg",
       "primaryColor": "rgb(1, 103, 49, .7)",
       "inputColor": "#CCFFE4",
-      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "description": "#RespiraYTomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
       "buttonColor": "rgb(1, 103, 49, 100)"
     }
   },
@@ -29,7 +29,7 @@
       "headerImage": "/images/pages/green/modal/modal-header.svg",
       "primaryColor": "rgb(1, 103, 49, .7)",
       "inputColor": "#CCFFE4",
-      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "description": "#RespiraYTomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
       "buttonColor": "rgb(1, 103, 49, 100)"
     }
   },
@@ -46,7 +46,7 @@
       "headerImage": "/images/pages/green/modal/modal-header.svg",
       "primaryColor": "rgb(1, 103, 49, .7)",
       "inputColor": "#CCFFE4",
-      "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+      "description": "#RespiraYTomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
       "buttonColor": "rgb(1, 103, 49, 100)"
     }
   },
@@ -63,7 +63,7 @@
         "headerImage": "/images/pages/green/modal/modal-header.svg",
         "primaryColor": "rgb(1, 103, 49, .7)",
         "inputColor": "#CCFFE4",
-        "description": "#TomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
+        "description": "#RespiraYTomaUnImpulsoReal con Halls y suscríbete para que le dejes claro a tu jefe porque trabajas hasta el viernes.",
         "buttonColor": "rgb(1, 103, 49, 100)"
       },
       "categories": 
@@ -193,7 +193,7 @@
         "headerImage": "/images/pages/red/modal/modal-header.svg",
         "primaryColor": "rgb(147, 19, 74, .7)",
         "inputColor": "#FFCBE1",
-        "description": "#RespiraYTomaUnImpulsoReal con Halls, suscríbete y no repitas la misma historia que viviste con tu ex por falta de compatibilidad.",
+        "description": "#RespiraYRespiraYTomaUnImpulsoReal con Halls, suscríbete y no repitas la misma historia que viviste con tu ex por falta de compatibilidad.",
         "buttonColor": "rgb(147, 19, 74, 100)"
       },
       "categories": {
@@ -215,7 +215,7 @@
       }, 
       "conversations": [
         {
-        "question": "¿Primer app1 date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
+        "question": "¿Primer app date? Cadena de consejos para romper el hielo en tu próxima cita👇?",
         "repply": "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
         },
         {
