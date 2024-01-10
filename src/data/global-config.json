@@ -88,31 +88,43 @@
           {   
               "id": 1,
               "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
+              "username": "duvanjimenez46",
               "location": "/video/halls1.mp4" 
           },
           {
               "id": 2,
               "title": "Pedir vacaciones imagen",
+              "url": "https://www.instagram.com/paupatarroyo/?hl=en",
+              "username": "paupatarroyo",
               "location": "/video/halls2.mp4" 
           },
           {
               "id": 3,
               "title": "Home Office imagen",
+              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
+              "username": "duvanjimenez46",
               "location": "/video/halls3.mp4" 
           },
           {   
-              "id": 1,
+              "id": 4,
               "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
+              "username": "duvanjimenez46",
               "location": "/video/halls1.mp4" 
           },
           {
-              "id": 2,
+              "id": 5,
               "title": "Pedir vacaciones imagen",
+              "url": "https://www.instagram.com/paupatarroyo/?hl=en",
+              "username": "paupatarroyo",
               "location": "/video/halls2.mp4" 
           },
           {
-              "id": 3,
+              "id": 6,
               "title": "Home Office imagen",
+              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
+              "username": "duvanjimenez46",
               "location": "/video/halls3.mp4" 
           }
       ]

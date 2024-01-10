@@ -26,7 +26,7 @@ const Clapperboard = ({ isText }) => {
                 {
                     isText && (
                         <div className="txt-videos-work" >
-                            <p>Basta de apps y cursos de inglés. Mejor cómete un Halls y practica lipsync con estos videos que de aburridos no tienen nada. #RespiraYTomaUnImpulsoReal haz tu mejor performance en tu entrevista y sigue facturando.</p>
+                            <p>#RespiraYTomaUnImpulsoReal con Halls y haz tu mejor performance en la entrevista para seguir facturando.</p>
                             <Button 
                             url={'manifestando-aumentos'}
                             borderColor={'#00F98C'}

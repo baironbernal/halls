@@ -12,13 +12,23 @@ import { Swiper, SwiperSlide, } from 'swiper/react';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import useSwiperTikToks from '../../../hooks/useSwiperTikToks';
+import { Zoom } from 'react-reveal';
+import { Row } from 'react-bootstrap';
 
 const SwiperTiktok = () => {
   const publicURL = process.env.PUBLIC_URL;
-  const {  swiperRef , videos } = useSwiperTikToks()
+  const {  swiperRef , videos, infoVideo } = useSwiperTikToks()
   
   return (
     <div>
+        <Zoom>
+            <Row className="tag d-flex justify-content-center align-items-center mb-4">
+            <a href={infoVideo.url} className="d-block text-decoration-none text-center w-auto" target='blank'>
+                    <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
+                </a>
+                <span className="tag--title d-block text-center text-white w-auto fs-3">{infoVideo.username} </span>
+            </Row>
+        </Zoom>
       <div className="d-flex justify-content-center align-items-center ">
         <img src={publicURL + '/images/icons/left.png'} 
           id='swiper-tiktok-iconleft'
@@ -70,6 +80,8 @@ const SwiperTiktok = () => {
                 <SwiperSlide key={index} className='h-100'>
                     {({ isActive }) => (
                        <video
+                       username={video.username}
+                       url={video.url}
                        className={isActive ? 'swiper-video-border rounded-5': 'rounded-5'}
                        controls
                        muted

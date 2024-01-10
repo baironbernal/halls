@@ -74,20 +74,7 @@ const Aumentos = () => {
            </Fade>
             {/* Typsettings */}
             <br />
-            <Zoom>
-                <Row className="tag d-flex justify-content-center align-items-center mb-4 my-5">
-                    <a href="https://www.instagram.com/duvanjimenez46/?hl=en" className="d-block text-decoration-none text-center w-auto">
-                        <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
-                    </a>
-                    <span className="tag--title d-block text-center text-white w-auto fs-3"> @duvanjimenez </span>
-                </Row>
-                <Row className="tag d-flex justify-content-center align-items-center mb-4">
-                <a href="https://www.instagram.com/paupatarroyo/?hl=en" className="d-block text-decoration-none text-center w-auto">
-                        <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
-                    </a>
-                    <span className="tag--title d-block text-center text-white w-auto fs-3">@paupatarroyo </span>
-                </Row>
-            </Zoom>
+            
         </div>
         <Container>
             {/* Slider Tik Toks */}
