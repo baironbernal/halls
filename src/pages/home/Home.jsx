@@ -90,7 +90,7 @@ const Home = () => {
               </div>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                  <a href="/fluye-en-la-u">
+                  <a href="/colombia/fluye-en-la-u">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_1.svg"}
@@ -101,7 +101,7 @@ const Home = () => {
               </Col>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                  <a href='/manifestando-aumentos'>
+                  <a href='/colombia/manifestando-aumentos'>
                     <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_2.svg"}
@@ -112,7 +112,7 @@ const Home = () => {
               </Col>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                <a href="/amor-drama-y-astros">
+                <a href="/colombia/amor-drama-y-astros">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_3.svg"}
@@ -333,7 +333,7 @@ const Home = () => {
           </p>
           <div className="text-center">
                 <Button
-                  url={"amor-drama-y-astros"}
+                  url={"colombia/amor-drama-y-astros"}
                   borderColor={"#D8005D"}
                   titleButton={"Leer más"}
                 />

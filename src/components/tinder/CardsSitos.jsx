@@ -11,8 +11,8 @@ const CardSitos = ({ conversations }) => {
   const [emoji, setEmoji] = useState(false);
 
   
-  const nopeImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/pages/purple/purple-x.svg' : publicURL + '/images/pages/red/pink-x.svg';
-  const logoImgSrc = location.pathname === '/fluye-en-la-u' ? publicURL + '/images/icons/person.png' : publicURL + '/images/icons/diamond.png';
+  const nopeImgSrc = location.pathname === '/colombia/fluye-en-la-u' ? publicURL + '/images/pages/purple/purple-x.svg' : publicURL + '/images/pages/red/pink-x.svg';
+  const logoImgSrc = location.pathname === '/colombia/fluye-en-la-u' ? publicURL + '/images/icons/person.png' : publicURL + '/images/icons/diamond.png';
 
   useEffect(() => {
     const tinderContainer = document.querySelector('.tinder');

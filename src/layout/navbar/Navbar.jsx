@@ -29,7 +29,7 @@ function Navbar2() {
     >
       <Container>
         <Navbar.Brand>
-          <Link to={'/'}>
+          <Link to={'/colombia/'}>
             <img
               src={publicURL + '/images/logos/halls.svg'}
               alt="Halls Logo"

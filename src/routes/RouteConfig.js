@@ -11,12 +11,12 @@ const RouteConfig = () => {
   return (
     <Suspense>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/halls" component={Home} />
-        <Route exact path="/amor-drama-y-astros" component={Astros} />
-        <Route exact path="/manifestando-aumentos" component={Aumentos} />
-        <Route exact path="/fluye-en-la-u" component={Fluye} />
-        <Route exact path="/politicas-de-privacidad" component={Policy} />
+        <Route exact path="/colombia/" component={Home} />
+        <Route exact path="/colombia/halls" component={Home} />
+        <Route exact path="/colombia/amor-drama-y-astros" component={Astros} />
+        <Route exact path="/colombia/manifestando-aumentos" component={Aumentos} />
+        <Route exact path="/colombia/fluye-en-la-u" component={Fluye} />
+        <Route exact path="/colombia/politicas-de-privacidad" component={Policy} />
       </Switch>
     </Suspense>
   );

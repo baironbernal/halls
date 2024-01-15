@@ -11,19 +11,19 @@ const Footer = () => {
     <div className="container">
         {/* Logo Halls  */}
         <div className="row text-center mb-4">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/colombia/">
                 <img src={publicURL + "/images/logos/halls.svg"} alt="Halls Logo" />
             </a>
         </div>
             {/* Links copyright  */}
         <div className="row d-flex flex-column flex-lg-row justify-content-center gap-lg-5 mb-4 ff-gotham-bold">
-                    <a href='/politicas-de-privacidad' 
+                    <a href='/colombia/politicas-de-privacidad' 
                     className="d-block text-decoration-none text-center w-auto">Políticas de Privacidad</a>
 
-                    <Link to={'/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
+                    <Link to={'/colombia/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
                         Aviso de Cookies
                     </Link>
-                    <Link to={'/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
+                    <Link to={'/colombia/politicas-de-privacidad'} className="d-block text-decoration-none text-center w-auto">
                         Aviso legal
                     </Link>    
         </div>

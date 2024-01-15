@@ -3,7 +3,6 @@ import './Honey.css'
 import Button from '../button/Button'
 import { useHistory } from 'react-router-dom';
 
-
 const Honey = () => {
   const publicURL = process.env.PUBLIC_URL;
 
@@ -15,7 +14,7 @@ const Honey = () => {
     
     // Use the setTimeout function to delay the redirect by 1 second (1000 milliseconds).
     setTimeout(() => {
-      history.push('/manifestando-aumentos');  // Replace '/destination' with your target URL.
+      history.push('/colombia/manifestando-aumentos');  // Replace '/destination' with your target URL.
     }, 1000);
   };
 
@@ -48,11 +47,11 @@ const Honey = () => {
                 vacaciones, un aumento o salir temprano los viernes ahora con
                 Halls es posible.
               </p>
-              <Button url={'/manifestando-aumentos'} titleButton={'Desliza para leer más'} />
+              <Button url={'/colombia/manifestando-aumentos'} titleButton={'Desliza para leer más'} />
             </div>
 
             <div className={isClassActive ? 'text-workimpulso-mobile mover-izquierda' : 'text-workimpulso-mobile'} id='mover-izquierda-button'>
-                <Button url={'/manifestando-aumentos'} titleButton={'Desliza'} />
+                <Button url={'/colombia/manifestando-aumentos'} titleButton={'Desliza'} />
             </div>
           </div>
         </div>
