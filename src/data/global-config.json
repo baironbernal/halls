@@ -1,11 +1,11 @@
 {
-  "/colombia/politicas-de-privacidad": {
+  "/peru/politicas-de-privacidad": {
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
       "list": {
-        "/colombia/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
-        "/colombia/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
-        "/colombia/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
+        "/peru/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/peru/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/peru/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
       }
     },
     "modal" : {
@@ -20,9 +20,9 @@
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
       "list": {
-        "/colombia/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
-        "/colombia/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
-        "/colombia/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
+        "/peru/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/peru/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/peru/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
       }
     },
     "modal" : {
@@ -33,13 +33,13 @@
       "buttonColor": "rgb(1, 103, 49, 100)"
     }
   },
-  "/colombia/": {
+  "/peru/": {
     "navbar": {
       "background": "/images/navbar/blue/bg.png", 
       "list": {
-        "/colombia/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
-        "/colombia/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
-        "/colombia/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
+        "/peru/fluye-en-la-u": "/images/navbar/blue/fluye.svg",
+        "/peru/manifestando-aumentos": "/images/navbar/blue/ma-aumentos.svg",
+        "/peru/amor-drama-y-astros": "/images/navbar/blue/amor.svg"
       }
     },
     "modal" : {
@@ -50,13 +50,13 @@
       "buttonColor": "rgb(1, 103, 49, 100)"
     }
   },
-    "/colombia/manifestando-aumentos": {
+    "/peru/manifestando-aumentos": {
       "navbar": {
         "background": "/images/navbar/green/bg.png", 
         "list": {
-          "/colombia/fluye-en-la-u": "/images/navbar/green/fluye.svg",
-          "/colombia/manifestando-aumentos": "/images/navbar/green/ma-aumentos.svg",
-          "/colombia/amor-drama-y-astros": "/images/navbar/green/amor.svg"
+          "/peru/fluye-en-la-u": "/images/navbar/green/fluye.svg",
+          "/peru/manifestando-aumentos": "/images/navbar/green/ma-aumentos.svg",
+          "/peru/amor-drama-y-astros": "/images/navbar/green/amor.svg"
         }
       },
       "modal" : {
@@ -75,11 +75,11 @@
           "overlay": "/images/pages/green/overlay-otras-categorias.png",
           "list": [
             {
-              "url": "/colombia/fluye-en-la-u",
+              "url": "/peru/fluye-en-la-u",
               "urlImage": "/images/home/person_1.svg" 
             },
             {
-              "url": "/colombia/amor-drama-y-astros",
+              "url": "/peru/amor-drama-y-astros",
               "urlImage": "/images/home/person_3.svg" 
             }
           ]
@@ -88,55 +88,55 @@
           {   
               "id": 1,
               "title": "Pedir aumento imagen",
-              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
-              "username": "duvanjimenez46",
-              "location": "/video/halls1.mp4" 
-          },
-          {
-              "id": 2,
-              "title": "Pedir vacaciones imagen",
-              "url": "https://www.instagram.com/paupatarroyo/?hl=en",
-              "username": "paupatarroyo",
-              "location": "/video/halls2.mp4" 
-          },
-          {
-              "id": 3,
-              "title": "Home Office imagen",
-              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
-              "username": "duvanjimenez46",
-              "location": "/video/halls3.mp4" 
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
           },
           {   
-              "id": 4,
+              "id": 1,
               "title": "Pedir aumento imagen",
-              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
-              "username": "duvanjimenez46",
-              "location": "/video/halls1.mp4" 
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
           },
-          {
-              "id": 5,
-              "title": "Pedir vacaciones imagen",
-              "url": "https://www.instagram.com/paupatarroyo/?hl=en",
-              "username": "paupatarroyo",
-              "location": "/video/halls2.mp4" 
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
           },
-          {
-              "id": 6,
-              "title": "Home Office imagen",
-              "url": "https://www.instagram.com/duvanjimenez46/?hl=en",
-              "username": "duvanjimenez46",
-              "location": "/video/halls3.mp4" 
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
+          },
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
+          },
+          {   
+              "id": 1,
+              "title": "Pedir aumento imagen",
+              "url": "https://www.instagram.com/marisolbenavides_",
+              "username": "@marisolbenavides_",
+              "location": "/video/peru_video1.mp4" 
           }
       ]
     },
     
-    "/colombia/fluye-en-la-u": {
+    "/peru/fluye-en-la-u": {
       "navbar": {
         "background": "/images/navbar/purple/bg.png", 
         "list": {
-          "/colombia/fluye-en-la-u": "/images/navbar/purple/fluye.svg",
-          "/colombia/manifestando-aumentos": "/images/navbar/purple/ma-aumentos.svg",
-          "/colombia/amor-drama-y-astros": "/images/navbar/purple/amor.svg"
+          "/peru/fluye-en-la-u": "/images/navbar/purple/fluye.svg",
+          "/peru/manifestando-aumentos": "/images/navbar/purple/ma-aumentos.svg",
+          "/peru/amor-drama-y-astros": "/images/navbar/purple/amor.svg"
         }
       },
       "modal" : {
@@ -155,7 +155,7 @@
           "overlay": "/images/pages/purple/overlay-otras-categorias.png",
           "list": [
             {
-              "url": "/colombia/amor-drama-y-astros",
+              "url": "/peru/amor-drama-y-astros",
               "urlImage": "/images/home/person_3.svg" 
             },
             {
@@ -166,39 +166,39 @@
         },
         "conversations": [
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "El outfit es tan importante como respirar y alistar tu stick de Halls Negro antes de salir 😏."
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "No le hables de tu ex! Respira y mejor ofrécele el último Hallsito 😉."
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "Keep it real, toma un respiro con Halls y no sobre actúes."
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "Si la cita está muy mala, respira y pon una alarma en tu celular a las 10 pm, la podrás usar como timbre de llamada urgente. 📲"
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+          "question": "¿Qué consejo le darías a ese novato en el primer día de U?",
           "repply": "Busca spots relajados donde se sientan cómodos, un Hallsito y déjalo fluir. 😉"
           }
         ]
     },
     
-    "/colombia/amor-drama-y-astros": {
+    "/peru/amor-drama-y-astros": {
       "navbar": {
         "background": "/images/navbar/red/bg.png", 
         "list": {
-          "/colombia/fluye-en-la-u": "/images/navbar/red/fluye.svg",
-          "/colombia/manifestando-aumentos": "/images/navbar/red/ma-aumentos.svg",
-          "/colombia/amor-drama-y-astros": "/images/navbar/red/amor.svg"
+          "/peru/fluye-en-la-u": "/images/navbar/red/fluye.svg",
+          "/peru/manifestando-aumentos": "/images/navbar/red/ma-aumentos.svg",
+          "/peru/amor-drama-y-astros": "/images/navbar/red/amor.svg"
         }
       },
       "modal" : {
@@ -216,11 +216,11 @@
           "overlay": "/images/pages/red/overlay-otras-categorias.png",
           "list": [
             {
-              "url": "/colombia/manifestando-aumentos",
+              "url": "/peru/manifestando-aumentos",
               "urlImage": "/images/home/person_2.svg" 
             },
             {
-              "url": "/colombia/fluye-en-la-u",
+              "url": "/peru/fluye-en-la-u",
               "urlImage": "/images/home/person_1.svg" 
             }
           ]

@@ -26,7 +26,12 @@ const SwiperTiktok = () => {
             <a href={infoVideo.url} className="d-block text-decoration-none text-center w-auto" target='blank'>
                     <img src={publicURL + "/images/pages/green/instagram-icon.svg"} alt="Icon Instagram" /> 
                 </a>
-                <span className="tag--title d-block text-center text-white w-auto fs-3">{infoVideo.username} </span>
+                <a href={infoVideo.url} style={{
+                  display: 'contents',
+                }}>
+                  <span className="tag--title d-block text-center text-white w-auto fs-3">{infoVideo.username} </span>
+                </a>
+                
             </Row>
         </Zoom>
       <div className="d-flex justify-content-center align-items-center ">

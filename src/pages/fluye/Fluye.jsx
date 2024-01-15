@@ -59,7 +59,7 @@ const Fluye = () => {
                      src={publicURL + "/images/pages/purple/consejos.png"} 
                     alt="Consejos de último semestre" />
                   </figure>
-                  <p className='text-white position-relative z-1'>¿Listo para dejar de ser ese “primíparo” <br />
+                  <p className='text-white position-relative z-1'>¿Listo para dejar de ser ese “novato” <br />
                     que no pasa desapercibido?</p>
                 </article>
         </Col>

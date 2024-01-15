@@ -90,7 +90,7 @@ const Home = () => {
               </div>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                  <a href="/colombia/fluye-en-la-u">
+                  <a href="/peru/fluye-en-la-u">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_1.svg"}
@@ -101,7 +101,7 @@ const Home = () => {
               </Col>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                  <a href='/colombia/manifestando-aumentos'>
+                  <a href='/peru/manifestando-aumentos'>
                     <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_2.svg"}
@@ -112,7 +112,7 @@ const Home = () => {
               </Col>
               <Col xs={12} md={12} lg={4} xl={4} className="position-relative z-1">
                 <Figure className="text-center">
-                <a href="/colombia/amor-drama-y-astros">
+                <a href="/peru/amor-drama-y-astros">
                   <img
                     className=" mw-100"
                     src={publicURL+"/images/home/person_3.svg"}
@@ -126,8 +126,8 @@ const Home = () => {
           <LightSpeed right>
             <Row className="text-center">
               <p className="mt-3 text-white fs-5">
-              Aquí nos gusta el chisme, por eso hablamos de tu jefe, de conquistar a tu mejor amix y de la carrera
-                a la que te quieres cambiar.
+              Aquí nos gusta el chismeo, por eso hablamos de tu jefe, de conquistar a tu mejor amix y de la
+              carrera a la que te quieres cambiar.
                 <br />
                 <b>#RespiraYTomaUnImpulsoreal clickea sin miedo y ¡empecemos!</b>
               </p>
@@ -179,8 +179,7 @@ const Home = () => {
                   </h1>
                   <p className="mt-3 text-white fs-5">
                     Dile no, a los sitios más básicos del lugar. <br />
-                    #RespiraYTomaUnImpulsoReal con Halls y sé el anfitrión más
-                    cool de tus amigos.
+                    #RespiraYTomaUnImpulsoReal con Halls y sé el anfitrión más cool de tus amix.
                   </p>
                   <Button
                     url={"fluye-en-la-u"}
@@ -203,12 +202,11 @@ const Home = () => {
           <Row className="mt-5 text-center w-100 position-relative z-3">
             <h1
               id="respiraytoma"
-              className="m-0 fc-pink-primary ff-gotham-bold fs-1"
-            >
+              className="m-0 fc-pink-primary ff-gotham-bold fs-1">
               #RespiraYTomaUnImpulsoReal
             </h1>
             <p className="fs-4 text-white">
-              con Halls y rómpela en el semestre.
+              con Halls y da lo mejor de ti en el semestre.
             </p>
           </Row>
           <Row className="tiras-consejo position-relative">
@@ -333,7 +331,7 @@ const Home = () => {
           </p>
           <div className="text-center">
                 <Button
-                  url={"colombia/amor-drama-y-astros"}
+                  url={"peru/amor-drama-y-astros"}
                   borderColor={"#D8005D"}
                   titleButton={"Leer más"}
                 />

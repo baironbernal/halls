@@ -14,7 +14,7 @@ const Honey = () => {
     
     // Use the setTimeout function to delay the redirect by 1 second (1000 milliseconds).
     setTimeout(() => {
-      history.push('/colombia/manifestando-aumentos');  // Replace '/destination' with your target URL.
+      history.push('/peru/manifestando-aumentos');  // Replace '/destination' with your target URL.
     }, 1000);
   };
 
@@ -47,11 +47,11 @@ const Honey = () => {
                 vacaciones, un aumento o salir temprano los viernes ahora con
                 Halls es posible.
               </p>
-              <Button url={'/colombia/manifestando-aumentos'} titleButton={'Desliza para leer más'} />
+              <Button url={'/peru/manifestando-aumentos'} titleButton={'Desliza para leer más'} />
             </div>
 
             <div className={isClassActive ? 'text-workimpulso-mobile mover-izquierda' : 'text-workimpulso-mobile'} id='mover-izquierda-button'>
-                <Button url={'/colombia/manifestando-aumentos'} titleButton={'Desliza'} />
+                <Button url={'/peru/manifestando-aumentos'} titleButton={'Desliza'} />
             </div>
           </div>
         </div>
