@@ -35,10 +35,7 @@ const ContainerMap = () => {
                             fontSize: '14px'
                         }}>
                             <option value="all" className='text-center'>Buscar Ciudad</option>
-                            <option value="Bogotá">Bogotá</option>
-                            <option value="Medellín">Medellín</option>
-                            <option value="Cali">Cali</option>
-                            <option value="Cartagena">Cartagena</option>
+                            <option value="Lima">Lima</option>
                         </Form.Select>
                     </Col>
                     <Col xs={12} md={12} lg={6} xl={6} className='my-md-0'>
