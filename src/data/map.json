@@ -1,13 +1,13 @@
 {
 	"drops": [
 		{
-			"name": "Barranco ⚡️(compartir)",
+			"name": "Barranco ⚡️",
 			"hours": "La cultura diversa en lo más TOP, ven con tus amix y descubre lo mejor del arte, la comida y la cultura.",
 			"address": "Barranco",
 			"zip": "",
 			"phone": "",
-			"lat": 4.599438390053059,
-			"long": -74.06968363928485,
+			"lat": -12.141666666667,
+			"long": -77.016666666667,
 			"geocode": [
 				{
 					"results": [
@@ -22,14 +22,14 @@
 							"formatted_address": "Barranco",
 							"geometry": {
 								"bounds": {
-									"northeast": {"lat": 4.599438390053059, "lng": -74.06968363928485},
-									"southwest": {"lat": 4.599438390053059, "lng": -74.06968363928485}
+									"northeast": {"lat": -12.141666666667, "lng": -77.016666666667},
+									"southwest": {"lat": -12.141666666667, "lng": -77.016666666667}
 								},
-								"location": {"lat": 4.599438390053059, "lng": -74.06968363928485},
+								"location": {"lat": -12.141666666667, "lng": -77.016666666667},
 								"location_type": "RANGE_INTERPOLATED",
 								"viewport": {
-									"northeast": {"lat": 4.599438390053059, "lng": -74.06968363928485},
-									"southwest": {"lat": 4.599438390053059, "lng": -74.06968363928485}
+									"northeast": {"lat": -12.141666666667, "lng": -77.016666666667},
+									"southwest": {"lat": -12.141666666667, "lng": -77.016666666667}
 								}
 							},
 							"partial_match": true,
@@ -41,11 +41,11 @@
 				}
 			],
 			"test": 196,
-			"city": "Bogotá",
-			"category": "Experimentar"
+			"city": "Lima",
+			"category": "Compartir"
 		},
 		{
-			"name": "Refugio Gastronómico ⚡️ (socializar)",
+			"name": "Refugio Gastronómico ⚡️",
 			"hours": "El mejor lugar para comer con tus patas y conectar con tus sentidos Av. Javier Prado Este 4492",
 			"address": "Av. Javier Prado Este 4492",
 			"zip": "",
@@ -85,11 +85,11 @@
 				}
 			],
 			"test": 196,
-			"city": "Bogotá",
+			"city": "Lima",
 			"category": "Socializar"
 		},
 		{
-			"name": "Rincón cervecero ⚡️ (socializar)",
+			"name": "Rincón cervecero ⚡️",
 			"hours": "Respira con tu grupo de amix y… ¡Atrapa la chela que te lanzan por la barra! Jr. de la Unión 1045, Centro histórico de Lima",
 			"address": "Jr. de la Unión 1045, Centro histórico de Lima",
 			"zip": "",
@@ -133,7 +133,7 @@
 			"category": "Socializar"
 		},
 		{
-			"name": "Larcomar ✨(compartir)",
+			"name": "Larcomar ✨",
 			"hours": "Cuando quieres salir con tus amix pero es fin de mes, el CC Larcomar es la vieja confiable. Mal. de la Reserva 610, Miraflores 15074",
 			"address": "Mal. de la Reserva 610, Miraflores 15074",
 			"zip": "15074",
@@ -177,7 +177,7 @@
 			"category": "Compartir"
 		},	
 		{
-			"name": "Puente de los Suspiros 🔥 (experimentar)",
+			"name": "Puente de los Suspiros 🔥",
 			"hours": "¡Hora de conquistar a tu crush! Respira profundo antes de atravesarlo: si aguantasla respiración mientras cruzas, se te cumplirá el deseo que pidas. Paseo Chabuca Granda, Distrito Barranco",
 			"address": "Paseo Chabuca Granda, Distrito Barranco",
 			"zip": "",
@@ -265,7 +265,7 @@
 			"category": "Socializar"
 		},
 		{
-			"name": "The Bunker 🔥 (socializar)",
+			"name": "The Bunker 🔥 ",
 			"hours": "Sencillo y perfecto para tu primera juerga con los amix de la U. Calle Bolívar 164, Miraflores",
 			"address": "Calle Bolívar 164, Miraflores",
 			"zip": "",
@@ -305,11 +305,11 @@
 				}
 			],
 			"test": 196,
-			"city": "Miraflores",
+			"city": "Lima",
 			"category": "Socializar"
 		},		
 		{
-			"name": "Huaca Pucllana ⚡️ (experimentar)",
+			"name": "Huaca Pucllana ⚡️",
 			"hours": "Un viaje pre-histórico perfecto para la tarde de un miércoles. Calle General Borgoño sin número, cuadra 8, Miraflores",
 			"address": "Calle General Borgoño sin número, cuadra 8, Miraflores",
 			"zip": "",
@@ -349,11 +349,11 @@
 				}
 			],
 			"test": 196,
-			"city": "Miraflores",
+			"city": "Lima",
 			"category": "Experimentar"
 		},
 		{
-			"name": "Huaca Pucllana ⚡️ (experimentar)",
+			"name": "Huaca Pucllana ⚡️",
 			"hours": "Un viaje pre-histórico perfecto para la tarde de un miércoles. Calle General Borgoño sin número, cuadra 8, Miraflores",
 			"address": "Calle General Borgoño sin número, cuadra 8, Miraflores",
 			"zip": "",
@@ -393,12 +393,53 @@
 				}
 			],
 			"test": 196,
-			"city": "Miraflores",
+			"city": "Lima",
+			"category": "Experimentar"
+		},
+
+		{
+			"name": "Circuito mágico de agua 🤩",
+			"hours": "¡Alucina con un show nocturno de fuentes de agua y luces",
+			"address": "Jirón Madre de Dios S/N, Lima 15046, Perú",
+			"zip": "",
+			"phone": "",
+			"lat": -12.070100443719602,
+			"long": -77.03493240323208,
+			"geocode": [
+				{
+					"results": [
+						{
+							"address_components": [
+								{
+									"long_name": "Calle General Borgoño sin número, cuadra 8, Miraflores",
+									"short_name": "Calle General Borgoño sin número, cuadra 8, Miraflores",
+									"types": ["street_number"]
+								}
+							],
+							"formatted_address": "Calle General Borgoño sin número, cuadra 8, Miraflores",
+							"geometry": {
+								"bounds": {
+									"northeast": {"lat": -12.070100443719602, "lng": -77.03493240323208},
+									"southwest": {"lat": -12.070100443719602, "lng": -77.03493240323208}
+								},
+								"location": {"lat": -12.070100443719602, "lng": -77.03493240323208},
+								"location_type": "RANGE_INTERPOLATED",
+								"viewport": {
+									"northeast": {"lat": -12.070100443719602, "lng": -77.03493240323208},
+									"southwest": {"lat": -12.070100443719602, "lng": -77.03493240323208}
+								}
+							},
+							"partial_match": true,
+							"place_id": "SnbMaJH28ZaQeqHm7",
+							"types": ["street_address"]
+						}
+					],
+					"status": "OK"
+				}
+			],
+			"test": 196,
+			"city": "Lima",
 			"category": "Experimentar"
 		}
-				
-		
-		
-
 	]
 }
