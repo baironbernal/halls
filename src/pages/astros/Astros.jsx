@@ -43,7 +43,7 @@ const Astros = () => {
                         <article>
                             <img className="mw-100" src={publicURL + "/images/pages/red/mural-rompe-hielo.png"} alt="Mural rompe hielo"/>
                             <p className="mt-3 text-white fs-5">Ser el más extrovertido no asegura el éxito en la primer a cita. Rompe el hielo con Halls y estos tipcitos. 
-                            <br/>¿Funcionan? No tenemos pruebas, pero tampoco dudas.#RespiraYTomaUnImpulsoReal y ponlos a prueba</p>
+                            <br/>¿Funcionan? No tenemos pruebas, pero tampoco dudas. <span className='ff-gotham-bold'>#RespiraYTomaUnImpulsoReal</span> y ponlos a prueba</p>
                         </article>
                 </Zoom>
             </Row>
@@ -74,7 +74,7 @@ const Astros = () => {
             <Row>
             <p className="mt-3 text-white fs-5 position-relative z-1">
             ¿Tienes más de un crush? Nada que un Halls no pueda resolver.<br />
-            #RespiraYTomaUnImpulsoReal para descubrir quién te conviene más.
+            <span className='ff-gotham-bold'>#RespiraYTomaUnImpulsoReal</span> para descubrir quién te conviene más.
             </p>
             </Row>
             

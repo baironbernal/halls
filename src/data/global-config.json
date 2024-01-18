@@ -167,27 +167,35 @@
         "conversations": [
           {
           "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "Para que tu amix deje el overthinking, respira y mándale tu ubicación en tiempo real 📌."
+          "repply": "¿Perdidx en la U? Cómete un Hallsito, respira y ubicate con el mapa📍"
           },
           {
           "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "El outfit es tan importante como respirar y alistar tu stick de Halls Negro antes de salir 😏."
+          "repply": "¿Quieres faltar a la inducción? Respira, toma un impulso y métele ganas iSerá más útil que esa electiva!"
           },
           {
           "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "No le hables de tu ex! Respira y mejor ofrécele el último Hallsito 😉."
+          "repply": "Ya saliste del colegio! Respira y toma el impulso de pararte al baño sin preguntar 😎"
           },
           {
           "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "Keep it real, toma un respiro con Halls y no sobre actúes."
+          "repply": "¡Que no se te note lo primíparo! Anda en parejitas y no en grupo de 20 por toda la U 😝."
           },
           {
           "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "Si la cita está muy mala, respira y pon una alarma en tu celular a las 10 pm, la podrás usar como timbre de llamada urgente. 📲"
+          "repply": "Evita preguntar a los chicxs grandes de la U, si tienes dudas hazlo con tu profe de confianza 😏"
           },
           {
-          "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
-          "repply": "Busca spots relajados donde se sientan cómodos, un Hallsito y déjalo fluir. 😉"
+            "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+            "repply": "iBye bye puestos fijos! Si alguien más tiene tu puesto, respira y cámbiate sin problema."
+          },
+          {
+            "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+            "repply": "¿Vas a inscribir materias? ¡TRANQUILO! Respira y consigue hacerlo con 2 computadores a la mano…por si se bloquea la plataforma 😪."
+          },
+          {
+            "question": "¿Qué consejo le darías a ese parcero primíparo para el primer día de U?",
+            "repply": "¡Amix date cuenta! Nadie recuerda lo que hiciste ayer o lo que harás mañana, Así que respira y toma el impulso que quieras 💁🏻‍♀️."
           }
         ]
     },

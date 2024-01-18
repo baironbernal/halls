@@ -56,8 +56,8 @@ const ContainerMap = () => {
                         }}>
                             <option value="all" className='text-center' >Buscar Categoría</option>
                             <option value="Experimentar">Experimentar</option>
-                            <option value="Socializar">Socializar</option>
-                            <option value="Compartir">Compartir</option>
+                            <option value="Socializar">Ir de fiesta</option>
+                            <option value="Compartir">Parchar</option>
                         </Form.Select>
                     </Col>
                 </Row>
