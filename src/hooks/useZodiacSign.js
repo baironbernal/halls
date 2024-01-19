@@ -7,7 +7,7 @@ const useZodiacSign = () => {
         { value: 1, label: 'Aries' },
         { value: 2, label: 'Tauro' },
         { value: 3, label: 'Geminis' },
-        { value: 4, label: 'Cancer' },
+        { value: 4, label: 'Cáncer' },
         { value: 5, label: 'Leo' },
         { value: 6, label: 'Virgo' },
         { value: 7, label: 'Libra' },

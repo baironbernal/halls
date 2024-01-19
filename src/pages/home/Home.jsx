@@ -126,8 +126,8 @@ const Home = () => {
           <LightSpeed right>
             <Row className="text-center">
               <p className="mt-3 text-white fs-5">
-              Aquí nos gusta el chismeo, por eso hablamos de tu jefe, de conquistar a tu mejor amix y de la
-              carrera a la que te quieres cambiar.
+              Aquí nos gusta el chismeo, por eso hablamos de la carrera a la que te quieres
+              cambiar, <br />de tu trabajo o de conquistar a tu mejor amix.
                 <br />
                 <b>#RespiraYTomaUnImpulsoreal clickea sin miedo y ¡empecemos!</b>
               </p>
@@ -179,7 +179,7 @@ const Home = () => {
                   </h1>
                   <p className="mt-3 text-white fs-5">
                     Dile no, a los sitios más básicos del lugar. <br />
-                    #RespiraYTomaUnImpulsoReal con Halls y sé el anfitrión más cool de tus amix.
+                    <span className="ff-gotham-bold">#RespiraYTomaUnImpulsoReal con Halls</span> y sé el anfitrión más cool de tus amix.
                   </p>
                   <Button
                     url={"fluye-en-la-u"}
@@ -326,7 +326,7 @@ const Home = () => {
         <Row className="pb-5">
           <p className="mt-3 text-white fs-5 position-relative z-1">
             ¿Tienes más de un crush? Nada que un Halls no pueda resolver. <br />
-            #RespiraYTomaUnImpulsoReal y descubre quién que te conviene. <br />
+            <span className="ff-gotham-bold">#RespiraYTomaUnImpulsoReal</span> y descubre quién que te conviene. <br />
             ¿Aries, Tauro, Libra?
           </p>
           <div className="text-center">

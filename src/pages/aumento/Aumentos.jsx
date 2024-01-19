@@ -44,9 +44,7 @@ const Aumentos = () => {
                             src={publicURL + "/images/pages/green/workimpulsos.svg"} 
                             alt="Work impulsos" /> 
                             <p className="mt-3 text-white fs-5">
-                            #RespiraYTomaUnImpulsoReal y haz eso que te apasiona con 
-                            los workimpulsos. Pedir vacaciones, un aumento o salir temprano 
-                            los viernes ahora con Halls es posible ¡Descarga el tuyo!
+                            <span className='ff-gotham-bold'>#RespiraYTomaUnImpulsoReal</span> y ¡Descarga el tuyo!
                             </p>
                         </article>
                     </Zoom>

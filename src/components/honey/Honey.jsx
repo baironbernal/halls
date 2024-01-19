@@ -41,7 +41,7 @@ const Honey = () => {
                 />
             </figure>
             <div className={isClassActive ? 'text-workimpulso mover-izquierda' : 'text-workimpulso'} id='textoMover'>
-              <h2 className="m-0">#RespiraYTomaUnImpulsoReal</h2>
+              <h2 className="m-0 ff-gotham-bold">#RespiraYTomaUnImpulsoReal</h2>
               <p>
                 y haz eso que te apasiona con los workimpulsos. Pedir
                 vacaciones, un aumento o salir temprano los viernes ahora con
