@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //Styles
 import './Aumentos.css';
 import '../../styles/keyframes.css';
@@ -7,15 +7,21 @@ import Clapperboard from '../../components/cinema/Clapperboard';
 import OtherCategories from '../../components/category/OtherCategories';
 import SwiperWork from '../../components/swipers/workimpulsos/SwiperWork';
 import SwiperTiktok from '../../components/swipers/tiktok/SwiperTiktok';
-
 //Boostrap
 import { Col, Container, Row } from 'react-bootstrap';
 //Animations
 import { Zoom, Fade } from 'react-reveal';
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
 
 const Aumentos = () => {
 
     const publicURL = process.env.PUBLIC_URL;
+
+    useEffect(() => {  
+        ReactPixel.pageView();
+        TiktokPixel.pageView();
+      }, []);
 
   return (
     <>

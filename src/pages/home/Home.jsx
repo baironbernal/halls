@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import "../../styles/keyframes.css";
 import { Col, Container, Figure, Row } from "react-bootstrap";
@@ -8,16 +8,37 @@ import { LightSpeed, Zoom } from "react-reveal";
 import Clapperboard from "../../components/cinema/Clapperboard";
 import Honey from "../../components/honey/Honey";
 import ModalVideo from "../../components/modal/ModalVideo";
+import TagManager from 'react-gtm-module';
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from "tiktok-pixel";
+
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
+  useEffect(() => {  
+    ReactPixel.pageView();
+    TiktokPixel.pageView();
+  }, []);
+
+  const sendGTM = () => {
+    console.log("Trigger GTM on ICON MOUSE")
+    // Push an event to the data layer
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'icon_mouse_click', // Event name
+        buttonName: 'ICON MOUSE', // Additional data
+      },
+    });
+
+    // Add any other logic you want to execute on button click
+  };
   
   return (
     <div>
       <section className="blue-home">
         <ModalVideo/>
       <a href="#three-options">
-      <div className="icon-mouse">
+      <div className="icon-mouse" onClick={sendGTM}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
