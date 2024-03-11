@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //Styles
 import './Aumentos.css';
 import '../../styles/keyframes.css';
@@ -12,10 +12,18 @@ import SwiperTiktok from '../../components/swipers/tiktok/SwiperTiktok';
 import { Col, Container, Row } from 'react-bootstrap';
 //Animations
 import { Zoom, Fade } from 'react-reveal';
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
+
 
 const Aumentos = () => {
 
     const publicURL = process.env.PUBLIC_URL;
+
+    useEffect(() => {
+        ReactPixel.pageView(); // Track page view on component mount
+        TiktokPixel.pageView();
+      }, []);
 
   return (
     <>

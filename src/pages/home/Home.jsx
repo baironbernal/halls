@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import "../../styles/keyframes.css";
 import { Col, Container, Figure, Row } from "react-bootstrap";
@@ -8,9 +8,16 @@ import { LightSpeed, Zoom } from "react-reveal";
 import Clapperboard from "../../components/cinema/Clapperboard";
 import Honey from "../../components/honey/Honey";
 import ModalVideo from "../../components/modal/ModalVideo";
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
 
 const Home = () => {
   const publicURL = process.env.PUBLIC_URL;
+
+  useEffect(() => {
+    ReactPixel.pageView(); // Track page view on component mount
+    TiktokPixel.pageView();
+  }, []);
   
   return (
     <div>

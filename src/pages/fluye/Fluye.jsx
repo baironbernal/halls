@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/keyframes.css';
 import './Fluye.css';
 import ContainerMap from '../../components/map/ContainerMap';
@@ -7,10 +7,17 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Zoom } from 'react-reveal';
 import CardSitos from '../../components/tinder/CardsSitos';
 import useFolderRoot from '../../hooks/useFolderRoot';
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
 
 const Fluye = () => {
   const publicURL = process.env.PUBLIC_URL;
   const { conversations } = useFolderRoot();
+
+  useEffect(() => {
+    ReactPixel.pageView(); // Track page view on component mount
+    TiktokPixel.pageView();
+  }, []);
   return (
     <>
     <div className="container-fluid overlay">

@@ -7,6 +7,18 @@ import Footer from './layout/footer/Footer';
 import Navbar from './layout/navbar/Navbar';
 import { ContextGlobal } from './context/ContextGlobal';
 
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
+
+
+const options = {
+  autoConfig: true,  // set pixel's autoConfig
+  debug: false,      // enable logs
+};
+
+ReactPixel.init('422122783599444', options);
+TiktokPixel.init('CNL376RC77U9NURUN5L0');
+
 function App() {
   return (
     <Router>

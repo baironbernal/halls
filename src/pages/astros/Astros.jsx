@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //Styles
 import './Astros.css';
 import '../../styles/keyframes.css';
@@ -14,11 +14,19 @@ import OtherCategories from '../../components/category/OtherCategories';
 import { Zoom } from 'react-reveal';
 import CardSitos from '../../components/tinder/CardsSitos';
 import useFolderRoot from '../../hooks/useFolderRoot';
+import ReactPixel from 'react-facebook-pixel';
+import TiktokPixel from 'tiktok-pixel';
+
 
 const Astros = () => {
 
    const publicURL = process.env.PUBLIC_URL;
    const { conversations } = useFolderRoot();
+
+   useEffect(() => {
+    ReactPixel.pageView(); // Track page view on component mount
+    TiktokPixel.pageView();
+  }, []);
 
   return (
     <>
